@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="speedcraft" author="" >
+<instances name="speedcraft_caso">
+  <instance id="sc_caso6" >
+    <att name="alm1-inv-cacao" value="15" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="10" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso5" >
+    <att name="alm1-inv-cacao" value="25" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="0" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso8" >
+    <att name="alm1-inv-cacao" value="15" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="6" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso7" >
+    <att name="alm1-inv-cacao" value="15" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="10" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="10" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="6" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso2" >
+    <att name="alm1-inv-cacao" value="25" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="0" />
+    <att name="alm1-inv-trigo" value="20" />
+    <att name="cofre-galleta-ingr-cacao" value="0" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pan" />
+    <att name="alm2-inv-huevo" value="17" />
+    <att name="cofre-pan-ingr-trigo" value="10" />
+    <att name="alm1-inv-huevo" value="5" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="0" />
+  </instance>
+  <instance id="sc_caso1" >
+    <att name="alm1-inv-cacao" value="25" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="0" />
+    <att name="alm1-inv-trigo" value="30" />
+    <att name="cofre-galleta-ingr-cacao" value="0" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pan" />
+    <att name="alm2-inv-huevo" value="17" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="5" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="0" />
+  </instance>
+  <instance id="sc_caso4" >
+    <att name="alm1-inv-cacao" value="25" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="3" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="0" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pan" />
+    <att name="alm2-inv-huevo" value="17" />
+    <att name="cofre-pan-ingr-trigo" value="11" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="2" />
+  </instance>
+  <instance id="sc_caso3" >
+    <att name="alm1-inv-cacao" value="25" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="0" />
+    <att name="cofre-pan" value="3" />
+    <att name="alm1-inv-trigo" value="20" />
+    <att name="cofre-galleta-ingr-cacao" value="0" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="16" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pan" />
+    <att name="alm2-inv-huevo" value="17" />
+    <att name="cofre-pan-ingr-trigo" value="1" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="10" />
+    <att name="cofre-pan-ingr-huevo" value="2" />
+  </instance>
+  <instance id="sc_caso12" >
+    <att name="alm1-inv-cacao" value="5" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="0" />
+    <att name="alm2-inv-cacao" value="0" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="3" />
+    <att name="cofre-pastel-ingr-cacao" value="11" />
+    <att name="cofre-pastel-ingr-huevo" value="1" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="0" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="3" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso13" >
+    <att name="alm1-inv-cacao" value="0" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="0" />
+    <att name="alm2-inv-cacao" value="0" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="3" />
+    <att name="cofre-pastel-ingr-cacao" value="16" />
+    <att name="cofre-pastel-ingr-huevo" value="1" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="0" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="3" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso10" >
+    <att name="alm1-inv-cacao" value="5" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="0" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="6" />
+    <att name="cofre-pastel-ingr-cacao" value="10" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso11" >
+    <att name="alm1-inv-cacao" value="5" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="0" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="3" />
+    <att name="cofre-pastel-ingr-cacao" value="1" />
+    <att name="cofre-pastel-ingr-huevo" value="1" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="0" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="3" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+  <instance id="sc_caso9" >
+    <att name="alm1-inv-cacao" value="5" />
+    <att name="cofre-pan-ingr-leche" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-inv-leche" value="3" />
+    <att name="cofre-galleta-ingr-trigo" value="0" />
+    <att name="cofre-galleta-ingr-leche" value="5" />
+    <att name="cofre-pan" value="10" />
+    <att name="alm1-inv-trigo" value="10" />
+    <att name="cofre-galleta-ingr-cacao" value="5" />
+    <att name="cofre-galleta-ingr-huevo" value="0" />
+    <att name="alm2-inv-leche" value="6" />
+    <att name="alm2-inv-cacao" value="10" />
+    <att name="cofre-pastel-ingr-trigo" value="0" />
+    <att name="cofre-pan-ingr-cacao" value="0" />
+    <att name="cofre-pastel-ingr-leche" value="0" />
+    <att name="cofre-pastel-ingr-cacao" value="10" />
+    <att name="cofre-pastel-ingr-huevo" value="0" />
+    <att name="a-objetivo" value="pastel" />
+    <att name="alm2-inv-huevo" value="7" />
+    <att name="cofre-pan-ingr-trigo" value="0" />
+    <att name="alm1-inv-huevo" value="0" />
+    <att name="cofre-pastel" value="0" />
+    <att name="alm2-inv-trigo" value="0" />
+    <att name="cofre-pan-ingr-huevo" value="5" />
+  </instance>
+</instances>
+<cb name="CB_csvImport">
+     <case name="sc_caso6" />
+     <case name="sc_caso5" />
+     <case name="sc_caso8" />
+     <case name="sc_caso7" />
+     <case name="sc_caso2" />
+     <case name="sc_caso1" />
+     <case name="sc_caso4" />
+     <case name="sc_caso3" />
+     <case name="sc_caso12" />
+     <case name="sc_caso13" />
+     <case name="sc_caso10" />
+     <case name="sc_caso11" />
+     <case name="sc_caso9" />
+</cb>
+</Project>
