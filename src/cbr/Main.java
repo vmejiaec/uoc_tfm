@@ -23,7 +23,7 @@ public class Main {
 				(Integer)0,(Integer)2,(Integer)0,(Integer)11,				
 				(Integer)0,
 				(Integer)0,(Integer)0,(Integer)0,(Integer)0,				
-				(Integer)3
+				(Integer)2
 		);
 		System.out.println(res);
 		
@@ -37,7 +37,7 @@ public class Main {
 				(Integer)0,(Integer)5,(Integer)0,(Integer)0,
 				(Integer)3,
 				(Integer)1,(Integer)1,(Integer)3,(Integer)0,
-				(Integer)3
+				(Integer)2
 		);
 		System.out.println(res1);
 		
@@ -51,7 +51,7 @@ public class Main {
 				(Integer)0,(Integer)5,(Integer)0,(Integer)0,
 				(Integer)0,
 				(Integer)0,(Integer)0,(Integer)0,(Integer)0,
-				(Integer)3
+				(Integer)2
 		);
 		System.out.println(res2);
 			
