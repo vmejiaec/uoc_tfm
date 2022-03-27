@@ -2,141 +2,121 @@
 <Project name="speedcraft" author="" >
 <exp obj="speedcraft_caso" type="Concept" >
   <desc>
-&#10;Cofre de base para producir pan        </desc>
-</exp>
-<exp obj="alm1-inv-cacao" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pan-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-galleta" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm1-inv-leche" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-galleta-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-galleta-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
+Cofre de base para producir pan          </desc>
 </exp>
 <exp obj="cofre-pan" c="speedcraft_caso" type="AttributeDesc" >
   <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm1-inv-trigo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-galleta-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-galleta-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm2-inv-leche" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm2-inv-cacao" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pan-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pastel-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pastel-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pastel-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pastel-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="a-objetivo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm2-inv-huevo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pan-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="alm1-inv-huevo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pastel" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
-</exp>
-<exp obj="cofre-pan-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
-  <desc>
-&#10;        </desc>
+          </desc>
 </exp>
 <exp obj="alm2-inv-trigo" c="speedcraft_caso" type="AttributeDesc" >
   <desc>
-&#10;        </desc>
+          </desc>
+</exp>
+<exp obj="cofre-galleta-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pastel" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm2-inv-leche" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-galleta" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm1-inv-trigo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pan-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pastel-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pan-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm2-inv-cacao" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pastel-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm1-inv-cacao" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pastel-ingr-leche" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm1-inv-huevo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm2-inv-huevo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-galleta-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-galleta-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="a-objetivo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-galleta-ingr-huevo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pastel-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pan-ingr-cacao" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="cofre-pan-ingr-trigo" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
+</exp>
+<exp obj="alm1-inv-leche" c="speedcraft_caso" type="AttributeDesc" >
+  <desc>
+          </desc>
 </exp>
 <exp obj="pan" c="speedcraft_caso" desc="a-objetivo" type="SimpleAttribute" >
   <desc>
-  </desc>
+&#10;    </desc>
 </exp>
-<exp obj="sc_caso4" c="speedcraft_caso" type="Instance" >
+<exp obj="speedcraft_caso10" c="speedcraft_caso" type="Instance" >
   <desc>
   </desc>
 </exp>
-<exp obj="sc_caso1" c="speedcraft_caso" type="Instance" >
+<exp obj="speedcraft_caso3" c="speedcraft_caso" type="Instance" >
   <desc>
   </desc>
 </exp>
-<exp obj="sc_caso9" c="speedcraft_caso" type="Instance" >
+<exp obj="speedcraft_caso0" c="speedcraft_caso" type="Instance" >
   <desc>
   </desc>
 </exp>
-<exp obj="sc_caso5" c="speedcraft_caso" type="Instance" >
-  <desc>
-  </desc>
-</exp>
-<exp obj="sc_caso8" c="speedcraft_caso" type="Instance" >
-  <desc>
-  </desc>
-</exp>
-<exp obj="sc_caso6" c="speedcraft_caso" type="Instance" >
-  <desc>
-  </desc>
-</exp>
-<exp obj="sc_caso3" c="speedcraft_caso" type="Instance" >
-  <desc>
-  </desc>
-</exp>
-<exp obj="sc_caso7" c="speedcraft_caso" type="Instance" >
-  <desc>
-  </desc>
-</exp>
-<exp obj="sc_caso2" c="speedcraft_caso" type="Instance" >
+<exp obj="speedcraft_caso1" c="speedcraft_caso" type="Instance" >
   <desc>
   </desc>
 </exp>

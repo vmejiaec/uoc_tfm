@@ -43,28 +43,11 @@ public class Recomendar {
 			Integer alm1_inv_leche,
 			Integer alm1_inv_trigo,
 			
-			Integer alm2_inv_cacao, 
-			Integer alm2_inv_huevo,
-			Integer alm2_inv_leche,
-			Integer alm2_inv_trigo,
-
 			Integer cofre_galleta,
 			Integer cofre_galleta_ingr_cacao,
 			Integer cofre_galleta_ingr_huevo,
 			Integer cofre_galleta_ingr_leche,
 			Integer cofre_galleta_ingr_trigo,
-			
-			Integer cofre_pan,
-			Integer cofre_pan_ingr_cacao,
-			Integer cofre_pan_ingr_huevo,
-			Integer cofre_pan_ingr_leche,
-			Integer cofre_pan_ingr_trigo,
-			
-			Integer cofre_pastel,
-			Integer cofre_pastel_ingr_cacao,
-			Integer cofre_pastel_ingr_huevo,
-			Integer cofre_pastel_ingr_leche,
-			Integer cofre_pastel_ingr_trigo,
 			
 			Integer numberofcases
 			) {
@@ -88,28 +71,11 @@ public class Recomendar {
 		IntegerDesc alm1_inv_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-leche");
 		IntegerDesc alm1_inv_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-trigo");
 		
-		IntegerDesc alm2_inv_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm2-inv-cacao");
-		IntegerDesc alm2_inv_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm2-inv-huevo");
-		IntegerDesc alm2_inv_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm2-inv-leche");
-		IntegerDesc alm2_inv_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm2-inv-trigo");
-		
 		IntegerDesc cofre_galletaDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta");
 		IntegerDesc cofre_galleta_ingr_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-cacao");
 		IntegerDesc cofre_galleta_ingr_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-huevo");
 		IntegerDesc cofre_galleta_ingr_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-leche");
 		IntegerDesc cofre_galleta_ingr_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-trigo");
-		
-		IntegerDesc cofre_panDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan");
-		IntegerDesc cofre_pan_ingr_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-ingr-cacao");
-		IntegerDesc cofre_pan_ingr_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-ingr-huevo");
-		IntegerDesc cofre_pan_ingr_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-ingr-leche");
-		IntegerDesc cofre_pan_ingr_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-ingr-trigo");
-		
-		IntegerDesc cofre_pastelDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel");
-		IntegerDesc cofre_pastel_ingr_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel-ingr-cacao");
-		IntegerDesc cofre_pastel_ingr_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel-ingr-huevo");
-		IntegerDesc cofre_pastel_ingr_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel-ingr-leche");
-		IntegerDesc cofre_pastel_ingr_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel-ingr-trigo");
 
 		try {
 			query.addAttribute(a_objetivoDesc,a_objetivoDesc.getAttribute(a_objetivo));
@@ -119,28 +85,12 @@ public class Recomendar {
 			query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute(alm1_inv_leche));
 			query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute(alm1_inv_trigo));
 			
-			query.addAttribute(alm2_inv_cacaoDesc,alm2_inv_cacaoDesc.getAttribute(alm2_inv_cacao));
-			query.addAttribute(alm2_inv_huevoDesc,alm2_inv_huevoDesc.getAttribute(alm2_inv_huevo));
-			query.addAttribute(alm2_inv_lecheDesc,alm2_inv_lecheDesc.getAttribute(alm2_inv_leche));
-			query.addAttribute(alm2_inv_trigoDesc,alm2_inv_trigoDesc.getAttribute(alm2_inv_trigo));
-			
 			query.addAttribute(cofre_galletaDesc,cofre_galletaDesc.getAttribute(cofre_galleta));
 			query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute(cofre_galleta_ingr_cacao));
 			query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute(cofre_galleta_ingr_huevo));
 			query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute(cofre_galleta_ingr_leche));
 			query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute(cofre_galleta_ingr_trigo));
-			
-			query.addAttribute(cofre_panDesc,cofre_panDesc.getAttribute(cofre_pan));
-			query.addAttribute(cofre_pan_ingr_cacaoDesc,cofre_pan_ingr_cacaoDesc.getAttribute(cofre_pan_ingr_cacao));
-			query.addAttribute(cofre_pan_ingr_huevoDesc,cofre_pan_ingr_huevoDesc.getAttribute(cofre_pan_ingr_huevo));
-			query.addAttribute(cofre_pan_ingr_lecheDesc,cofre_pan_ingr_lecheDesc.getAttribute(cofre_pan_ingr_leche));
-			query.addAttribute(cofre_pan_ingr_trigoDesc,cofre_pan_ingr_trigoDesc.getAttribute(cofre_pan_ingr_trigo));
-			
-			query.addAttribute(cofre_pastelDesc,cofre_pastelDesc.getAttribute(cofre_pastel));
-			query.addAttribute(cofre_pastel_ingr_cacaoDesc,cofre_pastel_ingr_cacaoDesc.getAttribute(cofre_pastel_ingr_cacao));
-			query.addAttribute(cofre_pastel_ingr_huevoDesc,cofre_pastel_ingr_huevoDesc.getAttribute(cofre_pastel_ingr_huevo));
-			query.addAttribute(cofre_pastel_ingr_lecheDesc,cofre_pastel_ingr_lecheDesc.getAttribute(cofre_pastel_ingr_leche));
-			query.addAttribute(cofre_pastel_ingr_trigoDesc,cofre_pastel_ingr_trigoDesc.getAttribute(cofre_pastel_ingr_trigo));
+
 			
 		} catch (ParseException e) {
 			e.printStackTrace();
@@ -168,8 +118,10 @@ public class Recomendar {
 			for(int i = 0; i<numberofcases; i++){
 
 				liste.add(getAttributes(result.get(i), rec.getConceptByID(CBREngine.getConceptName())));
-				System.out.println("liste "+liste.get(i).toString());
-				answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td><td>"+liste.get(i).toString()+"</td></tr>";
+				//System.out.println("liste "+liste.get(i).toString());
+				String valores = liste.get(i).toString().replace("{", "<ul><li>").replace("}", "</li></ul>").replace(",", "</li><li>");
+				//answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td><td>"+liste.get(i).toString()+"</td></tr>";
+				answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td><td>"+valores+"</td></tr>";
 			}
 
 			answer= answer+"</table>";		
