@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="speedcraft" author="" >
+<svs>
+  <sv name="_unknown_"/>
+  <sv name="_undefined_"/>
+  <sv name="_others_"/>
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_unknown_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_others_">
+</qsym>
+</fct>
+</svs>
+<model>
+  <concept name="speedcraft_caso">
+    <desc name="cofre-galleta-ingr-cacao" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pastel-ingr-huevo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm2-inv-trigo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pan-ingr-cacao" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm1-inv-cacao" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pastel-ingr-leche" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-galleta-ingr-trigo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm2-inv-leche" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pastel" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm2-inv-huevo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm1-inv-leche" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="a-objetivo" type="Symbol" mult="false" >
+      <symbol value="pan" />
+      <symbol value="galleta" />
+      <symbol value="pastel" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="pan">
+</qsym>
+<qsym name="galleta">
+</qsym>
+<qsym name="pastel">
+</qsym>
+</fct>
+    </desc>
+    <desc name="alm1-inv-trigo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-galleta-ingr-huevo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-galleta-ingr-leche" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pastel-ingr-cacao" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pan-ingr-huevo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm1-inv-huevo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pastel-ingr-trigo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pan-ingr-leche" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pan-ingr-trigo" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-galleta" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="alm2-inv-cacao" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="cofre-pan" type="Integer" min="0" max="50" mult="false" >
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <amalgam name="default function" type="EUCLIDEAN" active="false" >
+      <entry name="cofre-pastel-ingr-huevo" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-galleta-ingr-trigo" active="true" fct="default function" weight="1.0"/>
+      <entry name="alm2-inv-leche" active="true" fct="default function" weight="3.0"/>
+      <entry name="cofre-pastel" active="true" fct="default function" weight="2.0"/>
+      <entry name="alm1-inv-trigo" active="true" fct="default function" weight="3.0"/>
+      <entry name="alm1-inv-huevo" active="true" fct="default function" weight="3.0"/>
+      <entry name="cofre-pastel-ingr-trigo" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-galleta-ingr-cacao" active="true" fct="default function" weight="1.0"/>
+      <entry name="alm2-inv-trigo" active="true" fct="default function" weight="3.0"/>
+      <entry name="cofre-pan-ingr-cacao" active="true" fct="default function" weight="1.0"/>
+      <entry name="alm1-inv-cacao" active="true" fct="default function" weight="3.0"/>
+      <entry name="cofre-pastel-ingr-leche" active="true" fct="default function" weight="1.0"/>
+      <entry name="alm2-inv-huevo" active="true" fct="default function" weight="3.0"/>
+      <entry name="alm1-inv-leche" active="true" fct="default function" weight="3.0"/>
+      <entry name="a-objetivo" active="true" fct="default function" weight="4.0"/>
+      <entry name="cofre-galleta-ingr-huevo" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-galleta-ingr-leche" active="false" fct="default function" weight="1.0"/>
+      <entry name="cofre-pastel-ingr-cacao" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-pan-ingr-huevo" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-pan-ingr-leche" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-pan-ingr-trigo" active="true" fct="default function" weight="1.0"/>
+      <entry name="cofre-galleta" active="true" fct="default function" weight="2.0"/>
+      <entry name="alm2-inv-cacao" active="true" fct="default function" weight="3.0"/>
+      <entry name="cofre-pan" active="true" fct="default function" weight="2.0"/>
+    </amalgam>
+    <amalgam name="funcionvictor1" type="WEIGHTED_SUM" active="true" >
+      <entry name="cofre-pastel-ingr-huevo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-galleta-ingr-trigo" active="true" fct="default function" weight="1"/>
+      <entry name="alm2-inv-leche" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pastel" active="true" fct="default function" weight="1"/>
+      <entry name="alm1-inv-trigo" active="true" fct="default function" weight="1"/>
+      <entry name="alm1-inv-huevo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pastel-ingr-trigo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-galleta-ingr-cacao" active="true" fct="default function" weight="1"/>
+      <entry name="alm2-inv-trigo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pan-ingr-cacao" active="true" fct="default function" weight="1"/>
+      <entry name="alm1-inv-cacao" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pastel-ingr-leche" active="true" fct="default function" weight="1"/>
+      <entry name="alm2-inv-huevo" active="true" fct="default function" weight="1"/>
+      <entry name="alm1-inv-leche" active="true" fct="default function" weight="1"/>
+      <entry name="a-objetivo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-galleta-ingr-huevo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-galleta-ingr-leche" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pastel-ingr-cacao" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pan-ingr-huevo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pan-ingr-leche" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pan-ingr-trigo" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-galleta" active="true" fct="default function" weight="1"/>
+      <entry name="alm2-inv-cacao" active="true" fct="default function" weight="1"/>
+      <entry name="cofre-pan" active="true" fct="default function" weight="1"/>
+    </amalgam>
+  </concept>
+</model>
+<hierarchy>
+  <fct name="default function" type="Taxonomy" mt="PARTNER_QUERY" r="REUSE" t="MAX" qconfig="INNER_NODES_ANY" cconfig="INNER_NODES_ANY" top="inheritanceDesc" sim="0.0" symm="true" >
+    <node name="speedcraft_caso" sim="1.0" parent="inheritanceDesc" />
+  </fct>
+</hierarchy>
+<cases no="13" cb="CB_csvImport"/>
+</Project>
