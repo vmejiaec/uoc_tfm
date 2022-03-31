@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Project name="speedcraft" author="" >
 <instances name="speedcraft_caso">
+  <instance id="speedcraft_caso4" >
+    <att name="alm1-cacao" value="5" />
+    <att name="cofre-pan-cacao" value="0" />
+    <att name="cofre-galleta" value="5" />
+    <att name="alm1-leche" value="15" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="cofre-pan" value="5" />
+    <att name="alm1-trigo" value="10" />
+    <att name="cofre-galleta-cacao" value="0" />
+    <att name="cofre-pan-leche" value="0" />
+    <att name="cofre-galleta-leche" value="0" />
+    <att name="cofre-galleta-trigo" value="0" />
+    <att name="cofre-pan-trigo" value="0" />
+  </instance>
+  <instance id="speedcraft_caso3" >
+    <att name="alm1-cacao" value="5" />
+    <att name="cofre-pan-cacao" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-leche" value="15" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="cofre-pan" value="5" />
+    <att name="alm1-trigo" value="20" />
+    <att name="cofre-galleta-cacao" value="5" />
+    <att name="cofre-pan-leche" value="0" />
+    <att name="cofre-galleta-leche" value="0" />
+    <att name="cofre-galleta-trigo" value="0" />
+    <att name="cofre-pan-trigo" value="0" />
+  </instance>
+  <instance id="speedcraft_caso2" >
+    <att name="alm1-cacao" value="15" />
+    <att name="cofre-pan-cacao" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-leche" value="15" />
+    <att name="a-objetivo" value="galleta" />
+    <att name="cofre-pan" value="5" />
+    <att name="alm1-trigo" value="20" />
+    <att name="cofre-galleta-cacao" value="0" />
+    <att name="cofre-pan-leche" value="0" />
+    <att name="cofre-galleta-leche" value="0" />
+    <att name="cofre-galleta-trigo" value="0" />
+    <att name="cofre-pan-trigo" value="0" />
+  </instance>
+  <instance id="speedcraft_caso1" >
+    <att name="alm1-cacao" value="15" />
+    <att name="cofre-pan-cacao" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-leche" value="20" />
+    <att name="a-objetivo" value="pan" />
+    <att name="cofre-pan" value="0" />
+    <att name="alm1-trigo" value="20" />
+    <att name="cofre-galleta-cacao" value="0" />
+    <att name="cofre-pan-leche" value="0" />
+    <att name="cofre-galleta-leche" value="0" />
+    <att name="cofre-galleta-trigo" value="0" />
+    <att name="cofre-pan-trigo" value="10" />
+  </instance>
+  <instance id="speedcraft_caso0" >
+    <att name="alm1-cacao" value="15" />
+    <att name="cofre-pan-cacao" value="0" />
+    <att name="cofre-galleta" value="0" />
+    <att name="alm1-leche" value="20" />
+    <att name="a-objetivo" value="pan" />
+    <att name="cofre-pan" value="0" />
+    <att name="alm1-trigo" value="30" />
+    <att name="cofre-galleta-cacao" value="0" />
+    <att name="cofre-pan-leche" value="0" />
+    <att name="cofre-galleta-leche" value="0" />
+    <att name="cofre-galleta-trigo" value="0" />
+    <att name="cofre-pan-trigo" value="0" />
+  </instance>
 </instances>
 <cb name="CB_csvImport">
+     <case name="speedcraft_caso4" />
+     <case name="speedcraft_caso3" />
+     <case name="speedcraft_caso2" />
+     <case name="speedcraft_caso1" />
+     <case name="speedcraft_caso0" />
 </cb>
 </Project>

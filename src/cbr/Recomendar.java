@@ -38,16 +38,19 @@ public class Recomendar {
 	public String solveOuery(
 			String a_objetivo, 
 
-			Integer alm1_inv_cacao, 
-			Integer alm1_inv_huevo,
-			Integer alm1_inv_leche,
-			Integer alm1_inv_trigo,
+			Integer alm1_cacao,
+			Integer alm1_leche,
+			Integer alm1_trigo,
 			
 			Integer cofre_galleta,
-			Integer cofre_galleta_ingr_cacao,
-			Integer cofre_galleta_ingr_huevo,
-			Integer cofre_galleta_ingr_leche,
-			Integer cofre_galleta_ingr_trigo,
+			Integer cofre_galleta_cacao,
+			Integer cofre_galleta_leche,
+			Integer cofre_galleta_trigo,
+			
+			Integer cofre_pan,
+			Integer cofre_pan_cacao,
+			Integer cofre_pan_leche,
+			Integer cofre_pan_trigo,
 			
 			Integer numberofcases
 			) {
@@ -66,30 +69,36 @@ public class Recomendar {
 		SymbolDesc a_objetivoDesc = (SymbolDesc) myConcept.getAllAttributeDescs().get("a-objetivo");		
 
 		// Insert values into the query: Integer Description
-		IntegerDesc alm1_inv_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-cacao");
-		IntegerDesc alm1_inv_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-huevo");
-		IntegerDesc alm1_inv_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-leche");
-		IntegerDesc alm1_inv_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-inv-trigo");
+		IntegerDesc alm1_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-cacao");
+		IntegerDesc alm1_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-leche");
+		IntegerDesc alm1_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("alm1-trigo");
 		
 		IntegerDesc cofre_galletaDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta");
-		IntegerDesc cofre_galleta_ingr_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-cacao");
-		IntegerDesc cofre_galleta_ingr_huevoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-huevo");
-		IntegerDesc cofre_galleta_ingr_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-leche");
-		IntegerDesc cofre_galleta_ingr_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-ingr-trigo");
+		IntegerDesc cofre_galleta_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-cacao");
+		IntegerDesc cofre_galleta_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-leche");
+		IntegerDesc cofre_galleta_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-galleta-trigo");
+		
+		IntegerDesc cofre_panDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan");
+		IntegerDesc cofre_pan_cacaoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-cacao");
+		IntegerDesc cofre_pan_lecheDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-leche");
+		IntegerDesc cofre_pan_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pan-trigo");
 
 		try {
 			query.addAttribute(a_objetivoDesc,a_objetivoDesc.getAttribute(a_objetivo));
 			
-			query.addAttribute(alm1_inv_cacaoDesc,alm1_inv_cacaoDesc.getAttribute(alm1_inv_cacao));
-			query.addAttribute(alm1_inv_huevoDesc,alm1_inv_huevoDesc.getAttribute(alm1_inv_huevo));
-			query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute(alm1_inv_leche));
-			query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute(alm1_inv_trigo));
+			query.addAttribute(alm1_cacaoDesc,alm1_cacaoDesc.getAttribute(alm1_cacao));
+			query.addAttribute(alm1_lecheDesc,alm1_lecheDesc.getAttribute(alm1_leche));
+			query.addAttribute(alm1_trigoDesc,alm1_trigoDesc.getAttribute(alm1_trigo));
 			
 			query.addAttribute(cofre_galletaDesc,cofre_galletaDesc.getAttribute(cofre_galleta));
-			query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute(cofre_galleta_ingr_cacao));
-			query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute(cofre_galleta_ingr_huevo));
-			query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute(cofre_galleta_ingr_leche));
-			query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute(cofre_galleta_ingr_trigo));
+			query.addAttribute(cofre_galleta_cacaoDesc,cofre_galleta_cacaoDesc.getAttribute(cofre_galleta_cacao));
+			query.addAttribute(cofre_galleta_lecheDesc,cofre_galleta_lecheDesc.getAttribute(cofre_galleta_leche));
+			query.addAttribute(cofre_galleta_trigoDesc,cofre_galleta_trigoDesc.getAttribute(cofre_galleta_trigo));
+			
+			query.addAttribute(cofre_panDesc,cofre_panDesc.getAttribute(cofre_pan));
+			query.addAttribute(cofre_pan_cacaoDesc,cofre_pan_cacaoDesc.getAttribute(cofre_pan_cacao));
+			query.addAttribute(cofre_pan_lecheDesc,cofre_pan_lecheDesc.getAttribute(cofre_pan_leche));
+			query.addAttribute(cofre_pan_trigoDesc,cofre_pan_trigoDesc.getAttribute(cofre_pan_trigo));
 
 			
 		} catch (ParseException e) {
