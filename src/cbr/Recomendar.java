@@ -18,6 +18,7 @@ import de.dfki.mycbr.core.retrieval.Retrieval.RetrievalMethod;
 import de.dfki.mycbr.core.similarity.AmalgamationFct;
 import de.dfki.mycbr.core.similarity.Similarity;
 import de.dfki.mycbr.util.Pair;
+import var.Caso;
 
 public class Recomendar {
 	public CBREngine engine;
@@ -35,40 +36,10 @@ public class Recomendar {
 		myConcept = rec.getConceptByID(CBREngine.getConceptName());	
 	}
 
-	public String solveOuery(
-			String a_objetivo, 
+	public Pair<String, Integer> solveOuery(Caso caso, int numberofcases ) {
 
-			Integer alm1_inv_cacao, 
-			Integer alm1_inv_huevo,
-			Integer alm1_inv_leche,
-			Integer alm1_inv_trigo,
-			
-			Integer alm2_inv_cacao, 
-			Integer alm2_inv_huevo,
-			Integer alm2_inv_leche,
-			Integer alm2_inv_trigo,
-
-			Integer cofre_galleta,
-			Integer cofre_galleta_ingr_cacao,
-			Integer cofre_galleta_ingr_huevo,
-			Integer cofre_galleta_ingr_leche,
-			Integer cofre_galleta_ingr_trigo,
-			
-			Integer cofre_pan,
-			Integer cofre_pan_ingr_cacao,
-			Integer cofre_pan_ingr_huevo,
-			Integer cofre_pan_ingr_leche,
-			Integer cofre_pan_ingr_trigo,
-			
-			Integer cofre_pastel,
-			Integer cofre_pastel_ingr_cacao,
-			Integer cofre_pastel_ingr_huevo,
-			Integer cofre_pastel_ingr_leche,
-			Integer cofre_pastel_ingr_trigo,
-			
-			Integer numberofcases
-			) {
-
+		Pair<String, Integer> resultado = null;
+		
 		String answer="";		
 		// create a new retrieval
 		Retrieval ret = new Retrieval(myConcept, cb);
@@ -112,35 +83,35 @@ public class Recomendar {
 		IntegerDesc cofre_pastel_ingr_trigoDesc = (IntegerDesc) myConcept.getAllAttributeDescs().get("cofre-pastel-ingr-trigo");
 
 		try {
-			query.addAttribute(a_objetivoDesc,a_objetivoDesc.getAttribute(a_objetivo));
+			query.addAttribute(a_objetivoDesc,a_objetivoDesc.getAttribute(caso.a_objetivo));
 			
-			query.addAttribute(alm1_inv_cacaoDesc,alm1_inv_cacaoDesc.getAttribute(alm1_inv_cacao));
-			query.addAttribute(alm1_inv_huevoDesc,alm1_inv_huevoDesc.getAttribute(alm1_inv_huevo));
-			query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute(alm1_inv_leche));
-			query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute(alm1_inv_trigo));
+			query.addAttribute(alm1_inv_cacaoDesc,alm1_inv_cacaoDesc.getAttribute((Integer)caso.alm1.inv_cacao));
+			query.addAttribute(alm1_inv_huevoDesc,alm1_inv_huevoDesc.getAttribute((Integer)caso.alm1.inv_huevo));
+			query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute((Integer)caso.alm1.inv_leche));
+			query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute((Integer)caso.alm1.inv_trigo));
 			
-			query.addAttribute(alm2_inv_cacaoDesc,alm2_inv_cacaoDesc.getAttribute(alm2_inv_cacao));
-			query.addAttribute(alm2_inv_huevoDesc,alm2_inv_huevoDesc.getAttribute(alm2_inv_huevo));
-			query.addAttribute(alm2_inv_lecheDesc,alm2_inv_lecheDesc.getAttribute(alm2_inv_leche));
-			query.addAttribute(alm2_inv_trigoDesc,alm2_inv_trigoDesc.getAttribute(alm2_inv_trigo));
+			query.addAttribute(alm2_inv_cacaoDesc,alm2_inv_cacaoDesc.getAttribute((Integer)caso.alm2.inv_cacao));
+			query.addAttribute(alm2_inv_huevoDesc,alm2_inv_huevoDesc.getAttribute((Integer)caso.alm2.inv_huevo));
+			query.addAttribute(alm2_inv_lecheDesc,alm2_inv_lecheDesc.getAttribute((Integer)caso.alm2.inv_leche));
+			query.addAttribute(alm2_inv_trigoDesc,alm2_inv_trigoDesc.getAttribute((Integer)caso.alm2.inv_trigo));
 			
-			query.addAttribute(cofre_galletaDesc,cofre_galletaDesc.getAttribute(cofre_galleta));
-			query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute(cofre_galleta_ingr_cacao));
-			query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute(cofre_galleta_ingr_huevo));
-			query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute(cofre_galleta_ingr_leche));
-			query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute(cofre_galleta_ingr_trigo));
+			query.addAttribute(cofre_galletaDesc,cofre_galletaDesc.getAttribute((Integer)caso.cofre_galleta.inv));
+			query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_cacao));
+			query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_huevo));
+			query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute((Integer)caso.cofre_galleta.ingr_leche));
+			query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_trigo));
 			
-			query.addAttribute(cofre_panDesc,cofre_panDesc.getAttribute(cofre_pan));
-			query.addAttribute(cofre_pan_ingr_cacaoDesc,cofre_pan_ingr_cacaoDesc.getAttribute(cofre_pan_ingr_cacao));
-			query.addAttribute(cofre_pan_ingr_huevoDesc,cofre_pan_ingr_huevoDesc.getAttribute(cofre_pan_ingr_huevo));
-			query.addAttribute(cofre_pan_ingr_lecheDesc,cofre_pan_ingr_lecheDesc.getAttribute(cofre_pan_ingr_leche));
-			query.addAttribute(cofre_pan_ingr_trigoDesc,cofre_pan_ingr_trigoDesc.getAttribute(cofre_pan_ingr_trigo));
+			query.addAttribute(cofre_panDesc,cofre_panDesc.getAttribute((Integer)caso.cofre_pan.inv));
+			query.addAttribute(cofre_pan_ingr_cacaoDesc,cofre_pan_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pan.ingr_cacao));
+			query.addAttribute(cofre_pan_ingr_huevoDesc,cofre_pan_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pan.ingr_huevo));
+			query.addAttribute(cofre_pan_ingr_lecheDesc,cofre_pan_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pan.ingr_leche));
+			query.addAttribute(cofre_pan_ingr_trigoDesc,cofre_pan_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pan.ingr_trigo));
 			
-			query.addAttribute(cofre_pastelDesc,cofre_pastelDesc.getAttribute(cofre_pastel));
-			query.addAttribute(cofre_pastel_ingr_cacaoDesc,cofre_pastel_ingr_cacaoDesc.getAttribute(cofre_pastel_ingr_cacao));
-			query.addAttribute(cofre_pastel_ingr_huevoDesc,cofre_pastel_ingr_huevoDesc.getAttribute(cofre_pastel_ingr_huevo));
-			query.addAttribute(cofre_pastel_ingr_lecheDesc,cofre_pastel_ingr_lecheDesc.getAttribute(cofre_pastel_ingr_leche));
-			query.addAttribute(cofre_pastel_ingr_trigoDesc,cofre_pastel_ingr_trigoDesc.getAttribute(cofre_pastel_ingr_trigo));
+			query.addAttribute(cofre_pastelDesc,cofre_pastelDesc.getAttribute((Integer)caso.cofre_pastel.inv));
+			query.addAttribute(cofre_pastel_ingr_cacaoDesc,cofre_pastel_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_cacao));
+			query.addAttribute(cofre_pastel_ingr_huevoDesc,cofre_pastel_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_huevo));
+			query.addAttribute(cofre_pastel_ingr_lecheDesc,cofre_pastel_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pastel.ingr_leche));
+			query.addAttribute(cofre_pastel_ingr_trigoDesc,cofre_pastel_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_trigo));
 			
 		} catch (ParseException e) {
 			e.printStackTrace();
@@ -157,9 +128,13 @@ public class Recomendar {
 			// get the best case's name
 			String casename = result.get(0).getFirst().getName();	
 			// get the similarity value
-			Double sim = result.get(0).getSecond().getValue();		
-			answer = "I found "+casename+" with a similarity of "+sim+" as the best match.";
-			answer = answer+"The "+numberofcases+" best cases shown in a table: <br /> <br /> <table border=\"1\">";	
+			Double sim = result.get(0).getSecond().getValue();	
+			resultado = new Pair(casename, sim); 
+			answer = answer + resultado.getFirst().toString() + " ";
+			answer = answer + resultado.getSecond();
+			//answer = " <br />I found "+casename+" with a similarity of "+sim+" as the best match.";
+			//answer = answer+"The "+numberofcases+" best cases shown in a table: <br /> <br /> <table border=\"1\">";	
+			//answer = answer + "<table border=\"1\">";
 			
 			ArrayList<Hashtable<String, String>> liste = new ArrayList<Hashtable<String, String>>();	
 			// if more case results are requested than we have in our case base at all:
@@ -168,15 +143,16 @@ public class Recomendar {
 			for(int i = 0; i<numberofcases; i++){
 
 				liste.add(getAttributes(result.get(i), rec.getConceptByID(CBREngine.getConceptName())));
-				System.out.println("liste "+liste.get(i).toString());
-				answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td><td>"+liste.get(i).toString()+"</td></tr>";
+				//System.out.println("liste "+liste.get(i).toString());
+				//answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td>";
+				//answer=answer+ "<td>"+liste.get(i).toString()+"</td></tr>";
 			}
 
-			answer= answer+"</table>";		
+			//answer= answer+"</table>";		
 		}	
 		else{System.out.println("Retrieval Result is empty");}
 
-		return answer;
+		return resultado;
 	}
 	/**
 	 * This method delivers a Hashtable which contains the Attributs names (Attributes of the case) combined with their respective values.

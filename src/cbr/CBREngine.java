@@ -63,7 +63,7 @@ public class CBREngine {
 	 */	
 	public Project createProjectFromPRJ(){
 
-		System.out.println("Trying to load prj file with : "+data_path+ " "+projectName+" "+conceptName+" "); 
+		//System.out.println("Trying to load prj file with : "+data_path+ " "+projectName+" "+conceptName+" "); 
 
 		Project project = null;
 
@@ -76,7 +76,7 @@ public class CBREngine {
 			// Erste Retrieval laueft		
 			while (project.isImporting()){
 				Thread.sleep(1000);
-				System.out.print(".");
+				//System.out.print(".");
 			}		
 			System.out.print("\n");	//console pretty print			
 		}
