@@ -95,6 +95,7 @@ public class MyTrait extends Trait {
                 caminoAlm1.get(posactual).getY(),
                 caminoAlm1.get(posactual).getZ()
         ));
+        
     }
 
     @EventHandler
