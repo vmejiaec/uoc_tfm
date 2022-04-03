@@ -1,0 +1,10 @@
+name: Citnpc
+version: '${project.version}'
+main: vmejiaec.com.citnpc.Citnpc
+api-version: 1.15
+depend: [Citizens]
+commands:
+  crearnpc:
+    description: Comando para crear un npc de Citizen
+  movernpc:
+    description: Comando para mover un npc de Citizen
