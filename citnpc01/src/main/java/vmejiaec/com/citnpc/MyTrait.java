@@ -25,7 +25,7 @@ public class MyTrait extends Trait {
     World world = null;
     // La position de las bases
 
-    Vector vecbase1 = new Vector(151, 4, -105);
+    Vector vecbase1 = new Vector(152, 4, -105);
     Vector vecbase2 = new Vector(156, 4, -86);
 
     // La posición de los almacenes
@@ -33,17 +33,10 @@ public class MyTrait extends Trait {
     Vector vecAlmacen1 = new Vector(172, 4, -103);
     Vector vecAlmacen2 = new Vector(172, 4, -90);
 
-    // La localización de los puntos de los caminos
-    //  -- Camino 1 al Almacen 1
-    Vector C1v1 = new Vector(152, 4, -105);
-    Vector C1v2 = new Vector(156, 4, -103);
-    Vector C1v3 = new Vector(161, 4, -103);
-    Vector C1v4 = new Vector(161, 4, -107);
-    Vector C1v5 = new Vector(169, 4, -107);
-    Vector C1v6 = new Vector(172, 4, -90);
-    List<Vector> caminoAlm1 = new ArrayList<Vector>(){
-        {add(C1v1);add(C1v2);add(C1v3);add(C1v4);add(C1v5);add(C1v6);}};
-
+    // los caminos de la base a los almacenes
+    List<Vector> caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
+    List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
+    List<Vector> camino = new ArrayList<>();
 
     public MyTrait() {
         super("mytraitname");
@@ -70,8 +63,6 @@ public class MyTrait extends Trait {
         key.setBoolean("SomeSetting",SomeSetting);
     }
 
-
-
     @EventHandler
     public void click(net.citizensnpcs.api.event.NPCRightClickEvent event){
         System.out.println("click event ------------------------------- ");
@@ -83,19 +74,21 @@ public class MyTrait extends Trait {
         System.out.println("  -- <[ Evento de navegación BEGIN");
     }
 
+
+
+    // Coloca el siguiente destino
     int posactual = 0;
 
-    public  void movetonextpos(){
+    public void movetonextpos(){
         System.out.print(" -- movetonextpos: "+posactual);
-        if (posactual == 0 ) posactual = 5 ; else posactual = 0;
+        if (posactual == 0 ) posactual = 1 ; else posactual = 0;
         System.out.print(" -- movetonextpos: "+posactual);
         npc.getNavigator().setTarget(new Location(
                 world,
-                caminoAlm1.get(posactual).getX(),
-                caminoAlm1.get(posactual).getY(),
-                caminoAlm1.get(posactual).getZ()
+                camino.get(posactual).getX(),
+                camino.get(posactual).getY(),
+                camino.get(posactual).getZ()
         ));
-        
     }
 
     @EventHandler
@@ -103,7 +96,7 @@ public class MyTrait extends Trait {
         System.out.println("  -- ]> Evento de navegación COMPLETE");
         // Confirma que ha llegado al destino
         Location locnpc = npc.getStoredLocation();
-        double distancia =  caminoAlm1.get(posactual).distance(npc.getStoredLocation().toVector())  ;
+        double distancia =  camino.get(posactual).distance(npc.getStoredLocation().toVector())  ;
         System.out.println(" -- Distancia del Npc al destino: "+distancia);
         if (distancia <= 3 ){ // llegó al destino
             trigerbeginmove = true;
@@ -117,26 +110,33 @@ public class MyTrait extends Trait {
     public void navigationcancel( NavigationCancelEvent event){
         System.out.println("  -- (X) Evento de navegación CANCEL");
         System.out.println("  -- (X) -- Reason: "+event.getCancelReason().toString());
-        System.out.println("  -- (X) -- Reason name: "+event.getCancelReason().name());
+        // Si se cancela el destino, se vuelve a relanzar el movimiento
         trigerbeginmove = true;
     }
 
-
-
+    // para control del reloj
     int n_tick = 0;
     int n_tick_max = 50;
-
+    // Para volver a relanzar el movimiento
     boolean trigerbeginmove = true;
-
+    // Bandera para la iniciar el relog
+    boolean start = true;
     // Called every tick
     @Override
     public void run() {
 
-        n_tick++;
+        // Una sola vez al empezar
+        if (start){
+            start = false;
+            // Inicializa el camino por defecto al almacen 1
+            camino = caminoAlm2;
+        }
+
+        n_tick++; // El tick tack del reloj
         if (n_tick > n_tick_max){
             System.out.println("TICK + "+n_tick);
             System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
-            n_tick = 0;
+            n_tick = 0; // Reinicio del reloj
 
             // Si no ha empezado el viaje, lo inicia
             if(trigerbeginmove) {
