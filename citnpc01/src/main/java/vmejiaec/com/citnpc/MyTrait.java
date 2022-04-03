@@ -1,5 +1,6 @@
 package vmejiaec.com.citnpc;
 
+import net.citizensnpcs.api.ai.event.*;
 import net.citizensnpcs.api.persistence.Persist;
 import net.citizensnpcs.api.trait.Trait;
 import net.citizensnpcs.api.util.DataKey;
@@ -24,19 +25,19 @@ public class MyTrait extends Trait {
     World world = null;
     // La localización de las bases
     Location locbase1 = null;
-    Vector vecbase1 = new Vector(153, 4, -105);
+    Vector vecbase1 = new Vector(151, 4, -105);
     // La localización de los almacenes
     Location locAlmacen1 = null;
-    Vector vecAlmacen1 = new Vector(170, 4, -103);
+    Vector vecAlmacen1 = new Vector(173, 4, -103);
     Location locAlmacen2 = null;
     // La localización de los puntos de los caminos
     //  -- Camino 1 al Almacen 1
-    Vector C1v1 = new Vector(153, 4, -105);
+    Vector C1v1 = new Vector(151, 4, -105);
     Vector C1v2 = new Vector(156, 4, -103);
     Vector C1v3 = new Vector(161, 4, -103);
     Vector C1v4 = new Vector(161, 4, -107);
     Vector C1v5 = new Vector(169, 4, -107);
-    Vector C1v6 = new Vector(170, 4, -103);
+    Vector C1v6 = new Vector(173, 4, -103);
 
     List<Vector> caminoAlm1 = new ArrayList<Vector>(){
         {add(C1v1);add(C1v2);add(C1v3);add(C1v4);add(C1v5);add(C1v6);}};
@@ -67,26 +68,27 @@ public class MyTrait extends Trait {
         key.setBoolean("SomeSetting",SomeSetting);
     }
 
-    int pathid =0;
-    int pathsize = 5;
-    Vector v1 = new Vector(-395, 67, 270);
-    Vector v2 = new Vector(-400, 67, 270);
-    Vector v3 = new Vector(-407, 67, 270);
-    Vector v4 = new Vector(-410, 70, 264);
-    Vector v5 = new Vector(-407, 67, 251);
-    List<Vector> listvector = new ArrayList<Vector>(){{add(v1);add(v2);add(v3);add(v4);add(v5);}};
 
-    public Location LocationNext(World world){
-        pathid++;
-        if (pathid == pathsize) { pathid=0; }
-        return new Location(world,
-                listvector.get(pathid).getX(),listvector.get(pathid).getY(),listvector.get(pathid).getZ());
-    }
 
     @EventHandler
     public void click(net.citizensnpcs.api.event.NPCRightClickEvent event){
         System.out.println("click event ------------------------------- ");
         System.out.println( "  -- Nombre del Evento: "+ event.getEventName());
+    }
+
+    @EventHandler
+    public void navigationbegin( NavigationBeginEvent event){
+        System.out.println("  -- <[ Evento de navegación BEGIN");
+    }
+
+    @EventHandler
+    public void navigationbegin( NavigationCompleteEvent event){
+        System.out.println("  -- ]> Evento de navegación COMPLETE");
+    }
+
+    @EventHandler
+    public void navigationbegin( NavigationCancelEvent event){
+        System.out.println("  -- (X) Evento de navegación CANCEL");
     }
 
     int n_tick = 0;
@@ -100,6 +102,7 @@ public class MyTrait extends Trait {
         n_tick++;
         if (n_tick > n_tick_max){
             System.out.println("TICK + "+n_tick);
+            System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
             n_tick = 0;
             // Se pone a mover al NPC
             if (posactual == 0 ) posactual = 5 ; else posactual = 0;
@@ -111,13 +114,16 @@ public class MyTrait extends Trait {
                     caminoAlm1.get(posactual).getZ()
             ));
 
+
+
             Location locnpc = npc.getStoredLocation();
 
             // Cálculo de la distancia
 
             double d2 =  vecbase1.distance(npc.getStoredLocation().toVector())  ;
 
-            System.out.println("Distancia del Npc a la base1: "+d2);
+            System.out.println(" -- Distancia del Npc a la base1: "+d2);
+
 
         }
 
