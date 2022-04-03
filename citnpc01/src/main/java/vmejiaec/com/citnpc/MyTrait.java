@@ -13,6 +13,7 @@ import org.bukkit.util.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 //This is your trait that will be applied to a npc using the /trait mytraitname command.
 // Each NPC gets its own instance of this class.
@@ -74,9 +75,22 @@ public class MyTrait extends Trait {
         System.out.println("  -- <[ Evento de navegación BEGIN");
     }
 
+    // Elije cuál es la mejor estrategia
+    public void estrategia(){
+        Random r = new Random();
+        int sorteo = r.nextInt(2);
+        System.out.println("Estrategia :" + sorteo);
+        switch (sorteo){
+            case 0:
+                camino = caminoAlm1;
+                break;
+            case 1:
+                camino = caminoAlm2;
+                break;
+        }
+    }
 
-
-    // Coloca el siguiente destino
+    // Coloca el destino al NPC que le corresponde
     int posactual = 0;
 
     public void movetonextpos(){
@@ -91,6 +105,9 @@ public class MyTrait extends Trait {
         ));
     }
 
+    // El estado significa si se encuentra en la base
+    boolean estaenbase = true;
+
     @EventHandler
     public void navigationcomplete( NavigationCompleteEvent event){
         System.out.println("  -- ]> Evento de navegación COMPLETE");
@@ -100,8 +117,12 @@ public class MyTrait extends Trait {
         System.out.println(" -- Distancia del Npc al destino: "+distancia);
         if (distancia <= 3 ){ // llegó al destino
             trigerbeginmove = true;
+            estaenbase = posactual == 0;   // Si está en la base es true
+            if (estaenbase){
+                estrategia();
+            }
         } else {              // aun no llega al destino
-            if (posactual == 0 ) posactual = 5 ; else posactual = 0;
+            if (posactual == 0 ) posactual = 1 ; else posactual = 0;
             trigerbeginmove = true;
         }
     }
@@ -143,9 +164,7 @@ public class MyTrait extends Trait {
                 trigerbeginmove = false;
                 movetonextpos();
             }
-
         }
-
     }
 
     //Run code when your trait is attached to a NPC.
