@@ -10,6 +10,11 @@ import org.bukkit.World;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
+import vmejiaec.com.citnpc.cbr.Recomendar;
+import vmejiaec.com.citnpc.var.Almacen;
+import vmejiaec.com.citnpc.var.Base;
+import vmejiaec.com.citnpc.var.Caso;
+import vmejiaec.com.citnpc.var.Cofre;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +78,46 @@ public class MyTrait extends Trait {
     @EventHandler
     public void navigationbegin( NavigationBeginEvent event){
         System.out.println("  -- <[ Evento de navegación BEGIN");
+    }
+
+    // Almacenes y cofres
+    Almacen almacen1 = null;
+    Almacen almacen2 = null;
+
+    Base base1 = null;
+
+    // Función para inicializar los cofres y los almacenes
+    public void inicializarAlamcenesYCofres(){
+        base1 = new Base("pan");
+        almacen1 = new Almacen(25,5,3,30);
+        almacen2 = new Almacen(10,17,16,10);
+        base1.cofrepan = new Cofre(0,0,0,0,0);
+        base1.cofregalleta = new Cofre(0,0,0,0,0);
+        base1.cofrepastel = new Cofre(0,0,0,0,0);
+        // Inicializa los carteles con los mensajes
+    }
+
+    // Inicializa el cbr para realizar las consultas
+    Recomendar reco =null;
+
+    public  void inicializarCBR(){
+        System.out.println(" -- -- Inicializa el CBR con los casos");
+        reco = new Recomendar();
+        reco.loadengine();
+    }
+
+    // Consultar al cbr sobre el mejor caso
+    public void ConsultaCBR(){
+        Caso caso = new Caso(base1.objetivo);
+        caso.alm1 = almacen1;
+        caso.alm2 = almacen2;
+        caso.cofre_pan = base1.cofrepan;
+        caso.cofre_galleta = base1.cofregalleta;
+        caso.cofre_pastel = base1.cofrepastel;
+
+        de.dfki.mycbr.util.Pair res = reco.solveOuery(caso, 1);
+
+        System.out.println("Mejor caso: "+res.getFirst() + " " +res.getSecond());
     }
 
     // Elije cuál es la mejor estrategia

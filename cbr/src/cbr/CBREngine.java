@@ -10,7 +10,7 @@ public class CBREngine {
 	//private static String data_path = "C:\\Users\\bach\\IIS\\dev\\workspace\\myCBRWebDemo\\project\\";
 	//private static String data_path = "K:\\Student_Projects\\z_myCBR Material\\examples\\";
 	//private static String data_path = "C:\\progs\\myCBR\\CBR-SpeedCraft\\";
-	private static String data_path = "C:\\UOC\\S4\\TFM\\uoc_tfm\\modelo\\";
+	private static String data_path = "C:\\UOC\\S4\\TFM\\uoc_tfm\\cbr\\modelo\\";
 	//C:\progs\myCBR\CBR-SpeedCraft\
 	/* project specific: NewExampleProject*/
 	// name of the project file

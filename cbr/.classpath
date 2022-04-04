@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/UOC/S4/TFM/uoc_tfm/lib/myCBR3.0.0BETA.jar"/>
+	<classpathentry kind="lib" path="C:/UOC/S4/TFM/uoc_tfm/cbr/lib/myCBR3.0.0BETA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

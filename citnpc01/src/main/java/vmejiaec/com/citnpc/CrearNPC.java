@@ -1,6 +1,6 @@
 package vmejiaec.com.citnpc;
 
-import jdk.tools.jmod.Main;
+
 import net.citizensnpcs.api.CitizensAPI;
 import net.citizensnpcs.api.npc.NPC;
 import org.bukkit.Bukkit;
