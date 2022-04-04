@@ -4,7 +4,6 @@ import net.citizensnpcs.api.ai.event.*;
 import net.citizensnpcs.api.persistence.Persist;
 import net.citizensnpcs.api.trait.Trait;
 import net.citizensnpcs.api.util.DataKey;
-import net.citizensnpcs.api.npc.NPC;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.event.EventHandler;
@@ -32,7 +31,6 @@ public class MyTrait extends Trait {
     // La position de las bases
 
     Vector vecbase1 = new Vector(152, 4, -105);
-    Vector vecbase2 = new Vector(156, 4, -86);
 
     // La posición de los almacenes
 
@@ -196,6 +194,10 @@ public class MyTrait extends Trait {
             start = false;
             // Inicializa el camino por defecto al almacen 1
             camino = caminoAlm2;
+            // Iniciar el motor del cbr
+            inicializarCBR();
+            // Iniciar los almacenes y los cofres de la base
+            inicializarAlamcenesYCofres();
         }
 
         n_tick++; // El tick tack del reloj
