@@ -143,7 +143,7 @@ public class Recomendar {
             for(int i = 0; i<numberofcases; i++){
 
                 liste.add(getAttributes(result.get(i), rec.getConceptByID(CBREngine.getConceptName())));
-                //System.out.println("liste "+liste.get(i).toString());
+                System.out.println("liste "+liste.get(i).toString());
                 //answer=answer+"<tr><td>"+result.get(i).getFirst().getName()+"</td>";
                 //answer=answer+ "<td>"+liste.get(i).toString()+"</td></tr>";
             }

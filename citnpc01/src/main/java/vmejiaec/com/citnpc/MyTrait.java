@@ -123,6 +123,7 @@ public class MyTrait extends Trait {
         Random r = new Random();
         int sorteo = r.nextInt(2);
         System.out.println("Estrategia :" + sorteo);
+        ConsultaCBR();
         switch (sorteo){
             case 0:
                 camino = caminoAlm1;
