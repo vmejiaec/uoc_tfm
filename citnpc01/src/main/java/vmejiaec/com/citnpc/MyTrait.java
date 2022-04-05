@@ -92,6 +92,9 @@ public class MyTrait extends Trait {
         base1.cofregalleta.receta = new Receta("galleta",1,1,1,2);
         base1.cofrepastel = new Cofre(0,0,0,0,0);
         base1.cofrepastel.receta = new Receta("pastel",3,2,1,0);
+        // El agente
+        Agente agente = new Agente("npc");
+        agente.material = Material.tipo.CACAO;
         // Inicializa los carteles con los mensajes
     }
 
@@ -166,6 +169,8 @@ public class MyTrait extends Trait {
                 estrategia();
                 System.out.println(UtilBase.publicar(base1));
             } else {  // está en el almacen
+                // Toma el material
+
                 System.out.println(UtilAlmacen.publica(almacen1));
                 System.out.println(UtilAlmacen.publica(almacen2));
             }
