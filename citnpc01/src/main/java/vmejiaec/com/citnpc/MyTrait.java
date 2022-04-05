@@ -92,9 +92,10 @@ public class MyTrait extends Trait {
         base1.cofregalleta.receta = new Receta("galleta",1,1,1,2);
         base1.cofrepastel = new Cofre(0,0,0,0,0);
         base1.cofrepastel.receta = new Receta("pastel",3,2,1,0);
-        // El agente
+        // Inicializa el agente
         Agente agente = new Agente("npc");
         agente.material = Material.tipo.CACAO;
+        agente.cantidad = 10;
         // Inicializa los carteles con los mensajes
     }
 

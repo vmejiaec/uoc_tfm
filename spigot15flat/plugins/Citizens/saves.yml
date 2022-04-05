@@ -1,0 +1,38 @@
+# Citizens NPC Storage
+
+
+
+last-created-npc-id: 7
+npc:
+  '7':
+    metadata:
+      cached-skin-uuid: 59784db3-c0ec-425e-b8d7-db7bace95da1
+      cached-skin-uuid-name: npcvictor
+    name: npcVictor
+    uuid: e68095fe-340d-4b14-ab0a-42e5ee7e061e
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: 270.55426
+        world: world
+        x: '163.3484'
+        y: '4.0'
+        z: '-105.5111'
+        yaw: '-89.4457'
+        pitch: '0.0'
+      skintrait:
+        fetchDefaultSkin: true
+        signature: Sx/0G9aJd6JPGTsMrTWEl/3VPHP6GLJzAC0rXmUrlm9AcHwUSFlJ2xjFeONvCleL9flnln8J1Dp+pGrwqFXmSnC6RznfoUhoheDofyK3RtrszUqEGnCi5uMDDJJajKpZJkKcfdarPCyUjbpVTx0J9eIQxi1b2opGyMHvLm2+QYV34vXKx02o0LmJxN8IefQc6sEAZ+fTb/kJRArhING06/axOYne3QGnKlJz20du6r4zE8Ilgt0XXwSHKeu2+H0ebPmIj/I3B/oJfIb4cvMteYVLBAbEf6la2sG2xOYPLPLl9y1PoX/EJe8LgH4TO2pGhvxFgWS5aUxo65QUr+rWBJtYl19bEdVSP3ck4cctIDSQj9/4I11RctJGvZ4IbnZ6Y3lsjSRrqJ8sqCMpSahT4y+Z3+396JZ3AmiFS2QH+rwtDMIQPdG9acZkPUTC1/lmGLO2CHfpA+PnDf3HO8eR3taoxQKEMLzLOdmcrBk5bzH6cWUFMkw1A7k6MB/b71JcxMclIFvnaoxCjXSVWam+JAIR/mZKDsIMn1ipa2ONkd16bIubLloAdXhSu3xDgOnCJHL0o/hiIi81ffZyqnp0SVpslK38Kr1VwEhgbzTUFPhgYYlKdqeVS8LJLTepMEpwD8ZsZcuVfh+5cH+p2kzHI6I9Qh2qUl+5sFEkQk1w0gE=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0ODk2MjExNDMyOCwKICAicHJvZmlsZUlkIiA6ICI1OTc4NGRiM2MwZWM0MjVlYjhkN2RiN2JhY2U5NWRhMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJOUENWaWN0b3IiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM4M2IxNzBlNjgxNDY4MmFiODA1YzUyMzM2ZTNiZWY3N2ExYTUzOWNhZjdiMjU5MjFlYTAzOTI3N2Y0MWI1MiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9
+        updateSkins: false
+      spawned: true
+      mytraitname:
+        SomeSetting: false
+        mysettingname: false
+      sneak:
+        sneaking: false
+    traitnames: scoreboardtrait,type,equipment,inventory,skintrait,spawned,sneak,mounttrait,location,mytraitname
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

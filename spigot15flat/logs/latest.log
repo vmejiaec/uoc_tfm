@@ -1,0 +1,416 @@
+[19:42:49] [Server thread/INFO]: Starting minecraft server version 1.15.2
+[19:42:49] [Server thread/INFO]: Loading properties
+[19:42:50] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
+[19:42:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[19:42:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:42:50] [Server thread/INFO]: Debug logging is disabled
+[19:42:50] [Server thread/INFO]: Default game type: SURVIVAL
+[19:42:50] [Server thread/INFO]: Generating keypair
+[19:42:50] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:42:50] [Server thread/INFO]: Using default channel type
+[19:42:51] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
+[19:42:51] [Server thread/INFO]: [Citnpc] Loading Citnpc v1.0-SNAPSHOT
+[19:42:51] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:42:51] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:42:51] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:42:51] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:42:51] [Server thread/INFO]: Preparing level "world"
+[19:42:52] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[19:42:56] [Server thread/INFO]: Loaded 6 recipes
+[19:42:56] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:42:56] [Server thread/INFO]: View Distance: 10
+[19:42:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:42:56] [Server thread/INFO]: Mob Spawn Range: 6
+[19:42:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[19:42:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:42:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:42:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[19:42:56] [Server thread/INFO]: Max TNT Explosions: 100
+[19:42:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:42:56] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:42:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:42:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:42:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:42:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:42:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:42:56] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[19:42:56] [Server thread/INFO]: View Distance: 10
+[19:42:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:42:56] [Server thread/INFO]: Mob Spawn Range: 6
+[19:42:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[19:42:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:42:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:42:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[19:42:56] [Server thread/INFO]: Max TNT Explosions: 100
+[19:42:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:42:56] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:42:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:42:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:42:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:42:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:42:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:42:56] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[19:42:56] [Server thread/INFO]: View Distance: 10
+[19:42:56] [Server thread/INFO]: Experience Merge Radius: 3.0
+[19:42:56] [Server thread/INFO]: Mob Spawn Range: 6
+[19:42:56] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cane Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Melon Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Potato Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Vine Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[19:42:56] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[19:42:56] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:42:56] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[19:42:56] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[19:42:56] [Server thread/INFO]: Max TNT Explosions: 100
+[19:42:56] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:42:56] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[19:42:56] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[19:42:56] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[19:42:56] [Server thread/INFO]: Item Despawn Rate: 6000
+[19:42:56] [Server thread/INFO]: Item Merge Radius: 2.5
+[19:42:56] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[19:42:56] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[19:42:57] [Server thread/INFO]: Preparing spawn area: 0%
+[19:42:57] [Server-Worker-2/INFO]: Preparing spawn area: 0%
+[19:42:57] [Server-Worker-6/INFO]: Preparing spawn area: 94%
+[19:42:58] [Server thread/INFO]: Preparing spawn area: 98%
+[19:42:58] [Server thread/INFO]: Time elapsed: 1556 ms
+[19:42:58] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
+[19:42:58] [Server thread/INFO]: Preparing spawn area: 0%
+[19:42:58] [Server thread/INFO]: Preparing spawn area: 1%
+[19:42:59] [Server-Worker-3/INFO]: Preparing spawn area: 83%
+[19:42:59] [Server-Worker-3/INFO]: Preparing spawn area: 83%
+[19:43:00] [Server-Worker-5/INFO]: Preparing spawn area: 90%
+[19:43:00] [Server thread/INFO]: Time elapsed: 2290 ms
+[19:43:00] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[19:43:00] [Server thread/INFO]: Preparing spawn area: 0%
+[19:43:01] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[19:43:01] [Server thread/INFO]: Time elapsed: 667 ms
+[19:43:01] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[19:43:01] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
+[19:43:01] [Server thread/INFO]: [Citnpc] Enabling Citnpc v1.0-SNAPSHOT
+[19:43:01] [Server thread/INFO]: ++++ Registro del comando para crear citizen
+
+[19:43:01] [Server thread/INFO]: ++++ Registro del comando para mover citizen
+
+[19:43:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:43:01] [Server thread/INFO]: Done (10.006s)! For help, type "help"
+[19:43:01] [Server thread/INFO]: npcVictorhas been assigned MyTrait!
+[19:43:01] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+
+[19:43:01] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[19:43:01] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[19:43:01] [Thread-11/INFO]: Imported 13 instances.
+
+[19:43:02] [Server thread/INFO]: 
+
+[19:43:02] [Server thread/INFO]: Evento OnSpawn llamado --------(*)
+
+[19:43:02] [Server thread/INFO]:    --- El npc se llama: npcVictor
+
+[19:43:02] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
+[19:43:04] [Server thread/INFO]: TICK + 51
+
+[19:43:04] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:04] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:04] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:04] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:06] [Server thread/INFO]: TICK + 51
+
+[19:43:06] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:09] [Server thread/INFO]: TICK + 51
+
+[19:43:09] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:10] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:10] [Server thread/INFO]:  -- Distancia del Npc al destino: 1.2046182534981014
+
+[19:43:10] [Server thread/INFO]: Almacen 1 cacao: 25
+ huego: 5
+ leche: 3
+ trigo: 30
+
+
+[19:43:10] [Server thread/INFO]: Almacen 2 cacao: 10
+ huego: 17
+ leche: 16
+ trigo: 10
+
+
+[19:43:11] [Server thread/INFO]: TICK + 51
+
+[19:43:11] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:11] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:11] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:11] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:14] [Server thread/INFO]: TICK + 51
+
+[19:43:14] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:16] [Server thread/INFO]: TICK + 51
+
+[19:43:16] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:18] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:18] [Server thread/INFO]:  -- Distancia del Npc al destino: 2.5149061215240547
+
+[19:43:18] [Server thread/INFO]: Estrategia :1
+
+[19:43:18] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[19:43:18] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[19:43:18] [Server thread/INFO]: Base 
+  -- Objetivo: pan-- 
+  Cofre Pan: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Galleta: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Pastel: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[19:43:19] [Server thread/INFO]: TICK + 51
+
+[19:43:19] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:19] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:19] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:19] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:19] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:19] [Server thread/INFO]:  -- Distancia del Npc al destino: 22.513177746279396
+
+[19:43:22] [Server thread/INFO]: TICK + 51
+
+[19:43:22] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:22] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:22] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:22] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:24] [Server thread/INFO]: TICK + 51
+
+[19:43:24] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:27] [Server thread/INFO]: TICK + 51
+
+[19:43:27] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:28] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:28] [Server thread/INFO]:  -- Distancia del Npc al destino: 1.2091147119174623
+
+[19:43:28] [Server thread/INFO]: Almacen 1 cacao: 25
+ huego: 5
+ leche: 3
+ trigo: 30
+
+
+[19:43:28] [Server thread/INFO]: Almacen 2 cacao: 10
+ huego: 17
+ leche: 16
+ trigo: 10
+
+
+[19:43:29] [Server thread/INFO]: TICK + 51
+
+[19:43:29] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:29] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:29] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:29] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:32] [Server thread/INFO]: TICK + 51
+
+[19:43:32] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:34] [Server thread/INFO]: TICK + 51
+
+[19:43:34] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:35] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:35] [Server thread/INFO]:  -- Distancia del Npc al destino: 2.5149087198450983
+
+[19:43:35] [Server thread/INFO]: Estrategia :1
+
+[19:43:35] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[19:43:35] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[19:43:35] [Server thread/INFO]: Base 
+  -- Objetivo: pan-- 
+  Cofre Pan: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Galleta: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Pastel: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[19:43:37] [Server thread/INFO]: TICK + 51
+
+[19:43:37] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:37] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:37] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:37] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:37] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:37] [Server thread/INFO]:  -- Distancia del Npc al destino: 22.513176717419054
+
+[19:43:39] [Server thread/INFO]: TICK + 51
+
+[19:43:39] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:39] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:39] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:39] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:42] [Server thread/INFO]: TICK + 51
+
+[19:43:42] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:44] [Server thread/INFO]: TICK + 51
+
+[19:43:44] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:46] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:46] [Server thread/INFO]:  -- Distancia del Npc al destino: 1.2091119236946095
+
+[19:43:46] [Server thread/INFO]: Almacen 1 cacao: 25
+ huego: 5
+ leche: 3
+ trigo: 30
+
+
+[19:43:46] [Server thread/INFO]: Almacen 2 cacao: 10
+ huego: 17
+ leche: 16
+ trigo: 10
+
+
+[19:43:47] [Server thread/INFO]: TICK + 51
+
+[19:43:47] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:47] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:47] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:47] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:50] [Server thread/INFO]: TICK + 51
+
+[19:43:50] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:52] [Server thread/INFO]: TICK + 51
+
+[19:43:52] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:43:53] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:53] [Server thread/INFO]:  -- Distancia del Npc al destino: 2.514906306827012
+
+[19:43:53] [Server thread/INFO]: Estrategia :0
+
+[19:43:53] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[19:43:53] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[19:43:53] [Server thread/INFO]: Base 
+  -- Objetivo: pan-- 
+  Cofre Pan: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Galleta: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+  Cofre Pastel: invInv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[19:43:55] [Server thread/INFO]: TICK + 51
+
+[19:43:55] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:55] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:55] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:55] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:43:55] [Server thread/INFO]:   -- ]> Evento de navegación COMPLETE
+
+[19:43:55] [Server thread/INFO]:  -- Distancia del Npc al destino: 18.223042062259818
+
+[19:43:57] [Server thread/INFO]: TICK + 51
+
+[19:43:57] [Server thread/INFO]:  -- Está navegando?: false
+
+[19:43:57] [Server thread/INFO]:  -- movetonextpos: 0
+[19:43:57] [Server thread/INFO]:  -- movetonextpos: 1
+[19:43:57] [Server thread/INFO]:   -- <[ Evento de navegación BEGIN
+
+[19:44:00] [Server thread/INFO]: TICK + 51
+
+[19:44:00] [Server thread/INFO]:  -- Está navegando?: true
+
+[19:44:00] [Server thread/INFO]: Stopping the server
+[19:44:00] [Server thread/INFO]: Stopping server
+[19:44:00] [Server thread/INFO]: [Citnpc] Disabling Citnpc v1.0-SNAPSHOT
+[19:44:00] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[19:44:00] [Server thread/INFO]: Saving players
+[19:44:00] [Server thread/INFO]: Saving worlds
+[19:44:00] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[19:44:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:44:00] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[19:44:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:44:01] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[19:44:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:44:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:44:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:44:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
