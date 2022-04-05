@@ -85,33 +85,33 @@ public class Recomendar {
         try {
             query.addAttribute(a_objetivoDesc,a_objetivoDesc.getAttribute(caso.a_objetivo));
 
-            query.addAttribute(alm1_inv_cacaoDesc,alm1_inv_cacaoDesc.getAttribute((Integer)caso.alm1.inv_cacao));
-            query.addAttribute(alm1_inv_huevoDesc,alm1_inv_huevoDesc.getAttribute((Integer)caso.alm1.inv_huevo));
-            query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute((Integer)caso.alm1.inv_leche));
-            query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute((Integer)caso.alm1.inv_trigo));
+            query.addAttribute(alm1_inv_cacaoDesc,alm1_inv_cacaoDesc.getAttribute((Integer)caso.alm1.cofre.inv_cacao));
+            query.addAttribute(alm1_inv_huevoDesc,alm1_inv_huevoDesc.getAttribute((Integer)caso.alm1.cofre.inv_huevo));
+            query.addAttribute(alm1_inv_lecheDesc,alm1_inv_lecheDesc.getAttribute((Integer)caso.alm1.cofre.inv_leche));
+            query.addAttribute(alm1_inv_trigoDesc,alm1_inv_trigoDesc.getAttribute((Integer)caso.alm1.cofre.inv_trigo));
 
-            query.addAttribute(alm2_inv_cacaoDesc,alm2_inv_cacaoDesc.getAttribute((Integer)caso.alm2.inv_cacao));
-            query.addAttribute(alm2_inv_huevoDesc,alm2_inv_huevoDesc.getAttribute((Integer)caso.alm2.inv_huevo));
-            query.addAttribute(alm2_inv_lecheDesc,alm2_inv_lecheDesc.getAttribute((Integer)caso.alm2.inv_leche));
-            query.addAttribute(alm2_inv_trigoDesc,alm2_inv_trigoDesc.getAttribute((Integer)caso.alm2.inv_trigo));
+            query.addAttribute(alm2_inv_cacaoDesc,alm2_inv_cacaoDesc.getAttribute((Integer)caso.alm2.cofre.inv_cacao));
+            query.addAttribute(alm2_inv_huevoDesc,alm2_inv_huevoDesc.getAttribute((Integer)caso.alm2.cofre.inv_huevo));
+            query.addAttribute(alm2_inv_lecheDesc,alm2_inv_lecheDesc.getAttribute((Integer)caso.alm2.cofre.inv_leche));
+            query.addAttribute(alm2_inv_trigoDesc,alm2_inv_trigoDesc.getAttribute((Integer)caso.alm2.cofre.inv_trigo));
 
             query.addAttribute(cofre_galletaDesc,cofre_galletaDesc.getAttribute((Integer)caso.cofre_galleta.inv));
-            query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_cacao));
-            query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_huevo));
-            query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute((Integer)caso.cofre_galleta.ingr_leche));
-            query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute((Integer)caso.cofre_galleta.ingr_trigo));
+            query.addAttribute(cofre_galleta_ingr_cacaoDesc,cofre_galleta_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_galleta.inv_cacao));
+            query.addAttribute(cofre_galleta_ingr_huevoDesc,cofre_galleta_ingr_huevoDesc.getAttribute((Integer)caso.cofre_galleta.inv_huevo));
+            query.addAttribute(cofre_galleta_ingr_lecheDesc,cofre_galleta_ingr_lecheDesc.getAttribute((Integer)caso.cofre_galleta.inv_leche));
+            query.addAttribute(cofre_galleta_ingr_trigoDesc,cofre_galleta_ingr_trigoDesc.getAttribute((Integer)caso.cofre_galleta.inv_trigo));
 
             query.addAttribute(cofre_panDesc,cofre_panDesc.getAttribute((Integer)caso.cofre_pan.inv));
-            query.addAttribute(cofre_pan_ingr_cacaoDesc,cofre_pan_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pan.ingr_cacao));
-            query.addAttribute(cofre_pan_ingr_huevoDesc,cofre_pan_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pan.ingr_huevo));
-            query.addAttribute(cofre_pan_ingr_lecheDesc,cofre_pan_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pan.ingr_leche));
-            query.addAttribute(cofre_pan_ingr_trigoDesc,cofre_pan_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pan.ingr_trigo));
+            query.addAttribute(cofre_pan_ingr_cacaoDesc,cofre_pan_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pan.inv_cacao));
+            query.addAttribute(cofre_pan_ingr_huevoDesc,cofre_pan_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pan.inv_huevo));
+            query.addAttribute(cofre_pan_ingr_lecheDesc,cofre_pan_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pan.inv_leche));
+            query.addAttribute(cofre_pan_ingr_trigoDesc,cofre_pan_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pan.inv_trigo));
 
             query.addAttribute(cofre_pastelDesc,cofre_pastelDesc.getAttribute((Integer)caso.cofre_pastel.inv));
-            query.addAttribute(cofre_pastel_ingr_cacaoDesc,cofre_pastel_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_cacao));
-            query.addAttribute(cofre_pastel_ingr_huevoDesc,cofre_pastel_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_huevo));
-            query.addAttribute(cofre_pastel_ingr_lecheDesc,cofre_pastel_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pastel.ingr_leche));
-            query.addAttribute(cofre_pastel_ingr_trigoDesc,cofre_pastel_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pastel.ingr_trigo));
+            query.addAttribute(cofre_pastel_ingr_cacaoDesc,cofre_pastel_ingr_cacaoDesc.getAttribute((Integer)caso.cofre_pastel.inv_cacao));
+            query.addAttribute(cofre_pastel_ingr_huevoDesc,cofre_pastel_ingr_huevoDesc.getAttribute((Integer)caso.cofre_pastel.inv_huevo));
+            query.addAttribute(cofre_pastel_ingr_lecheDesc,cofre_pastel_ingr_lecheDesc.getAttribute((Integer)caso.cofre_pastel.inv_leche));
+            query.addAttribute(cofre_pastel_ingr_trigoDesc,cofre_pastel_ingr_trigoDesc.getAttribute((Integer)caso.cofre_pastel.inv_trigo));
 
         } catch (ParseException e) {
             e.printStackTrace();

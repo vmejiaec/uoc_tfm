@@ -10,10 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 import vmejiaec.com.citnpc.cbr.Recomendar;
-import vmejiaec.com.citnpc.var.Almacen;
-import vmejiaec.com.citnpc.var.Base;
-import vmejiaec.com.citnpc.var.Caso;
-import vmejiaec.com.citnpc.var.Cofre;
+import vmejiaec.com.citnpc.var.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,11 +84,14 @@ public class MyTrait extends Trait {
     // Función para inicializar los cofres y los almacenes
     public void inicializarAlamcenesYCofres(){
         base1 = new Base("pan");
-        almacen1 = new Almacen(25,5,3,30);
-        almacen2 = new Almacen(10,17,16,10);
+        almacen1 = new Almacen("Almacen 1",25,5,3,30);
+        almacen2 = new Almacen("Almacen 2",10,17,16,10);
         base1.cofrepan = new Cofre(0,0,0,0,0);
+        base1.cofrepan.receta = new Receta("pan",0,1,0,3);
         base1.cofregalleta = new Cofre(0,0,0,0,0);
+        base1.cofregalleta.receta = new Receta("galleta",1,1,1,2);
         base1.cofrepastel = new Cofre(0,0,0,0,0);
+        base1.cofrepastel.receta = new Receta("pastel",3,2,1,0);
         // Inicializa los carteles con los mensajes
     }
 
@@ -162,8 +162,12 @@ public class MyTrait extends Trait {
         if (distancia <= 3 ){ // llegó al destino
             trigerbeginmove = true;
             estaenbase = posactual == 0;   // Si está en la base es true
-            if (estaenbase){
+            if (estaenbase){  // está en la base
                 estrategia();
+                System.out.println(UtilBase.publicar(base1));
+            } else {  // está en el almacen
+                System.out.println(UtilAlmacen.publica(almacen1));
+                System.out.println(UtilAlmacen.publica(almacen2));
             }
         } else {              // aun no llega al destino
             if (posactual == 0 ) posactual = 1 ; else posactual = 0;
