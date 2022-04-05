@@ -59,10 +59,10 @@ public class CtrlCofre {
     }
 
     public static void Procesar(Cofre cofre){
-        int pan_ingr_c = cofre.receta.ingredientes.inv_cacao;
-        int pan_ingr_h = cofre.receta.ingredientes.inv_huevo;
-        int pan_ingr_l = cofre.receta.ingredientes.inv_leche;
-        int pan_ingr_t = cofre.receta.ingredientes.inv_trigo;
+        int pan_ingr_c = cofre.receta.ingr_cacao;
+        int pan_ingr_h = cofre.receta.ingr_huevo;
+        int pan_ingr_l = cofre.receta.ingr_leche;
+        int pan_ingr_t = cofre.receta.ingr_trigo;
         int pan_inv_c = cofre.inv_cacao;
         int pan_inv_h = cofre.inv_huevo;
         int pan_inv_l = cofre.inv_leche;

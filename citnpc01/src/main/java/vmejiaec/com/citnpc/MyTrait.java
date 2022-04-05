@@ -167,9 +167,11 @@ public class MyTrait extends Trait {
             trigerbeginmove = true;
             estaenbase = posactual == 0;   // Si está en la base es true
             if (estaenbase){  // está en la base
+                System.out.print("Estoy en la base!");
                 estrategia();
                 System.out.println(UtilBase.publicar(base1));
             } else {  // está en el almacen
+                System.out.print("Estoy en el almacén!");
                 // Toma el material
 
                 System.out.println(UtilAlmacen.publica(almacen1));

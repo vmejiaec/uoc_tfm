@@ -2,14 +2,18 @@ package vmejiaec.com.citnpc.var;
 
 public class Receta {
     public String nombre;
-    public Cofre ingredientes;
+    public int ingr_cacao;
+    public int ingr_huevo;
+    public int ingr_leche;
+    public int ingr_trigo;
 
-    public Receta(){
-        this.ingredientes = new Cofre();
-    }
+    public Receta(){ }
 
     public Receta(String nombre,int inv_cacao,int inv_huevo, int inv_leche, int inv_trigo){
         this.nombre = nombre;
-        this.ingredientes = new Cofre(0,inv_cacao, inv_huevo, inv_leche, inv_trigo);
+        this.ingr_cacao = inv_cacao;
+        this.ingr_huevo = inv_huevo;
+        this.ingr_leche = inv_leche;
+        this.ingr_trigo = inv_trigo;
     }
 }
