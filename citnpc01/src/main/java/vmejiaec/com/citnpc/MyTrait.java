@@ -78,8 +78,8 @@ public class MyTrait extends Trait {
     // Almacenes y cofres
     Almacen almacen1 = null;
     Almacen almacen2 = null;
-
     Base base1 = null;
+    Agente agente = null;
 
     // Función para inicializar los cofres y los almacenes
     public void inicializarAlamcenesYCofres(){
@@ -93,7 +93,7 @@ public class MyTrait extends Trait {
         base1.cofrepastel = new Cofre(0,0,0,0,0);
         base1.cofrepastel.receta = new Receta("pastel",3,2,1,0);
         // Inicializa el agente
-        Agente agente = new Agente("npc");
+        agente = new Agente("npc");
         agente.material = Material.tipo.CACAO;
         agente.cantidad = 10;
         // Inicializa los carteles con los mensajes
@@ -131,9 +131,11 @@ public class MyTrait extends Trait {
         switch (sorteo){
             case 0:
                 camino = caminoAlm1;
+                agente.destino = Agente.destinotipo.ALALMACEN1;
                 break;
             case 1:
                 camino = caminoAlm2;
+                agente.destino = Agente.destinotipo.ALALMACEN2;
                 break;
         }
     }
@@ -168,14 +170,26 @@ public class MyTrait extends Trait {
             estaenbase = posactual == 0;   // Si está en la base es true
             if (estaenbase){  // está en la base
                 System.out.print("Estoy en la base!");
-                estrategia();
-                System.out.println(UtilBase.publicar(base1));
-            } else {  // está en el almacen
-                System.out.print("Estoy en el almacén!");
-                // Toma el material
 
-                System.out.println(UtilAlmacen.publica(almacen1));
+                // Publica el estado de la base
+                System.out.println(UtilBase.publicar(base1));
+                // Elije la estrategia
+                estrategia();
+            } else {  // está en el almacen
+                System.out.print("Estoy en el almacén!"+agente.destino);
+
                 System.out.println(UtilAlmacen.publica(almacen2));
+                // Toma el material
+                switch (agente.destino){
+                    case ALALMACEN1:
+                        CtrlAgente.Toma(agente,almacen1);
+                        System.out.println(UtilAlmacen.publica(almacen1));
+                        break;
+                    case ALALMACEN2:
+                        CtrlAgente.Toma(agente,almacen2);
+                        System.out.println(UtilAlmacen.publica(almacen2));
+                        break;
+                }
             }
         } else {              // aun no llega al destino
             if (posactual == 0 ) posactual = 1 ; else posactual = 0;
@@ -215,7 +229,6 @@ public class MyTrait extends Trait {
 
         n_tick++; // El tick tack del reloj
         if (n_tick > n_tick_max){
-            System.out.println("TICK + "+n_tick);
             System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
             n_tick = 0; // Reinicio del reloj
 

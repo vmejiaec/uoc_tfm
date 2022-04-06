@@ -1,19 +1,19 @@
 package vmejiaec.com.citnpc.var;
 
 public class CtrlAgente {
-    public static void Toma(Agente agente, Almacen almacen, Material.tipo material, int cantidad){
+    public static void Toma(Agente agente, Almacen almacen){
         // Quita del almacen
-        if (CtrlCofre.Retiro(almacen.cofre, material, cantidad)){
+        if (CtrlCofre.Retiro(almacen.cofre, agente.material, agente.cantidad)){
             // Pone en el cofre del agente
-            CtrlCofre.Deposito(agente.cofre,material, cantidad);
+            CtrlCofre.Deposito(agente.bolsa,agente.material,agente.cantidad);
         }
     }
 
-    public static void Deja(Agente agente, Cofre cofre, Material.tipo material, int cantidad){
+    public static void Deja(Agente agente, Cofre cofre){
         // Quita del cofre del agente
-        if(CtrlCofre.Retiro(agente.cofre, material, cantidad)){
+        if(CtrlCofre.Retiro(agente.bolsa, agente.material, agente.cantidad)){
             // Deja en el cofre
-            CtrlCofre.Deposito(cofre, material, cantidad);
+            CtrlCofre.Deposito(cofre, agente.material, agente.cantidad);
         }
     }
 }
