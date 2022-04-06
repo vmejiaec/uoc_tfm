@@ -14,6 +14,7 @@ import vmejiaec.com.citnpc.var.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 import static vmejiaec.com.citnpc.var.Agente.*;
@@ -117,7 +118,7 @@ public class MyTrait extends Trait {
 
     // Consultar al cbr sobre el mejor caso
     public String ConsultaCBR(){
-        Caso caso = new Caso(base1.objetivo);
+        Caso caso = new Caso(base1.objetivo.toLowerCase(Locale.ROOT));
         caso.alm1 = almacen1;
         caso.alm2 = almacen2;
         caso.cofre_pan = base1.cofrepan;
@@ -134,10 +135,15 @@ public class MyTrait extends Trait {
     // Elije cuál es la mejor estrategia
     public void estrategia(){
         Random r = new Random();
-        int sorteo = r.nextInt(2);
-        System.out.println("Estrategia :" + sorteo);
+
+
+        // Consulta al CBR
         String resultado = ConsultaCBR();
         CtrlAgente.Configurar(agente,resultado);
+
+        // Factor aleatorio sobre el resultado CBR
+        int sorteo = r.nextInt(2);
+        System.out.println("Estrategia :" + sorteo);
         switch (sorteo){
             case 0:
                 camino = caminoAlm1;
@@ -146,6 +152,33 @@ public class MyTrait extends Trait {
             case 1:
                 camino = caminoAlm2;
                 agente.destino = destinotipo.ALALMACEN2;
+                break;
+        }
+        sorteo = r.nextInt(4);
+        switch (sorteo){
+            case 0:
+                agente.material = tipo.CACAO;
+                break;
+            case 1:
+                agente.material = tipo.HUEVO;
+                break;
+            case 2:
+                agente.material = tipo.LECHE;
+                break;
+            case 3:
+                agente.material = tipo.TRIGO;
+                break;
+        }
+        sorteo = r.nextInt(3);
+        switch (sorteo){
+            case 0:
+                agente.producto = tipo.PAN;
+                break;
+            case 1:
+                agente.producto = tipo.GALLETA;
+                break;
+            case 2:
+                agente.producto = tipo.PASTEL;
                 break;
         }
     }
@@ -181,7 +214,20 @@ public class MyTrait extends Trait {
             if (estaenbase){  // está en la base
                 System.out.print("Estoy en la base!");
                 // Deja el material que lleva en la bolsa
-                CtrlAgente.Deja(agente,base1.cofrepan);
+                switch (agente.producto){
+                    case PAN:
+                        CtrlAgente.Deja(agente,base1.cofrepan);
+                        break;
+                    case GALLETA:
+                        CtrlAgente.Deja(agente,base1.cofregalleta);
+                        break;
+                    case PASTEL:
+                        CtrlAgente.Deja(agente,base1.cofrepastel);
+                        break;
+                }
+                base1.objetivo = ""+agente.producto;
+                // Procesa los productos de los cofres de la base
+                CtrlBase.procesa(base1);
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(base1));
                 // Elije la estrategia
