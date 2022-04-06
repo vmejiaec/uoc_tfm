@@ -38,20 +38,16 @@ public class CtrlCofre {
         // Se deposita en el cofre seleccionado
         switch (material){
             case CACAO:
-                if(cofre.inv_cacao >= cantidad)
-                    cofre.inv_cacao += cantidad;
+                cofre.inv_cacao += cantidad;
                 break;
             case HUEVO:
-                if(cofre.inv_huevo >= cantidad)
-                    cofre.inv_huevo += cantidad;
+                cofre.inv_huevo += cantidad;
                 break;
             case LECHE:
-                if (cofre.inv_leche >= cantidad)
-                    cofre.inv_leche += cantidad;
+                cofre.inv_leche += cantidad;
                 break;
             case TRIGO:
-                if (cofre.inv_trigo >= cantidad)
-                    cofre.inv_trigo += cantidad;
+                cofre.inv_trigo += cantidad;
                 break;
             default:
                 break;

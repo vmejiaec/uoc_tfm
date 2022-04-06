@@ -2,7 +2,7 @@ package vmejiaec.com.citnpc.var;
 
 public class UtilCofre {
     public static String publicar(Cofre cofre){
-        String res = "inv";
+        String res = "";
         res += "Inv: " + cofre.inv;
         res += " (";
         res += " c: " + cofre.inv_cacao ;

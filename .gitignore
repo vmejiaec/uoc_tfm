@@ -1,1 +1,6 @@
 *.log.gz
+*.log
+*.dat
+*.dat_old
+*.mca
+*.lock

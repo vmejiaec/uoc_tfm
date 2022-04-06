@@ -16,6 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static vmejiaec.com.citnpc.var.Agente.*;
+import static vmejiaec.com.citnpc.var.Material.*;
+
 //This is your trait that will be applied to a npc using the /trait mytraitname command.
 // Each NPC gets its own instance of this class.
 //the Trait class has a reference to the attached NPC class
@@ -72,7 +75,7 @@ public class MyTrait extends Trait {
 
     @EventHandler
     public void navigationbegin( NavigationBeginEvent event){
-        System.out.println("  -- <[ Evento de navegación BEGIN");
+        System.out.print("  -- <[ Evento mov BEGIN");
     }
 
     // Almacenes y cofres
@@ -84,8 +87,8 @@ public class MyTrait extends Trait {
     // Función para inicializar los cofres y los almacenes
     public void inicializarAlamcenesYCofres(){
         base1 = new Base("pan");
-        almacen1 = new Almacen("Almacen 1",25,5,3,30);
-        almacen2 = new Almacen("Almacen 2",10,17,16,10);
+        almacen1 = new Almacen("Almacen 1",25,25,35,30);
+        almacen2 = new Almacen("Almacen 2",15,15,20,10);
         base1.cofrepan = new Cofre(0,0,0,0,0);
         base1.cofrepan.receta = new Receta("pan",0,1,0,3);
         base1.cofregalleta = new Cofre(0,0,0,0,0);
@@ -94,9 +97,13 @@ public class MyTrait extends Trait {
         base1.cofrepastel.receta = new Receta("pastel",3,2,1,0);
         // Inicializa el agente
         agente = new Agente("npc");
-        agente.material = Material.tipo.CACAO;
+        agente.destino = destinotipo.ALALMACEN1;
+        agente.producto = tipo.PAN;
+        agente.material = tipo.CACAO;
         agente.cantidad = 10;
-        // Inicializa los carteles con los mensajes
+        // Publica la condición inicial
+        System.out.println(UtilAlmacen.publica(almacen1));
+        System.out.println(UtilAlmacen.publica(almacen2));
     }
 
     // Inicializa el cbr para realizar las consultas
@@ -109,7 +116,7 @@ public class MyTrait extends Trait {
     }
 
     // Consultar al cbr sobre el mejor caso
-    public void ConsultaCBR(){
+    public String ConsultaCBR(){
         Caso caso = new Caso(base1.objetivo);
         caso.alm1 = almacen1;
         caso.alm2 = almacen2;
@@ -120,6 +127,8 @@ public class MyTrait extends Trait {
         de.dfki.mycbr.util.Pair res = reco.solveOuery(caso, 1);
 
         System.out.println("Mejor caso: "+res.getFirst() + " " +res.getSecond());
+
+        return ""+ res.getFirst();
     }
 
     // Elije cuál es la mejor estrategia
@@ -127,15 +136,16 @@ public class MyTrait extends Trait {
         Random r = new Random();
         int sorteo = r.nextInt(2);
         System.out.println("Estrategia :" + sorteo);
-        ConsultaCBR();
+        String resultado = ConsultaCBR();
+        CtrlAgente.Configurar(agente,resultado);
         switch (sorteo){
             case 0:
                 camino = caminoAlm1;
-                agente.destino = Agente.destinotipo.ALALMACEN1;
+                agente.destino = destinotipo.ALALMACEN1;
                 break;
             case 1:
                 camino = caminoAlm2;
-                agente.destino = Agente.destinotipo.ALALMACEN2;
+                agente.destino = destinotipo.ALALMACEN2;
                 break;
         }
     }
@@ -144,9 +154,9 @@ public class MyTrait extends Trait {
     int posactual = 0;
 
     public void movetonextpos(){
-        System.out.print(" -- movetonextpos: "+posactual);
+        //System.out.print(" -- movetonextpos: "+posactual);
         if (posactual == 0 ) posactual = 1 ; else posactual = 0;
-        System.out.print(" -- movetonextpos: "+posactual);
+        //System.out.print(" -- movetonextpos: "+posactual);
         npc.getNavigator().setTarget(new Location(
                 world,
                 camino.get(posactual).getX(),
@@ -160,25 +170,24 @@ public class MyTrait extends Trait {
 
     @EventHandler
     public void navigationcomplete( NavigationCompleteEvent event){
-        System.out.println("  -- ]> Evento de navegación COMPLETE");
+        System.out.print("  -- ]> Evento mov COMPLETE");
         // Confirma que ha llegado al destino
         Location locnpc = npc.getStoredLocation();
         double distancia =  camino.get(posactual).distance(npc.getStoredLocation().toVector())  ;
-        System.out.println(" -- Distancia del Npc al destino: "+distancia);
+        //System.out.println(" -- Distancia del Npc al destino: "+distancia);
         if (distancia <= 3 ){ // llegó al destino
             trigerbeginmove = true;
             estaenbase = posactual == 0;   // Si está en la base es true
             if (estaenbase){  // está en la base
                 System.out.print("Estoy en la base!");
-
+                // Deja el material que lleva en la bolsa
+                CtrlAgente.Deja(agente,base1.cofrepan);
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(base1));
                 // Elije la estrategia
                 estrategia();
             } else {  // está en el almacen
                 System.out.print("Estoy en el almacén!"+agente.destino);
-
-                System.out.println(UtilAlmacen.publica(almacen2));
                 // Toma el material
                 switch (agente.destino){
                     case ALALMACEN1:
@@ -190,6 +199,8 @@ public class MyTrait extends Trait {
                         System.out.println(UtilAlmacen.publica(almacen2));
                         break;
                 }
+                // Se publica al agente
+                System.out.println(UtilAgente.publicar(agente));
             }
         } else {              // aun no llega al destino
             if (posactual == 0 ) posactual = 1 ; else posactual = 0;
@@ -229,7 +240,7 @@ public class MyTrait extends Trait {
 
         n_tick++; // El tick tack del reloj
         if (n_tick > n_tick_max){
-            System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
+            //System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
             n_tick = 0; // Reinicio del reloj
 
             // Si no ha empezado el viaje, lo inicia
