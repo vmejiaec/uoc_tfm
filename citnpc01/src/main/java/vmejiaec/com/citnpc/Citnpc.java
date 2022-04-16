@@ -11,6 +11,9 @@ public final class Citnpc extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        // Registra la clase con los eventos
+        getServer().getPluginManager().registerEvents(new Events(), this);
+
         // Plugin startup logic
         System.out.println("++++ Registro del comando para crear citizen");
         getCommand("crearnpc").setExecutor(new CrearNPC(this));
@@ -26,6 +29,8 @@ public final class Citnpc extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+
+
 
         //Register your trait with Citizens.
         CitizensAPI.getTraitFactory()

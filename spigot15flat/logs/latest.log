@@ -1,731 +1,230 @@
-[12:44:28] [Server thread/INFO]: Starting minecraft server version 1.15.2
-[12:44:28] [Server thread/INFO]: Loading properties
-[12:44:28] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
-[12:44:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:34:35] [Server thread/INFO]: Starting minecraft server version 1.15.2
+[23:34:35] [Server thread/INFO]: Loading properties
+[23:34:36] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
+[23:34:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
 
-[12:44:28] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:44:28] [Server thread/INFO]: Debug logging is disabled
-[12:44:28] [Server thread/INFO]: Default game type: SURVIVAL
-[12:44:28] [Server thread/INFO]: Generating keypair
-[12:44:29] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:44:29] [Server thread/INFO]: Using default channel type
-[12:44:52] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
-[12:44:52] [Server thread/INFO]: [Citnpc] Loading Citnpc v1.0-SNAPSHOT
-[12:44:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[12:44:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[12:44:52] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[12:44:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[12:44:52] [Server thread/INFO]: Preparing level "world"
-[12:44:52] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:44:53] [Server thread/INFO]: Loaded 6 recipes
-[12:44:53] [Server thread/INFO]: -------- World Settings For [world] --------
-[12:44:53] [Server thread/INFO]: View Distance: 10
-[12:44:53] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:53] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:53] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:53] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[12:44:53] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:53] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:53] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:53] [Server thread/INFO]: Mob Spawn Range: 6
-[12:44:53] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Potato Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[12:44:53] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:53] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:53] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
-[12:44:53] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:53] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:53] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[12:44:53] [Server thread/INFO]: View Distance: 10
-[12:44:53] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:53] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:53] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:53] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[12:44:53] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:53] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:53] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:53] [Server thread/INFO]: Mob Spawn Range: 6
-[12:44:53] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Potato Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[12:44:53] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:53] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:53] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
-[12:44:53] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:53] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:53] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[12:44:53] [Server thread/INFO]: View Distance: 10
-[12:44:53] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[12:44:53] [Server thread/INFO]: Item Despawn Rate: 6000
-[12:44:53] [Server thread/INFO]: Item Merge Radius: 2.5
-[12:44:53] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[12:44:53] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[12:44:53] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[12:44:53] [Server thread/INFO]: Experience Merge Radius: 3.0
-[12:44:53] [Server thread/INFO]: Mob Spawn Range: 6
-[12:44:53] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cane Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Melon Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Potato Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Vine Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[12:44:53] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[12:44:53] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[12:44:53] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[12:44:53] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
-[12:44:53] [Server thread/INFO]: Max TNT Explosions: 100
-[12:44:53] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[12:44:53] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
-[12:44:54] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:54] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:54] [Server-Worker-7/INFO]: Preparing spawn area: 83%
-[12:44:55] [Server thread/INFO]: Preparing spawn area: 96%
-[12:44:55] [Server thread/INFO]: Time elapsed: 1734 ms
-[12:44:55] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
-[12:44:55] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:55] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:56] [Server-Worker-6/INFO]: Preparing spawn area: 83%
-[12:44:56] [Server-Worker-6/INFO]: Preparing spawn area: 83%
-[12:44:57] [Server-Worker-2/INFO]: Preparing spawn area: 83%
-[12:44:57] [Server-Worker-5/INFO]: Preparing spawn area: 97%
-[12:44:57] [Server thread/INFO]: Time elapsed: 2567 ms
-[12:44:57] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
-[12:44:58] [Server thread/INFO]: Preparing spawn area: 0%
-[12:44:58] [Server-Worker-5/INFO]: Preparing spawn area: 83%
-[12:44:58] [Server thread/INFO]: Time elapsed: 720 ms
-[12:44:58] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
-[12:44:58] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
-[12:44:58] [Server thread/INFO]: [Citnpc] Enabling Citnpc v1.0-SNAPSHOT
-[12:44:58] [Server thread/INFO]: ++++ Registro del comando para crear citizen
+[23:34:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:34:36] [Server thread/INFO]: Debug logging is disabled
+[23:34:36] [Server thread/INFO]: Default game type: SURVIVAL
+[23:34:36] [Server thread/INFO]: Generating keypair
+[23:34:36] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:34:36] [Server thread/INFO]: Using default channel type
+[23:34:37] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
+[23:34:37] [Server thread/INFO]: [Citnpc] Loading Citnpc v1.0-SNAPSHOT
+[23:34:37] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:34:37] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:34:37] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[23:34:37] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:34:37] [Server thread/INFO]: Preparing level "world"
+[23:34:38] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[23:34:42] [Server thread/INFO]: Loaded 6 recipes
+[23:34:42] [Server thread/INFO]: -------- World Settings For [world] --------
+[23:34:42] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:34:42] [Server thread/INFO]: Mob Spawn Range: 6
+[23:34:42] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Potato Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[23:34:42] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:34:42] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:34:42] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[23:34:42] [Server thread/INFO]: Max TNT Explosions: 100
+[23:34:42] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:34:42] [Server thread/INFO]: View Distance: 10
+[23:34:42] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:34:42] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:34:42] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:34:42] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[23:34:42] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:34:42] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:34:42] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[23:34:42] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:34:42] [Server thread/INFO]: Mob Spawn Range: 6
+[23:34:42] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Potato Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[23:34:42] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:34:42] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:34:42] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[23:34:42] [Server thread/INFO]: Max TNT Explosions: 100
+[23:34:42] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:34:42] [Server thread/INFO]: View Distance: 10
+[23:34:42] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:34:42] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:34:42] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:34:42] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[23:34:42] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:34:42] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:34:42] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[23:34:42] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:34:42] [Server thread/INFO]: Mob Spawn Range: 6
+[23:34:42] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Potato Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[23:34:42] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[23:34:42] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:34:42] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:34:42] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[23:34:42] [Server thread/INFO]: Max TNT Explosions: 100
+[23:34:42] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:34:42] [Server thread/INFO]: View Distance: 10
+[23:34:42] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:34:42] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:34:42] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:34:42] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[23:34:42] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:34:42] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:34:42] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[23:34:43] [Server thread/INFO]: Preparing spawn area: 0%
+[23:34:43] [Server thread/INFO]: Preparing spawn area: 0%
+[23:34:43] [Server-Worker-7/INFO]: Preparing spawn area: 83%
+[23:34:44] [Server thread/INFO]: Preparing spawn area: 98%
+[23:34:44] [Server thread/INFO]: Time elapsed: 1534 ms
+[23:34:44] [Server thread/INFO]: Preparing start region for dimension 'world_nether'/minecraft:the_nether
+[23:34:44] [Server thread/INFO]: Preparing spawn area: 0%
+[23:34:44] [Server thread/INFO]: Preparing spawn area: 58%
+[23:34:45] [Server-Worker-1/INFO]: Preparing spawn area: 83%
+[23:34:45] [Server-Worker-4/INFO]: Preparing spawn area: 83%
+[23:34:46] [Server-Worker-4/INFO]: Preparing spawn area: 88%
+[23:34:46] [Server thread/INFO]: Time elapsed: 2337 ms
+[23:34:46] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[23:34:46] [Server thread/INFO]: Preparing spawn area: 0%
+[23:34:47] [Server-Worker-1/INFO]: Preparing spawn area: 84%
+[23:34:47] [Server thread/INFO]: Time elapsed: 623 ms
+[23:34:47] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[23:34:47] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
+[23:34:47] [Server thread/INFO]: [Citnpc] Enabling Citnpc v1.0-SNAPSHOT
+[23:34:47] [Server thread/INFO]: ++++ Registro del comando para crear citizen
 
-[12:44:58] [Server thread/INFO]: ++++ Registro del comando para mover citizen
+[23:34:47] [Server thread/INFO]: ++++ Registro del comando para mover citizen
 
-[12:44:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:44:58] [Server thread/INFO]: Done (6.609s)! For help, type "help"
-[12:44:58] [Server thread/INFO]: npcVictorhas been assigned MyTrait!
-[12:44:58] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+[23:34:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:34:47] [Server thread/INFO]: Done (9.641s)! For help, type "help"
+[23:34:47] [Server thread/INFO]: npcVictorhas been assigned MyTrait!
+[23:34:47] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
 
-[12:44:58] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:34:47] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[12:44:58] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:34:47] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[12:44:58] [Thread-11/INFO]: Imported 13 instances.
+[23:34:47] [User Authenticator #1/INFO]: UUID of player vmejiaec is 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c
+[23:34:47] [Thread-11/INFO]: Imported 13 instances.
 
-[12:44:59] [Server thread/INFO]: 
+[23:34:48] [Server thread/INFO]: 
 
-[12:44:59] [Server thread/INFO]: 
+[23:34:48] [Server thread/INFO]: 
 Almacen 1
 Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
 
-[12:44:59] [Server thread/INFO]: 
+[23:34:48] [Server thread/INFO]: 
 Almacen 2
 Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
 
-[12:45:00] [Server thread/INFO]: Evento OnSpawn llamado --------(*)
+[23:34:48] [Server thread/INFO]: Evento OnSpawn llamado --------(*)
 
-[12:45:00] [Server thread/INFO]:    --- El npc se llama: npcVictor
+[23:34:48] [Server thread/INFO]:    --- El npc se llama: npcVictor
 
-[12:45:00] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
-[12:45:01] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:07] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:07] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:45:07] [Server thread/INFO]: Operación: TOMA
-[12:45:07] [Server thread/INFO]: Retiro: Almacen 1 CACAO 10
-[12:45:07] [Server thread/INFO]:  - Deposito: 
+[23:34:48] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
+[23:34:49] [Server thread/INFO]: vmejiaec[/127.0.0.1:9421] logged in with entity id 183 at ([world]170.97993144673023, 4.0, -91.44662991689304)
+[23:34:49] [Server thread/INFO]:   -- <[ Evento mov BEGIN
+[23:34:50] [Server thread/INFO]: Bloque tipo: CHEST
 
-[12:45:07] [Server thread/INFO]: 
+[23:34:50] [Server thread/INFO]: Si es un cofre!!
+[23:34:50] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:34:50] [Server thread/INFO]:  5/27: MILK_BUCKET 1; 6/27: COCOA_BEANS 24; 14/27: MILK_BUCKET 1; 15/27: COCOA_BEANS 12; 16/27: COCOA_BEANS 6; 20/27: WHEAT 10; 21/27: WHEAT 32; 23/27: MILK_BUCKET 1; 24/27: COCOA_BEANS 6;
+[23:34:50] [Server thread/INFO]: - Quito un item
+
+[23:34:50] [Server thread/INFO]:  Encontrado - i: 20/27
+[23:34:50] [Server thread/INFO]: : WHEAT 10
+[23:34:50] [Server thread/INFO]:  Encontrado - i: 21/27
+[23:34:50] [Server thread/INFO]: : WHEAT 32
+[23:34:50] [Server thread/INFO]: Ejecuto retiro
+
+[23:34:54] [Server thread/INFO]: Bloque tipo: CHEST
+
+[23:34:54] [Server thread/INFO]: Si es un cofre!!
+[23:34:54] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:34:54] [Server thread/INFO]:  5/27: MILK_BUCKET 1; 6/27: COCOA_BEANS 24; 14/27: MILK_BUCKET 1; 15/27: COCOA_BEANS 12; 16/27: COCOA_BEANS 6; 20/27: WHEAT 6; 21/27: WHEAT 32; 23/27: MILK_BUCKET 1; 24/27: COCOA_BEANS 6;
+[23:34:54] [Server thread/INFO]: - Quito un item
+
+[23:34:54] [Server thread/INFO]:  Encontrado - i: 20/27
+[23:34:54] [Server thread/INFO]: : WHEAT 6
+[23:34:54] [Server thread/INFO]:  Encontrado - i: 21/27
+[23:34:54] [Server thread/INFO]: : WHEAT 32
+[23:34:54] [Server thread/INFO]: Ejecuto retiro
+
+[23:34:56] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
+[23:34:56] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:34:56] [Server thread/INFO]: Operación: TOMA
+[23:34:56] [Server thread/INFO]: Retiro: Almacen 1 CACAO 10
+[23:34:56] [Server thread/INFO]:  - Deposito: 
+
+[23:34:56] [Server thread/INFO]: 
 Almacen 1
 Inv: 0 ( c: 15 h: 25 l: 35 t: 30 )
 
-[12:45:07] [Server thread/INFO]: 
+[23:34:56] [Server thread/INFO]: 
 Agente 
   - destino: ALALMACEN1
   - producto: PAN
   - material: 10 - CACAO
   - BOLSA: Inv: 0 ( c: 10 h: 0 l: 0 t: 0 )
 
-[12:45:08] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:13] [User Authenticator #1/INFO]: UUID of player vmejiaec is 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c
-[12:45:13] [Server thread/INFO]: vmejiaec[/127.0.0.1:29814] logged in with entity id 184 at ([world]160.75583781512563, 9.488074183565326, -94.31914598828531)
-[12:45:15] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:15] [Server thread/INFO]: Estoy en la base!
-[12:45:15] [Server thread/INFO]: Operación: DEJA
-[12:45:15] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
-[12:45:15] [Server thread/INFO]:  - Deposito: 
-[12:45:15] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[12:45:15] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
-
-[12:45:15] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[12:45:15] [Server thread/INFO]: Estrategia :0
-
-[12:45:16] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:16] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:19] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:24] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:24] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:45:24] [Server thread/INFO]: Operación: TOMA
-[12:45:24] [Server thread/INFO]: Retiro: Almacen 1 LECHE 5
-[12:45:24] [Server thread/INFO]:  - Deposito: 
-
-[12:45:24] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 25 l: 30 t: 30 )
-
-[12:45:24] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PAN
-  - material: 5 - LECHE
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-[12:45:24] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:29] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:29] [Server thread/INFO]: Estoy en la base!
-[12:45:29] [Server thread/INFO]: Operación: DEJA
-[12:45:29] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[12:45:29] [Server thread/INFO]:  - Deposito: 
-[12:45:29] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 5 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[12:45:29] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
-
-[12:45:29] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[12:45:29] [Server thread/INFO]: Estrategia :0
-
-[12:45:29] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:32] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:34] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:36] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:36] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:45:36] [Server thread/INFO]: Operación: TOMA
-[12:45:36] [Server thread/INFO]: Retiro: Almacen 1 LECHE 5
-[12:45:36] [Server thread/INFO]:  - Deposito: 
-
-[12:45:36] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 25 l: 25 t: 30 )
-
-[12:45:36] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PAN
-  - material: 5 - LECHE
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-[12:45:37] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:41] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:41] [Server thread/INFO]: Estoy en la base!
-[12:45:41] [Server thread/INFO]: Operación: DEJA
-[12:45:41] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[12:45:41] [Server thread/INFO]:  - Deposito: 
-[12:45:41] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[12:45:41] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
-
-[12:45:41] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[12:45:41] [Server thread/INFO]: Estrategia :0
-
-[12:45:42] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:46] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:46] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:45:46] [Server thread/INFO]: Operación: TOMA
-[12:45:46] [Server thread/INFO]: Retiro: Almacen 1 TRIGO 5
-[12:45:46] [Server thread/INFO]:  - Deposito: 
-
-[12:45:46] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 25 l: 25 t: 25 )
-
-[12:45:46] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: GALLETA
-  - material: 5 - TRIGO
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-
-[12:45:47] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:52] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:52] [Server thread/INFO]: Estoy en la base!
-[12:45:52] [Server thread/INFO]: Operación: DEJA
-[12:45:52] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
-[12:45:52] [Server thread/INFO]:  - Deposito: 
-[12:45:52] [Server thread/INFO]: 
-Base   -- Objetivo: GALLETA-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[12:45:52] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
-
-[12:45:52] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
-
-[12:45:52] [Server thread/INFO]: Estrategia :0
-
-[12:45:52] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:52] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:54] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:45:59] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:45:59] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:45:59] [Server thread/INFO]: Operación: TOMA
-[12:45:59] [Server thread/INFO]: Retiro: Almacen 1 LECHE 5
-[12:45:59] [Server thread/INFO]:  - Deposito: 
-
-[12:45:59] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 25 l: 20 t: 25 )
-
-[12:45:59] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PASTEL
-  - material: 5 - LECHE
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-[12:45:59] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:04] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:04] [Server thread/INFO]: Estoy en la base!
-[12:46:04] [Server thread/INFO]: Operación: DEJA
-[12:46:04] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[12:46:04] [Server thread/INFO]:  - Deposito: 
-[12:46:04] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-
-[12:46:04] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:46:04] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:46:04] [Server thread/INFO]: Estrategia :0
-
-[12:46:05] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:05] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:07] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:12] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:12] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:46:12] [Server thread/INFO]: Operación: TOMA
-[12:46:12] [Server thread/INFO]: Retiro: Almacen 1 HUEVO 5
-[12:46:12] [Server thread/INFO]:  - Deposito: 
-
-[12:46:12] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 20 l: 20 t: 25 )
-
-[12:46:12] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PASTEL
-  - material: 5 - HUEVO
-  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-[12:46:12] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:17] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:17] [Server thread/INFO]: Estoy en la base!
-[12:46:17] [Server thread/INFO]: Operación: DEJA
-[12:46:17] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
-[12:46:17] [Server thread/INFO]:  - Deposito: 
-[12:46:17] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 5 t: 0 )
-
-
-[12:46:17] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:46:17] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:46:17] [Server thread/INFO]: Estrategia :0
-
-[12:46:17] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:17] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:20] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:25] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:25] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:46:25] [Server thread/INFO]: Operación: TOMA
-[12:46:25] [Server thread/INFO]: Retiro: Almacen 1 LECHE 5
-[12:46:25] [Server thread/INFO]:  - Deposito: 
-
-[12:46:25] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 20 l: 15 t: 25 )
-
-[12:46:25] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PASTEL
-  - material: 5 - LECHE
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-[12:46:25] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:30] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:30] [Server thread/INFO]: Estoy en la base!
-[12:46:30] [Server thread/INFO]: Operación: DEJA
-[12:46:30] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[12:46:30] [Server thread/INFO]:  - Deposito: 
-[12:46:30] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
-
-
-[12:46:30] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:46:30] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:46:30] [Server thread/INFO]: Estrategia :0
-
-[12:46:30] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:33] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:35] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:37] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:37] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[12:46:37] [Server thread/INFO]: Operación: TOMA
-[12:46:37] [Server thread/INFO]: Retiro: Almacen 1 HUEVO 5
-[12:46:37] [Server thread/INFO]:  - Deposito: 
-
-[12:46:37] [Server thread/INFO]: 
-Almacen 1
-Inv: 0 ( c: 15 h: 15 l: 15 t: 25 )
-
-[12:46:37] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PASTEL
-  - material: 5 - HUEVO
-  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-[12:46:38] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:43] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:43] [Server thread/INFO]: Estoy en la base!
-[12:46:43] [Server thread/INFO]: Operación: DEJA
-[12:46:43] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
-[12:46:43] [Server thread/INFO]:  - Deposito: 
-[12:46:43] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 10 l: 10 t: 0 )
-
-
-[12:46:43] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:46:43] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:46:43] [Server thread/INFO]: Estrategia :1
-
-[12:46:43] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:46] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:48] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:51] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:51] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:46:51] [Server thread/INFO]: Operación: TOMA
-[12:46:51] [Server thread/INFO]: Retiro: Almacen 2 HUEVO 5
-[12:46:51] [Server thread/INFO]:  - Deposito: 
-
-[12:46:51] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 15 h: 10 l: 20 t: 10 )
-
-[12:46:51] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PASTEL
-  - material: 5 - HUEVO
-  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-[12:46:53] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:46:59] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:46:59] [Server thread/INFO]: Estoy en la base!
-[12:46:59] [Server thread/INFO]: Operación: DEJA
-[12:46:59] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
-[12:46:59] [Server thread/INFO]:  - Deposito: 
-[12:46:59] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 15 l: 10 t: 0 )
-
-
-[12:46:59] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:46:59] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:46:59] [Server thread/INFO]: Estrategia :1
-
-[12:47:01] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:01] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:03] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:10] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:10] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:47:10] [Server thread/INFO]: Operación: TOMA
-[12:47:10] [Server thread/INFO]: Retiro: Almacen 2 LECHE 5
-[12:47:10] [Server thread/INFO]:  - Deposito: 
-
-[12:47:10] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 15 h: 10 l: 15 t: 10 )
-
-[12:47:10] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: GALLETA
-  - material: 5 - LECHE
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
-
-[12:47:11] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:17] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:17] [Server thread/INFO]: Estoy en la base!
-[12:47:17] [Server thread/INFO]: Operación: DEJA
-[12:47:17] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[12:47:17] [Server thread/INFO]:  - Deposito: 
-[12:47:17] [Server thread/INFO]: 
-Base   -- Objetivo: GALLETA-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 5 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 15 l: 10 t: 0 )
-
-
-[12:47:17] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
-
-[12:47:17] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
-
-[12:47:17] [Server thread/INFO]: Estrategia :1
-
-[12:47:19] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:19] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:21] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:27] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:27] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:47:27] [Server thread/INFO]: Operación: TOMA
-[12:47:27] [Server thread/INFO]: Retiro: Almacen 2 CACAO 5
-[12:47:27] [Server thread/INFO]:  - Deposito: 
-
-[12:47:27] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 10 h: 10 l: 15 t: 10 )
-
-[12:47:27] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PASTEL
-  - material: 5 - CACAO
-  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
-
-[12:47:29] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:35] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:35] [Server thread/INFO]: Estoy en la base!
-[12:47:35] [Server thread/INFO]: Operación: DEJA
-[12:47:35] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
-[12:47:35] [Server thread/INFO]:  - Deposito: 
-[12:47:35] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 5 )
-    Cofre Pastel: Inv: 1 ( c: 2 h: 13 l: 9 t: 0 )
-
-
-[12:47:35] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:47:35] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:47:35] [Server thread/INFO]: Estrategia :1
-
-[12:47:36] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:36] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:39] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:45] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:45] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:47:45] [Server thread/INFO]: Operación: TOMA
-[12:47:45] [Server thread/INFO]: Retiro: Almacen 2 HUEVO 5
-[12:47:45] [Server thread/INFO]:  - Deposito: 
-
-[12:47:45] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 10 h: 5 l: 15 t: 10 )
-
-[12:47:45] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PASTEL
-  - material: 5 - HUEVO
-  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-[12:47:47] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:53] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:53] [Server thread/INFO]: Estoy en la base!
-[12:47:53] [Server thread/INFO]: Operación: DEJA
-[12:47:53] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
-[12:47:53] [Server thread/INFO]:  - Deposito: 
-[12:47:53] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 5 )
-    Cofre Pastel: Inv: 1 ( c: 2 h: 18 l: 9 t: 0 )
-
-
-[12:47:53] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
-
-[12:47:53] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[12:47:53] [Server thread/INFO]: Estrategia :1
-
-[12:47:54] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:47:54] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:47:57] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:03] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:03] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:48:03] [Server thread/INFO]: Operación: TOMA
-[12:48:03] [Server thread/INFO]: Retiro: Almacen 2 TRIGO 5
-[12:48:03] [Server thread/INFO]:  - Deposito: 
-
-[12:48:03] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 10 h: 5 l: 15 t: 5 )
-
-[12:48:03] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PAN
-  - material: 5 - TRIGO
-  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
-
-[12:48:04] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:11] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:11] [Server thread/INFO]: Estoy en la base!
-[12:48:11] [Server thread/INFO]: Operación: DEJA
-[12:48:11] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
-[12:48:11] [Server thread/INFO]:  - Deposito: 
-[12:48:11] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 10 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 5 )
-    Cofre Pastel: Inv: 1 ( c: 2 h: 18 l: 9 t: 0 )
-
-
-[12:48:11] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
-
-[12:48:11] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[12:48:11] [Server thread/INFO]: Estrategia :1
-
-[12:48:12] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:12] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:15] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:21] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:21] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[12:48:21] [Server thread/INFO]: Operación: TOMA
-[12:48:21] [Server thread/INFO]: Retiro: Almacen 2 CACAO 5
-[12:48:21] [Server thread/INFO]:  - Deposito: 
-
-[12:48:21] [Server thread/INFO]: 
-Almacen 2
-Inv: 0 ( c: 5 h: 5 l: 15 t: 5 )
-
-[12:48:21] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PAN
-  - material: 5 - CACAO
-  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
-
-[12:48:22] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:29] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:29] [Server thread/INFO]: Estoy en la base!
-[12:48:29] [Server thread/INFO]: Operación: DEJA
-[12:48:29] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
-[12:48:29] [Server thread/INFO]:  - Deposito: 
-[12:48:29] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 15 h: 0 l: 10 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 5 )
-    Cofre Pastel: Inv: 1 ( c: 2 h: 18 l: 9 t: 0 )
-
-
-[12:48:29] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
-
-[12:48:29] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[12:48:29] [Server thread/INFO]: Estrategia :1
-
-[12:48:30] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:30] [Server thread/INFO]:   -- ]> Evento mov COMPLETE
-[12:48:32] [Server thread/INFO]:   -- <[ Evento mov BEGIN
-[12:48:36] [Server thread/INFO]: Stopping the server
-[12:48:36] [Server thread/INFO]: Stopping server
-[12:48:36] [Server thread/INFO]: [Citnpc] Disabling Citnpc v1.0-SNAPSHOT
-[12:48:36] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.29-SNAPSHOT (build 2491)
-[12:48:36] [Server thread/INFO]: Saving players
-[12:48:37] [Server thread/INFO]: vmejiaec lost connection: Server closed
-[12:48:37] [Server thread/INFO]: vmejiaec left the game
-[12:48:37] [Server thread/INFO]: Saving worlds
-[12:48:37] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
-[12:48:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[12:48:37] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
-[12:48:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12:48:37] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
-[12:48:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[12:48:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[12:48:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[12:48:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:34:57] [Server thread/INFO]:   -- <[ Evento mov BEGIN
+[23:35:01] [Server thread/INFO]: Stopping the server
+[23:35:01] [Server thread/INFO]: Stopping server
+[23:35:01] [Server thread/INFO]: [Citnpc] Disabling Citnpc v1.0-SNAPSHOT
+[23:35:01] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[23:35:01] [Server thread/INFO]: Saving players
+[23:35:01] [Server thread/INFO]: vmejiaec lost connection: Server closed
+[23:35:01] [Server thread/INFO]: vmejiaec left the game
+[23:35:01] [Server thread/INFO]: Saving worlds
+[23:35:01] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[23:35:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:35:01] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[23:35:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:35:02] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[23:35:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:35:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:35:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:35:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

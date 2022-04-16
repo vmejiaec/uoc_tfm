@@ -1,11 +1,13 @@
 package vmejiaec.com.citnpc;
 
+import com.sun.tools.jdi.Packet;
 import net.citizensnpcs.api.ai.event.*;
 import net.citizensnpcs.api.persistence.Persist;
 import net.citizensnpcs.api.trait.Trait;
 import net.citizensnpcs.api.util.DataKey;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
@@ -72,6 +74,17 @@ public class MyTrait extends Trait {
     public void click(net.citizensnpcs.api.event.NPCRightClickEvent event){
         System.out.println("click event ------------------------------- ");
         System.out.println( "  -- Nombre del Evento: "+ event.getEventName());
+        Block bloque = event.getClicker().getTargetBlockExact(1);
+        Location bloqueLocation = bloque.getLocation();
+        System.out.println(ToString(bloqueLocation));
+    }
+
+    public String ToString(Location loc){
+        String res="";
+        res += " x: " + loc.getX();
+        res += " y: " + loc.getY();
+        res += " z: " + loc.getZ();
+        return res;
     }
 
     @EventHandler
@@ -282,6 +295,8 @@ public class MyTrait extends Trait {
             inicializarCBR();
             // Iniciar los almacenes y los cofres de la base
             inicializarAlamcenesYCofres();
+            // Encuentra las posiciones de referencia
+
         }
 
         n_tick++; // El tick tack del reloj
