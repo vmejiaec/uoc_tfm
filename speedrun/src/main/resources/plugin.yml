@@ -1,0 +1,5 @@
+name: speedrun
+version: '${project.version}'
+main: uoc.tfm.vmejia.speedrun.SpeedRun
+api-version: 1.15
+depend: [CbrPlugin]

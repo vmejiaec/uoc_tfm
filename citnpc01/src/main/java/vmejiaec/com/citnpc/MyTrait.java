@@ -1,7 +1,8 @@
 package vmejiaec.com.citnpc;
 
-import com.sun.tools.jdi.Packet;
-import net.citizensnpcs.api.ai.event.*;
+import net.citizensnpcs.api.ai.event.NavigationBeginEvent;
+import net.citizensnpcs.api.ai.event.NavigationCancelEvent;
+import net.citizensnpcs.api.ai.event.NavigationCompleteEvent;
 import net.citizensnpcs.api.persistence.Persist;
 import net.citizensnpcs.api.trait.Trait;
 import net.citizensnpcs.api.util.DataKey;
@@ -19,8 +20,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-import static vmejiaec.com.citnpc.var.Agente.*;
-import static vmejiaec.com.citnpc.var.Material.*;
+import static vmejiaec.com.citnpc.var.Agente.destinotipo;
+import static vmejiaec.com.citnpc.var.Material.tipo;
 
 //This is your trait that will be applied to a npc using the /trait mytraitname command.
 // Each NPC gets its own instance of this class.
@@ -138,7 +139,30 @@ public class MyTrait extends Trait {
         caso.cofre_galleta = base1.cofregalleta;
         caso.cofre_pastel = base1.cofrepastel;
 
-        de.dfki.mycbr.util.Pair res = reco.solveOuery(caso, 1);
+        // --------------------------------------------------------------------------------------
+        String[] nombres = new String[]{
+                "alm1-inv-cacao","alm1-inv-huevo","alm1-inv-leche","alm1-inv-trigo",
+                "alm2-inv-cacao","alm2-inv-huevo","alm2-inv-leche","alm2-inv-trigo",
+                "cofre-galleta",
+                "cofre-galleta-ingr-cacao","cofre-galleta-ingr-huevo","cofre-galleta-ingr-leche","cofre-galleta-ingr-trigo",
+                "cofre-pan",
+                "cofre-pan-ingr-cacao","cofre-pan-ingr-huevo","cofre-pan-ingr-leche","cofre-pan-ingr-trigo",
+                "cofre-pastel",
+                "cofre-pastel-ingr-cacao","cofre-pastel-ingr-huevo","cofre-pastel-ingr-leche","cofre-pastel-ingr-trigo"
+        };
+        int[] valores = new int[]{
+                caso.alm1.cofre.inv_cacao, caso.alm1.cofre.inv_huevo, caso.alm1.cofre.inv_leche, caso.alm1.cofre.inv_trigo,
+                caso.alm2.cofre.inv_cacao, caso.alm2.cofre.inv_huevo, caso.alm2.cofre.inv_leche, caso.alm2.cofre.inv_trigo,
+                caso.cofre_galleta.inv,
+                caso.cofre_galleta.inv_cacao,caso.cofre_galleta.inv_huevo, caso.cofre_galleta.inv_leche, caso.cofre_galleta.inv_trigo,
+                caso.cofre_pan.inv,
+                caso.cofre_pan.inv_cacao, caso.cofre_pan.inv_huevo, caso.cofre_pan.inv_leche,caso.cofre_pan.inv_trigo,
+                caso.cofre_pastel.inv,
+                caso.cofre_pastel.inv_cacao, caso.cofre_pastel.inv_huevo,caso.cofre_pastel.inv_leche,caso.cofre_pastel.inv_trigo
+        };
+        // --------------------------------------------------------------------------------------
+
+        de.dfki.mycbr.util.Pair res = reco.solveOuery(caso.a_objetivo, nombres, valores, 1);
 
         System.out.println("Mejor caso: "+res.getFirst() + " " +res.getSecond());
 

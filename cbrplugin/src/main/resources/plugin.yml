@@ -1,0 +1,4 @@
+name: CbrPlugin
+version: '${project.version}'
+main: uoc.tfm.vmejia.cbrplugin.CBR
+api-version: 1.15

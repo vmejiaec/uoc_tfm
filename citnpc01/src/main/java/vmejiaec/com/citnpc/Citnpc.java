@@ -1,7 +1,6 @@
 package vmejiaec.com.citnpc;
 
 import net.citizensnpcs.api.CitizensAPI;
-import net.citizensnpcs.api.npc.NPC;
 import net.citizensnpcs.api.trait.TraitInfo;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -29,8 +28,6 @@ public final class Citnpc extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
-
-
 
         //Register your trait with Citizens.
         CitizensAPI.getTraitFactory()

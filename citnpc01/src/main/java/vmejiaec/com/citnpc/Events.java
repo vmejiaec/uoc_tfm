@@ -55,6 +55,8 @@ public class Events implements Listener {
             HashMap<Integer ,ItemStack> z =
                     chest.getInventory().removeItem(
                             new ItemStack(materialBuscado,cantRetiro));
+            System.out.println("Luego de ejecutar el retiro");
+            if (z == null) System.out.println("z es nulo!!");
             for(Integer i : z.keySet()){
                 System.out.println(z.get(i).getType().name() + ": " + z.get(i).getAmount());
             }
@@ -62,6 +64,7 @@ public class Events implements Listener {
             //ItemStack[] x = chest.getInventory().getStorageContents();
             //chest.getInventory().setStorageContents(x);
             //System.out.println(utilChest.ToString(chest));
+
         }
 
         // Cuando es un letrero
