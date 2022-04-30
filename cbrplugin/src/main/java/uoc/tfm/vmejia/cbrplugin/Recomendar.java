@@ -35,6 +35,7 @@ public class Recomendar {
         myConcept = rec.getConceptByID(CBREngine.getConceptName());
     }
 
+    // Retorna el caso más cercano a los valores entregados
     public Pair<String, Integer> solveOuery(String a_objetivo, String[] nombres, int[] valores, int numberofcases ) {
 
         Pair<String, Integer> resultado = null;
