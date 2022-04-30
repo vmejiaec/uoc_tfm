@@ -9,13 +9,11 @@ import org.bukkit.block.data.BlockData;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import vmejiaec.com.citnpc.util.utilChest;
-import vmejiaec.com.citnpc.util.utilLocation;
+import vmejiaec.com.citnpc.util.UtilChest;
+import vmejiaec.com.citnpc.util.UtilLocation;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Events implements Listener {
 
@@ -32,10 +30,10 @@ public class Events implements Listener {
             //BlockData bloquedata = bloque.getBlockData();
 
             Location bloqueLoc = bloque.getLocation();
-            System.out.print(utilLocation.ToString(bloqueLoc));
+            System.out.print(UtilLocation.ToString(bloqueLoc));
 
             Chest chest = (Chest) bloque.getState();
-            System.out.print(utilChest.ToString(chest));
+            System.out.print(UtilChest.ToString(chest));
 
             // Tomo un item
             System.out.println("- Quito un item");
@@ -72,7 +70,7 @@ public class Events implements Listener {
             System.out.println("Es un LETRERO!!");
             BlockData bloquedata = bloque.getBlockData();
             Location bloqueLoc = bloque.getLocation();
-            System.out.println(utilLocation.ToString(bloqueLoc));
+            System.out.println(UtilLocation.ToString(bloqueLoc));
             Sign letrero = (Sign) bloque.getState();
             letrero.setLine(1,"EXITO!!");
             letrero.update();

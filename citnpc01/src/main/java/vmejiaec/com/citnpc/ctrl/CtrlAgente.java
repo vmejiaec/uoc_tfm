@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.ctrl;
+
+import vmejiaec.com.citnpc.var.*;
 
 public class CtrlAgente {
     public static void Toma(Agente agente, Almacen almacen){

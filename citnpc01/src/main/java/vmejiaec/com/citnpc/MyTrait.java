@@ -14,9 +14,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 
-import uoc.tfm.vmejia.cbrplugin.CBR;
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
 
+import vmejiaec.com.citnpc.ctrl.CtrlAgente;
+import vmejiaec.com.citnpc.ctrl.CtrlBase;
+import vmejiaec.com.citnpc.util.UtilAgente;
+import vmejiaec.com.citnpc.util.UtilAlmacen;
+import vmejiaec.com.citnpc.util.UtilBase;
 import vmejiaec.com.citnpc.var.*;
 
 import java.util.ArrayList;

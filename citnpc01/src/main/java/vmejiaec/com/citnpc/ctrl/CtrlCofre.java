@@ -1,4 +1,7 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.ctrl;
+
+import vmejiaec.com.citnpc.var.Cofre;
+import vmejiaec.com.citnpc.var.Material;
 
 public class CtrlCofre {
     public static  boolean Retiro(Cofre cofre, Material.tipo material, int cantidad){

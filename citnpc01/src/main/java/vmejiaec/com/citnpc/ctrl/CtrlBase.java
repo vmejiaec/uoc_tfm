@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.ctrl;
+
+import vmejiaec.com.citnpc.var.Base;
 
 public class CtrlBase {
     // Procesa el inventario del cofre para obtener los productos

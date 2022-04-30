@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.util;
+
+import vmejiaec.com.citnpc.var.Base;
 
 public class UtilBase {
     public static String publicar(Base base){

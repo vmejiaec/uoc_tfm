@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.util;
+
+import vmejiaec.com.citnpc.var.Cofre;
 
 public class UtilCofre {
     public static String publicar(Cofre cofre){

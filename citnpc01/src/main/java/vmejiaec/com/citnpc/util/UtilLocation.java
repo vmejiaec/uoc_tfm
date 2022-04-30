@@ -2,7 +2,7 @@ package vmejiaec.com.citnpc.util;
 
 import org.bukkit.Location;
 
-public class utilLocation {
+public class UtilLocation {
     public static String ToString(Location loc)
     {
         String res="";

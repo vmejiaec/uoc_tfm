@@ -3,7 +3,7 @@ package vmejiaec.com.citnpc.util;
 import org.bukkit.block.Chest;
 import org.bukkit.inventory.ItemStack;
 
-public class utilChest {
+public class UtilChest {
     // Imprime el contenido del chest
     public static String ToString(Chest chest){
         String res= "";

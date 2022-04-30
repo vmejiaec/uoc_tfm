@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.util;
+
+import vmejiaec.com.citnpc.var.Agente;
 
 public class UtilAgente {
     public static String publicar(Agente agente){

@@ -1,4 +1,6 @@
-package vmejiaec.com.citnpc.var;
+package vmejiaec.com.citnpc.util;
+
+import vmejiaec.com.citnpc.var.Almacen;
 
 public class UtilAlmacen {
     public static String publica(Almacen almacen){
