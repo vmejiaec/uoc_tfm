@@ -1,5 +1,6 @@
 package vmejiaec.com.citnpc;
 
+import de.dfki.mycbr.util.Pair;
 import net.citizensnpcs.api.ai.event.NavigationBeginEvent;
 import net.citizensnpcs.api.ai.event.NavigationCancelEvent;
 import net.citizensnpcs.api.ai.event.NavigationCompleteEvent;
@@ -12,7 +13,10 @@ import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
-import vmejiaec.com.citnpc.cbr.Recomendar;
+
+import uoc.tfm.vmejia.cbrplugin.CBR;
+import uoc.tfm.vmejia.cbrplugin.Recomendar;
+
 import vmejiaec.com.citnpc.var.*;
 
 import java.util.ArrayList;
@@ -162,7 +166,7 @@ public class MyTrait extends Trait {
         };
         // --------------------------------------------------------------------------------------
 
-        de.dfki.mycbr.util.Pair res = reco.solveOuery(caso.a_objetivo, nombres, valores, 1);
+        Pair res = reco.solveOuery(caso.a_objetivo, nombres, valores, 1);
 
         System.out.println("Mejor caso: "+res.getFirst() + " " +res.getSecond());
 

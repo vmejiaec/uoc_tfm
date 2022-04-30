@@ -2,7 +2,7 @@ name: Citnpc
 version: '${project.version}'
 main: vmejiaec.com.citnpc.Citnpc
 api-version: 1.15
-depend: [Citizens]
+depend: [Citizens, CbrPlugin]
 commands:
   crearnpc:
     description: Comando para crear un npc de Citizen
