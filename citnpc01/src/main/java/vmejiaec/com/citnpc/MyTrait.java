@@ -18,9 +18,7 @@ import uoc.tfm.vmejia.cbrplugin.Recomendar;
 
 import vmejiaec.com.citnpc.ctrl.CtrlAgente;
 import vmejiaec.com.citnpc.ctrl.CtrlBase;
-import vmejiaec.com.citnpc.util.UtilAgente;
-import vmejiaec.com.citnpc.util.UtilAlmacen;
-import vmejiaec.com.citnpc.util.UtilBase;
+import vmejiaec.com.citnpc.util.*;
 import vmejiaec.com.citnpc.var.*;
 
 import java.util.ArrayList;
@@ -31,24 +29,15 @@ import java.util.Random;
 import static vmejiaec.com.citnpc.var.Agente.destinotipo;
 import static vmejiaec.com.citnpc.var.Material.tipo;
 
-//This is your trait that will be applied to a npc using the /trait mytraitname command.
-// Each NPC gets its own instance of this class.
-//the Trait class has a reference to the attached NPC class
-// through the protected field 'npc' or getNPC().
-//The Trait class also implements Listener so you can add EventHandlers directly to your trait.
 public class MyTrait extends Trait {
 
     // El mundo
     World world = null;
     // La position de las bases
-
     Vector vecbase1 = new Vector(152, 4, -105);
-
     // La posición de los almacenes
-
     Vector vecAlmacen1 = new Vector(172, 4, -103);
     Vector vecAlmacen2 = new Vector(172, 4, -90);
-
     // los caminos de la base a los almacenes
     List<Vector> caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
     List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
@@ -59,7 +48,7 @@ public class MyTrait extends Trait {
         plugin = JavaPlugin.getPlugin(Citnpc.class);
     }
 
-    Citnpc plugin = null;
+    Citnpc plugin;
 
     boolean SomeSetting = false;
 
@@ -67,7 +56,8 @@ public class MyTrait extends Trait {
     @Persist("mysettingname") boolean automaticallyPersistedSetting = false;
 
     // Here you should load up any values you have previously saved (optional).
-    // This does NOT get called when applying the trait for the first time, only loading onto an existing npc at server start.
+    // This does NOT get called when applying the trait for the first time,
+    // only loading onto an existing npc at server start.
     // This is called AFTER onAttach so you can load defaults in onAttach and they will be overridden here.
     // This is called BEFORE onSpawn, npc.getEntity() will return null.
     public void load(DataKey key) {
@@ -84,16 +74,9 @@ public class MyTrait extends Trait {
         System.out.println("click event ------------------------------- ");
         System.out.println( "  -- Nombre del Evento: "+ event.getEventName());
         Block bloque = event.getClicker().getTargetBlockExact(1);
+        if (bloque == null) throw new AssertionError();
         Location bloqueLocation = bloque.getLocation();
-        System.out.println(ToString(bloqueLocation));
-    }
-
-    public String ToString(Location loc){
-        String res="";
-        res += " x: " + loc.getX();
-        res += " y: " + loc.getY();
-        res += " z: " + loc.getZ();
-        return res;
+        System.out.println(UtilLocation.ToString(bloqueLocation));
     }
 
     @EventHandler
@@ -107,7 +90,8 @@ public class MyTrait extends Trait {
     Base base1 = null;
     Agente agente = null;
 
-    // Función para inicializar los cofres y los almacenes
+    // Función para inicializar los cofres, los almacenes y el agente
+    // TODO hacer una clase juego para configurar las condiciones iniciales de la partida
     public void inicializarAlamcenesYCofres(){
         base1 = new Base("pan");
         almacen1 = new Almacen("Almacen 1",25,25,35,30);
@@ -130,8 +114,8 @@ public class MyTrait extends Trait {
     }
 
     // Inicializa el cbr para realizar las consultas
+    // TODO poner en la clase de modelo para independizarlo de aquí
     Recomendar reco =null;
-
     public  void inicializarCBR(){
         System.out.println(" -- -- Inicializa el CBR con los casos");
         reco = new Recomendar();
@@ -139,6 +123,7 @@ public class MyTrait extends Trait {
     }
 
     // Consultar al cbr sobre el mejor caso
+    // TODO poner en una clase del modelo y poner los nombres de las variables en un archivo plano
     public String ConsultaCBR(){
         Caso caso = new Caso(base1.objetivo.toLowerCase(Locale.ROOT));
         caso.alm1 = almacen1;
@@ -158,16 +143,7 @@ public class MyTrait extends Trait {
                 "cofre-pastel",
                 "cofre-pastel-ingr-cacao","cofre-pastel-ingr-huevo","cofre-pastel-ingr-leche","cofre-pastel-ingr-trigo"
         };
-        int[] valores = new int[]{
-                caso.alm1.cofre.inv_cacao, caso.alm1.cofre.inv_huevo, caso.alm1.cofre.inv_leche, caso.alm1.cofre.inv_trigo,
-                caso.alm2.cofre.inv_cacao, caso.alm2.cofre.inv_huevo, caso.alm2.cofre.inv_leche, caso.alm2.cofre.inv_trigo,
-                caso.cofre_galleta.inv,
-                caso.cofre_galleta.inv_cacao,caso.cofre_galleta.inv_huevo, caso.cofre_galleta.inv_leche, caso.cofre_galleta.inv_trigo,
-                caso.cofre_pan.inv,
-                caso.cofre_pan.inv_cacao, caso.cofre_pan.inv_huevo, caso.cofre_pan.inv_leche,caso.cofre_pan.inv_trigo,
-                caso.cofre_pastel.inv,
-                caso.cofre_pastel.inv_cacao, caso.cofre_pastel.inv_huevo,caso.cofre_pastel.inv_leche,caso.cofre_pastel.inv_trigo
-        };
+        int[] valores = UtilCaso.getValores(caso);
         // --------------------------------------------------------------------------------------
 
         Pair res = reco.solveOuery(caso.a_objetivo, nombres, valores, 1);
@@ -178,9 +154,9 @@ public class MyTrait extends Trait {
     }
 
     // Elije cuál es la mejor estrategia
+    // TODO: Pasar a una clase del modelo para que pueda ser independiente
     public void estrategia(){
         Random r = new Random();
-
 
         // Consulta al CBR
         String resultado = ConsultaCBR();
