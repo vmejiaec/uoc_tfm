@@ -30,6 +30,7 @@ public class Countdown extends BukkitRunnable {
             arena.start();
             return;
         }
+
         if(countdownSeconds <=10 || countdownSeconds % 15 == 0){
             //El mensaje con la cuenta para el inicio del juego
             arena.sendMessage(
@@ -38,6 +39,13 @@ public class Countdown extends BukkitRunnable {
                     (countdownSeconds == 1 ? "" :"s") + "."  // para añadir la s del plural en segundos
             );
         }
+
+        arena.sendTitle(
+            ChatColor.GREEN + "" + countdownSeconds +
+                    "segundo" +
+                    (countdownSeconds == 1 ? "" :"s") + ".",
+            ChatColor.GRAY + "hasta que el juego empiece."
+        );
 
         --countdownSeconds;
     }

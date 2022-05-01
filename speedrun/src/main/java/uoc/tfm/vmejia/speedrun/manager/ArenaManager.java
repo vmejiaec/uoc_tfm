@@ -16,11 +16,13 @@ public class ArenaManager {
 
     public List<Arena> getArenas (){return arenas;}
 
-    public ArenaManager(SpeedRun mingame){
-        FileConfiguration config = mingame.getConfig();
+    public ArenaManager(SpeedRun minigame){
+        FileConfiguration config = minigame.getConfig();
+        System.out.println("ArenaManager busca las arenas en el archivo de configuración");
         for(String str: config.getConfigurationSection("arenas.").getKeys(false)){
+            System.out.println("Lee una arena "+ str);
             arenas.add(new Arena(
-                    mingame,
+                    minigame,
                     Integer.parseInt(str),
                     new Location(
                             Bukkit.getWorld(config.getString("arenas."+str+".world")),

@@ -1,6 +1,7 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -72,6 +73,7 @@ public class Arena {
             players.clear();
         }
 
+        sendTitle("","");
         // Primero volvemos a la espera de los jugadores
         state = GameState.RECRUITING;
         countdown.cancel();
@@ -95,6 +97,20 @@ public class Arena {
     public void removePlayer(Player player){
         players.remove(player.getUniqueId());
         player.teleport(ConfigManager.getLobbySpawn());
+        player.sendTitle("","");
+
+        // Si estamos en espera de más jugadores, no se hecha fuera a los que ya están conectados esperando
+        if(state.equals(GameState.COUNTDOWN) && players.size() < ConfigManager.getRequiredPlayers()){
+            sendMessage(ChatColor.RED + "No hay suficientes jugadores. El conteo se ha detenido.");
+            reset(false);
+            return;
+        }
+
+        // Si el juego está en ejecución, no se hecha fuera a los que ya están jugando
+        if(state.equals(GameState.LIVE) && players.size() < ConfigManager.getRequiredPlayers()){
+            sendMessage(ChatColor.RED + "No hay suficientes jugadores para continuar la partida.");
+            reset(false);
+        }
     }
 
     /* TOOLS */
@@ -105,7 +121,7 @@ public class Arena {
         }
     }
 
-    public void sendMessage(String title, String subtitle){
+    public void sendTitle(String title, String subtitle){
         for(UUID uuid:players){
             Bukkit.getPlayer(uuid).sendTitle(title, subtitle);
         }
