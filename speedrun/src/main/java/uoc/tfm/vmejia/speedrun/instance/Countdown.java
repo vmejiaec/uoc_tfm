@@ -1,6 +1,8 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
+import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
+import uoc.tfm.vmejia.speedrun.GameState;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 
@@ -17,12 +19,27 @@ public class Countdown extends BukkitRunnable {
     }
 
     public void start(){
-        
+        arena.setState(GameState.COUNTDOWN);
+        runTaskTimer(minigame,0,20);
     }
 
     @Override
     public void run() {
+        if(countdownSeconds == 0){
+            cancel();
+            arena.start();
+            return;
+        }
+        if(countdownSeconds <=10 || countdownSeconds % 15 == 0){
+            //El mensaje con la cuenta para el inicio del juego
+            arena.sendMessage(
+                    ChatColor.GREEN + "El juego empezará en " + countdownSeconds +
+                    "segundo" +
+                    (countdownSeconds == 1 ? "" :"s") + "."  // para añadir la s del plural en segundos
+            );
+        }
 
+        --countdownSeconds;
     }
 
 }
