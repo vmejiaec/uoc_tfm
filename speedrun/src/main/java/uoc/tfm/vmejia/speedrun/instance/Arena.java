@@ -54,6 +54,10 @@ public class Arena {
 
     }
 
+    public void reset(){
+
+    }
+
     /* PLAYERS */
 
     public void addPlayer(Player player){
