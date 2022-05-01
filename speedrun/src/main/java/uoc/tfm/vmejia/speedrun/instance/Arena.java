@@ -18,6 +18,8 @@ public class Arena {
     private List<UUID> players;
     private GameState state;
     private Countdown countdown;
+    private Game game;
+    private SpeedRun minigame;
 
     public Arena(SpeedRun minigame, int id, Location spawn){
         this.id = id;
@@ -26,6 +28,9 @@ public class Arena {
         this.players = new ArrayList<>();
         // El conteo atrás para iniciar el juego
         this.countdown = new Countdown(minigame, this);
+        // El juego
+        this.game = new Game(this);
+        this.minigame = minigame;
     }
 
     public int getId() {
@@ -44,6 +49,8 @@ public class Arena {
         return state;
     }
 
+    public Game getGame(){ return game;}
+
     public void setState(GameState state) {
         this.state = state;
     }
@@ -51,10 +58,26 @@ public class Arena {
     /* GAME */
 
     public void start(){
-
+        game.start();
     }
 
-    public void reset(){
+    public void reset(boolean kickPlayers){
+        // Cuando se debe terminar el juego y quitar a todos los jugadores
+        if (kickPlayers){
+            Location location = ConfigManager.getLobbySpawn();
+            // Se transporta a todos los jugadores de la arena al punto de partida
+            for(UUID uuid: players){
+                Bukkit.getPlayer(uuid).teleport(location);
+            }
+            players.clear();
+        }
+
+        // Primero volvemos a la espera de los jugadores
+        state = GameState.RECRUITING;
+        countdown.cancel();
+        // Segundo arrancamos el contador y el juego
+        countdown = new Countdown(minigame, this);
+        game = new Game(this);
 
     }
 
