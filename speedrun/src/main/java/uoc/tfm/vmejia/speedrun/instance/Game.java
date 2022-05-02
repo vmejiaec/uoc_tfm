@@ -31,11 +31,10 @@ public class Game {
         int playerPoints = points.get(player.getUniqueId())+1;
 
         // Verifica que el puntaje sea el ganador
-        if(playerPoints == 20){
-            // Envía el mensaje a todos los jugadores que hay un ganador
+        if(playerPoints == 3){
             arena.sendMessage(ChatColor.GOLD + player.getName()+" HA GANADO LA PARTIDA!!");
             // Se resetea la arena para volver a empezar el juego
-            arena.reset(true);
+            arena.reset();
             return;
         }
 

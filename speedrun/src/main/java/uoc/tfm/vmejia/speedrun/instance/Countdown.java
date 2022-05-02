@@ -26,6 +26,7 @@ public class Countdown extends BukkitRunnable {
     @Override
     public void run() {
         if(countdownSeconds == 0){
+            arena.sendTitle(ChatColor.RED+"INICIO", ChatColor.GRAY+"Que gane el mejor");
             cancel();
             arena.start();
             return;
@@ -35,14 +36,14 @@ public class Countdown extends BukkitRunnable {
             //El mensaje con la cuenta para el inicio del juego
             arena.sendMessage(
                     ChatColor.GREEN + "El juego empezará en " + countdownSeconds +
-                    "segundo" +
+                    " segundo" +
                     (countdownSeconds == 1 ? "" :"s") + "."  // para añadir la s del plural en segundos
             );
         }
 
         arena.sendTitle(
             ChatColor.GREEN + "" + countdownSeconds +
-                    "segundo" +
+                    " segundo" +
                     (countdownSeconds == 1 ? "" :"s") + ".",
             ChatColor.GRAY + "hasta que el juego empiece."
         );

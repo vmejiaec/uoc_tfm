@@ -1,8 +1,6 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerJoinEvent;
 import uoc.tfm.vmejia.speedrun.GameState;
@@ -62,22 +60,24 @@ public class Arena {
         game.start();
     }
 
-    public void reset(boolean kickPlayers){
-        // Cuando se debe terminar el juego y quitar a todos los jugadores
-        if (kickPlayers){
+    public void reset(){
+
+        if (state == GameState.LIVE){
             Location location = ConfigManager.getLobbySpawn();
-            // Se transporta a todos los jugadores de la arena al punto de partida
             for(UUID uuid: players){
                 Bukkit.getPlayer(uuid).teleport(location);
             }
             players.clear();
+
+            String worldName = spawn.getWorld().getName();
+            //Bukkit.unloadWorld(spawn.getWorld(),false);
+            World world = Bukkit.createWorld(new WorldCreator(worldName) );
+            world.setAutoSave(false);
         }
 
         sendTitle("","");
-        // Primero volvemos a la espera de los jugadores
         state = GameState.RECRUITING;
         countdown.cancel();
-        // Segundo arrancamos el contador y el juego
         countdown = new Countdown(minigame, this);
         game = new Game(this);
 
@@ -102,14 +102,14 @@ public class Arena {
         // Si estamos en espera de más jugadores, no se hecha fuera a los que ya están conectados esperando
         if(state.equals(GameState.COUNTDOWN) && players.size() < ConfigManager.getRequiredPlayers()){
             sendMessage(ChatColor.RED + "No hay suficientes jugadores. El conteo se ha detenido.");
-            reset(false);
+            reset();
             return;
         }
 
         // Si el juego está en ejecución, no se hecha fuera a los que ya están jugando
         if(state.equals(GameState.LIVE) && players.size() < ConfigManager.getRequiredPlayers()){
             sendMessage(ChatColor.RED + "No hay suficientes jugadores para continuar la partida.");
-            reset(false);
+            reset();
         }
     }
 

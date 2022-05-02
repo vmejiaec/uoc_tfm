@@ -31,7 +31,7 @@ npc:
         mysettingname: false
       sneak:
         sneaking: false
-    traitnames: skintrait,inventory,mounttrait,scoreboardtrait,location,equipment,spawned,type,sneak
+    traitnames: spawned,mounttrait,scoreboardtrait,skintrait,inventory,equipment,location,sneak,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

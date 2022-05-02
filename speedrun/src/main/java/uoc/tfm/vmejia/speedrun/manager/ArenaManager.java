@@ -2,6 +2,8 @@ package uoc.tfm.vmejia.speedrun.manager;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.World;
+import org.bukkit.WorldCreator;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
@@ -18,9 +20,10 @@ public class ArenaManager {
 
     public ArenaManager(SpeedRun minigame){
         FileConfiguration config = minigame.getConfig();
-        System.out.println("ArenaManager busca las arenas en el archivo de configuración");
         for(String str: config.getConfigurationSection("arenas.").getKeys(false)){
-            System.out.println("Lee una arena "+ str);
+            World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".world")));
+            world.setAutoSave(false);
+
             arenas.add(new Arena(
                     minigame,
                     Integer.parseInt(str),
