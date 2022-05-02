@@ -19,40 +19,29 @@ public class Arena {
     private Countdown countdown;
     private Game game;
     private SpeedRun minigame;
+    private boolean canJoin;
 
     public Arena(SpeedRun minigame, int id, Location spawn){
         this.id = id;
         this.spawn = spawn;
         this.state = GameState.RECRUITING;
         this.players = new ArrayList<>();
-        // El conteo atrás para iniciar el juego
         this.countdown = new Countdown(minigame, this);
-        // El juego
         this.game = new Game(this);
         this.minigame = minigame;
+        this.canJoin = true;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public List<UUID> getPlayers() {
-        return players;
-    }
-
-    public Location getSpawn() {
-        return spawn;
-    }
-
-    public GameState getState(){
-        return state;
-    }
-
+    /* INFO */
+    public int getId() {return id;}
+    public List<UUID> getPlayers() {return players;}
+    public Location getSpawn() {return spawn;}
+    public GameState getState(){return state;}
     public Game getGame(){ return game;}
-
-    public void setState(GameState state) {
-        this.state = state;
-    }
+    public void setState(GameState state) {this.state = state;}
+    public World getWorld(){return spawn.getWorld();}
+    public void toggleCanJoin(){this.canJoin = !this.canJoin;}
+    public boolean canJoin(){return this.canJoin;}
 
     /* GAME */
 
@@ -61,8 +50,9 @@ public class Arena {
     }
 
     public void reset(){
-
         if (state == GameState.LIVE){
+            this.canJoin = false;
+
             Location location = ConfigManager.getLobbySpawn();
             for(UUID uuid: players){
                 Bukkit.getPlayer(uuid).teleport(location);
@@ -80,7 +70,6 @@ public class Arena {
         countdown.cancel();
         countdown = new Countdown(minigame, this);
         game = new Game(this);
-
     }
 
     /* PLAYERS */
@@ -127,5 +116,5 @@ public class Arena {
         }
     }
 
-    /* INFO */
+
 }

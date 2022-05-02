@@ -57,4 +57,12 @@ public class ArenaManager {
         return  null;
     }
 
+    public Arena getArena(World world){
+        for(Arena arena : arenas){
+            if(arena.getWorld().getName().equals(world.getName())){
+                return arena;
+            }
+        }
+        return null;
+    }
 }
