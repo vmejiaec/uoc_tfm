@@ -1,5 +1,6 @@
 required-players: 2
-countdown-seconds: 30
+countdown-seconds: 6
+cuenta-aviso: 3
 lobby-spawn:
   world: 'world'
   x: 176
@@ -9,21 +10,21 @@ lobby-spawn:
   pitch: 0
 arenas:
   0:
-    world: 'world'
+    world: 'world_0'
     x: 167
     y: 4
     z: -53
     yaw: -180
     pitch: 0
   1:
-    world: 'world'
+    world: 'world_1'
     x: 167
     y: 4
     z: -61
     yaw: -180
     pitch: 0
   2:
-    world: 'world'
+    world: 'world_2'
     x: 167
     y: 4
     z: -69

@@ -35,7 +35,7 @@ public class Game {
             // Envía el mensaje a todos los jugadores que hay un ganador
             arena.sendMessage(ChatColor.GOLD + player.getName()+" HA GANADO LA PARTIDA!!");
             // Se resetea la arena para volver a empezar el juego
-            arena.reset(true);
+            arena.reset();
             return;
         }
 

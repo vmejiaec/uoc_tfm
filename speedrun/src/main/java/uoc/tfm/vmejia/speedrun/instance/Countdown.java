@@ -31,18 +31,21 @@ public class Countdown extends BukkitRunnable {
             return;
         }
 
-        if(countdownSeconds <=10 || countdownSeconds % 15 == 0){
+        int cuentaAviso;
+        cuentaAviso = ConfigManager.getCuentaAviso();
+
+        if(countdownSeconds <= 5 || countdownSeconds % cuentaAviso == 0){
             //El mensaje con la cuenta para el inicio del juego
             arena.sendMessage(
                     ChatColor.GREEN + "El juego empezará en " + countdownSeconds +
-                    "segundo" +
+                    " segundo" +
                     (countdownSeconds == 1 ? "" :"s") + "."  // para añadir la s del plural en segundos
             );
         }
 
         arena.sendTitle(
             ChatColor.GREEN + "" + countdownSeconds +
-                    "segundo" +
+                    " segundo" +
                     (countdownSeconds == 1 ? "" :"s") + ".",
             ChatColor.GRAY + "hasta que el juego empiece."
         );

@@ -1,8 +1,6 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerJoinEvent;
 import uoc.tfm.vmejia.speedrun.GameState;
@@ -21,6 +19,7 @@ public class Arena {
     private Countdown countdown;
     private Game game;
     private SpeedRun minigame;
+    private boolean canJoin;
 
     public Arena(SpeedRun minigame, int id, Location spawn){
         this.id = id;
@@ -32,6 +31,8 @@ public class Arena {
         // El juego
         this.game = new Game(this);
         this.minigame = minigame;
+
+        this.canJoin = true;
     }
 
     public int getId() {
@@ -56,21 +57,32 @@ public class Arena {
         this.state = state;
     }
 
+    public void toggleCanJoin(){this.canJoin = !this.canJoin;}
+
+    public boolean canJoin(){return canJoin;}
+
     /* GAME */
 
     public void start(){
         game.start();
     }
 
-    public void reset(boolean kickPlayers){
-        // Cuando se debe terminar el juego y quitar a todos los jugadores
-        if (kickPlayers){
+    public void reset(){
+
+        if (state == GameState.LIVE){
+            this.canJoin = false;
+
             Location location = ConfigManager.getLobbySpawn();
             // Se transporta a todos los jugadores de la arena al punto de partida
             for(UUID uuid: players){
                 Bukkit.getPlayer(uuid).teleport(location);
             }
             players.clear();
+
+            String worldName = spawn.getWorld().getName();
+            Bukkit.unloadWorld(spawn.getWorld(), false);
+            World world = Bukkit.createWorld(new WorldCreator(worldName));
+            world.setAutoSave(false);
         }
 
         sendTitle("","");
@@ -86,7 +98,11 @@ public class Arena {
     /* PLAYERS */
 
     public void addPlayer(Player player){
+
+        System.out.println("Añadimos al jugador: "+player.getName());
         players.add(player.getUniqueId());
+        System.out.println("Le teleporta al spawn");
+        System.out.println("spawn" + spawn.getWorld().getName());
         player.teleport(spawn);
 
         if (state.equals(GameState.RECRUITING) && players.size() >= ConfigManager.getRequiredPlayers()){
@@ -102,14 +118,14 @@ public class Arena {
         // Si estamos en espera de más jugadores, no se hecha fuera a los que ya están conectados esperando
         if(state.equals(GameState.COUNTDOWN) && players.size() < ConfigManager.getRequiredPlayers()){
             sendMessage(ChatColor.RED + "No hay suficientes jugadores. El conteo se ha detenido.");
-            reset(false);
+            reset();
             return;
         }
 
         // Si el juego está en ejecución, no se hecha fuera a los que ya están jugando
         if(state.equals(GameState.LIVE) && players.size() < ConfigManager.getRequiredPlayers()){
             sendMessage(ChatColor.RED + "No hay suficientes jugadores para continuar la partida.");
-            reset(false);
+            reset();
         }
     }
 
@@ -128,4 +144,8 @@ public class Arena {
     }
 
     /* INFO */
+
+    public World getWorld(){
+        return spawn.getWorld();
+    }
 }
