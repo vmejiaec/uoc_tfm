@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.GameState;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 
 public class ArenaCommand implements CommandExecutor {
 
@@ -57,8 +58,13 @@ public class ArenaCommand implements CommandExecutor {
                 if(id >= 0 && id < minigame.getArenaManager().getArenas().size()){
                     Arena arena = minigame.getArenaManager().getArena(id);
                     if(arena.getState().equals(GameState.RECRUITING) || arena.getState().equals(GameState.COUNTDOWN)){
-                        arena.addPlayer(player);
-                        player.sendMessage(ChatColor.GREEN+"Ahora está en la arena "+arena.getId());
+
+                        if(arena.canJoin()){
+                            arena.addPlayer(player);
+                            player.sendMessage(ChatColor.GREEN+"Ahora está en la arena "+arena.getId());
+                        } else {
+                            player.sendMessage(ChatColor.RED+"No puedes conectarte a esta arena ahora. El mapa se está cargando");
+                        }
                     } else {
                         player.sendMessage(ChatColor.RED+"No puedes conectarte a esta arena ahora");
                     }

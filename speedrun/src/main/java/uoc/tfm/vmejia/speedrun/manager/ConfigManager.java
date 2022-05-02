@@ -21,6 +21,8 @@ public class ConfigManager {
         return config.getInt("countdown-seconds");
     }
 
+    public static int getCuentaAviso(){return config.getInt("cuenta-aviso");}
+
     public static Location getLobbySpawn(){
         return  new Location(
             Bukkit.getWorld(config.getString("lobby-spawn.world")),

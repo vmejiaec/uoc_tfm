@@ -32,7 +32,10 @@ public class Countdown extends BukkitRunnable {
             return;
         }
 
-        if(countdownSeconds <=10 || countdownSeconds % 15 == 0){
+        int cuentaAviso;
+        cuentaAviso = ConfigManager.getCuentaAviso();
+
+        if(countdownSeconds <= 5 || countdownSeconds % cuentaAviso == 0){
             //El mensaje con la cuenta para el inicio del juego
             arena.sendMessage(
                     ChatColor.GREEN + "El juego empezará en " + countdownSeconds +
