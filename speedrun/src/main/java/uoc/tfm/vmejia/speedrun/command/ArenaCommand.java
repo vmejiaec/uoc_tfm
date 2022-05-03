@@ -59,7 +59,8 @@ public class ArenaCommand implements CommandExecutor {
                     Arena arena = minigame.getArenaManager().getArena(id);
                     if(arena.getState().equals(GameState.RECRUITING) || arena.getState().equals(GameState.COUNTDOWN)){
 
-                        if(arena.canJoin()){
+                        //if(arena.canJoin()){
+                        if(true){
                             arena.addPlayer(player);
                             player.sendMessage(ChatColor.GREEN+"Ahora está en la arena "+arena.getId());
                         } else {

@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 
+import java.awt.geom.Area;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,21 +22,35 @@ public class ArenaManager {
     public ArenaManager(SpeedRun minigame){
         FileConfiguration config = minigame.getConfig();
         for(String str: config.getConfigurationSection("arenas.").getKeys(false)){
-            World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".world")));
+            System.out.println( " - World: "+ str + " - " + config.getString("arenas."+str+".player-spawn.world"));
+            World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".player-spawn.world")));
             world.setAutoSave(false);
+
+            System.out.println( "Datos de la arena "+ str + " " +
+                    config.getString("arenas."+str+".sign.world")+ " " +
+                    config.getDouble("arenas."+str+".sign.x")+ " " +
+                    config.getDouble("arenas."+str+".sign.y")+ " " +
+                    config.getDouble("arenas."+str+".sign.z"));
 
             arenas.add(new Arena(
                     minigame,
                     Integer.parseInt(str),
                     new Location(
-                            Bukkit.getWorld(config.getString("arenas."+str+".world")),
-                            config.getDouble("arenas."+str+".x"),
-                            config.getDouble("arenas."+str+".y"),
-                            config.getDouble("arenas."+str+".z"),
-                            (float) config.getDouble("arenas."+str+".yaw"),
-                            (float) config.getDouble("arenas."+str+".pitch")
+                            Bukkit.getWorld(config.getString("arenas."+str+".player-spawn.world")),
+                            config.getDouble("arenas."+str+".player-spawn.x"),
+                            config.getDouble("arenas."+str+".player-spawn.y"),
+                            config.getDouble("arenas."+str+".player-spawn.z"),
+                            (float) config.getDouble("arenas."+str+".player-spawn.yaw"),
+                            (float) config.getDouble("arenas."+str+".player-spawn.pitch")
+                    ),
+                    new Location(
+                            Bukkit.getWorld(config.getString("arenas."+str+".sign.world")),
+                            config.getDouble("arenas."+str+".sign.x"),
+                            config.getDouble("arenas."+str+".sign.y"),
+                            config.getDouble("arenas."+str+".sign.z")
                     )
             ));
+
         }
     }
 
@@ -60,6 +75,15 @@ public class ArenaManager {
     public Arena getArena(World world){
         for(Arena arena : arenas){
             if(arena.getWorld().getName().equals(world.getName())){
+                return arena;
+            }
+        }
+        return null;
+    }
+
+    public Arena getArena(Location sign){
+        for(Arena arena : arenas){
+            if(arena.getSignLocation().equals(sign)){
                 return arena;
             }
         }
