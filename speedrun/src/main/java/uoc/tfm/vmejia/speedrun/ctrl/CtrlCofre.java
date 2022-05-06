@@ -1,7 +1,7 @@
-package vmejiaec.com.citnpc.ctrl;
+package uoc.tfm.vmejia.speedrun.ctrl;
 
-import vmejiaec.com.citnpc.var.Cofre;
-import vmejiaec.com.citnpc.var.Material;
+import uoc.tfm.vmejia.speedrun.var.Cofre;
+import uoc.tfm.vmejia.speedrun.var.Material;
 
 public class CtrlCofre {
     public static  boolean Retiro(Cofre cofre, Material.tipo material, int cantidad){

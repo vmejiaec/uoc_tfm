@@ -1,6 +1,6 @@
-package vmejiaec.com.citnpc.ctrl;
+package uoc.tfm.vmejia.speedrun.ctrl;
 
-import vmejiaec.com.citnpc.var.*;
+import uoc.tfm.vmejia.speedrun.var.*;
 
 public class CtrlAgente {
     public static void Toma(Agente agente, Almacen almacen){

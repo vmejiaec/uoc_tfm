@@ -1,6 +1,6 @@
 package uoc.tfm.vmejia.speedrun.util;
 
-import vmejiaec.com.citnpc.var.Base;
+import uoc.tfm.vmejia.speedrun.var.Base;
 
 public class UtilBase {
     public static String publicar(Base base){

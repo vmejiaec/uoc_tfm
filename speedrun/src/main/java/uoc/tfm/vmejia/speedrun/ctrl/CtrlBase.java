@@ -1,6 +1,6 @@
-package vmejiaec.com.citnpc.ctrl;
+package uoc.tfm.vmejia.speedrun.ctrl;
 
-import vmejiaec.com.citnpc.var.Base;
+import uoc.tfm.vmejia.speedrun.var.Base;
 
 public class CtrlBase {
     // Procesa el inventario del cofre para obtener los productos

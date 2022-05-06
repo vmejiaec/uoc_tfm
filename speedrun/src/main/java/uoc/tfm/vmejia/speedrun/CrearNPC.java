@@ -14,9 +14,9 @@ import org.bukkit.entity.Player;
 
 public class CrearNPC implements CommandExecutor {
 
-    private Citnpc citnpc;
+    private SpeedRun citnpc;
 
-    public CrearNPC(Citnpc citnpc){this.citnpc = citnpc;}
+    public CrearNPC(SpeedRun citnpc){this.citnpc = citnpc;}
 
     @Override
     public boolean onCommand(CommandSender sender, Command command,  String label,  String[] args) {

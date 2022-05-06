@@ -1,6 +1,6 @@
 package uoc.tfm.vmejia.speedrun.util;
 
-import vmejiaec.com.citnpc.var.Cofre;
+import uoc.tfm.vmejia.speedrun.var.Cofre;
 
 public class UtilCofre {
     public static String publicar(Cofre cofre){

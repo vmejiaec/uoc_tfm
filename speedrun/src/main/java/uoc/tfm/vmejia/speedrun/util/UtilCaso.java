@@ -1,6 +1,6 @@
 package uoc.tfm.vmejia.speedrun.util;
 
-import vmejiaec.com.citnpc.var.Caso;
+import uoc.tfm.vmejia.speedrun.var.Caso;
 
 public class UtilCaso {
     public static int[] getValores(Caso caso){

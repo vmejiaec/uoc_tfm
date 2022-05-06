@@ -1,6 +1,6 @@
 package uoc.tfm.vmejia.speedrun.util;
 
-import vmejiaec.com.citnpc.var.Agente;
+import uoc.tfm.vmejia.speedrun.var.Agente;
 
 public class UtilAgente {
     public static String publicar(Agente agente){

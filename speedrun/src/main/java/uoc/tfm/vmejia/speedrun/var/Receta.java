@@ -1,4 +1,4 @@
-package vmejiaec.com.citnpc.var;
+package uoc.tfm.vmejia.speedrun.var;
 
 public class Receta {
     public String nombre;

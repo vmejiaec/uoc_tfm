@@ -16,18 +16,18 @@ import org.bukkit.util.Vector;
 
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
 
-import vmejiaec.com.citnpc.ctrl.CtrlAgente;
-import vmejiaec.com.citnpc.ctrl.CtrlBase;
-import vmejiaec.com.citnpc.util.*;
-import vmejiaec.com.citnpc.var.*;
+import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
+import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
+import uoc.tfm.vmejia.speedrun.util.*;
+import uoc.tfm.vmejia.speedrun.var.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-import static vmejiaec.com.citnpc.var.Agente.destinotipo;
-import static vmejiaec.com.citnpc.var.Material.tipo;
+import static uoc.tfm.vmejia.speedrun.var.Agente.destinotipo;
+import static uoc.tfm.vmejia.speedrun.var.Material.tipo;
 
 public class MyTrait extends Trait {
 

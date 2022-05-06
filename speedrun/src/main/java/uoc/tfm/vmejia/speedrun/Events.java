@@ -10,8 +10,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
-import vmejiaec.com.citnpc.util.UtilChest;
-import vmejiaec.com.citnpc.util.UtilLocation;
+import uoc.tfm.vmejia.speedrun.util.UtilChest;
+import uoc.tfm.vmejia.speedrun.util.UtilLocation;
 
 import java.util.HashMap;
 

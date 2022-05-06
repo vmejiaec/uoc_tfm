@@ -1,6 +1,6 @@
 package uoc.tfm.vmejia.speedrun.util;
 
-import vmejiaec.com.citnpc.var.Almacen;
+import uoc.tfm.vmejia.speedrun.var.Almacen;
 
 public class UtilAlmacen {
     public static String publica(Almacen almacen){
