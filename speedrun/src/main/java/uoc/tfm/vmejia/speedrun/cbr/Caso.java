@@ -1,4 +1,7 @@
-package uoc.tfm.vmejia.speedrun.var;
+package uoc.tfm.vmejia.speedrun.cbr;
+
+import uoc.tfm.vmejia.speedrun.var.Almacen;
+import uoc.tfm.vmejia.speedrun.var.Cofre;
 
 public class Caso {
     public String a_objetivo;
