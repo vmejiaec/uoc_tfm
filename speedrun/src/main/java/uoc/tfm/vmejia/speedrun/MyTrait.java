@@ -45,10 +45,10 @@ public class MyTrait extends Trait {
 
     public MyTrait() {
         super("mytraitname");
-        plugin = JavaPlugin.getPlugin(Citnpc.class);
+        plugin = JavaPlugin.getPlugin(SpeedRun.class);
     }
 
-    Citnpc plugin;
+    SpeedRun plugin;
 
     boolean SomeSetting = false;
 

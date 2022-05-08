@@ -9,9 +9,9 @@ import org.bukkit.entity.Player;
 
 
 public class MoverNPC implements CommandExecutor {
-    private Citnpc citnpc;
+    private SpeedRun speed;
 
-    public MoverNPC(Citnpc citnpc){this.citnpc = citnpc;}
+    public MoverNPC(SpeedRun speed){this.speed = speed;}
 
     @Override
     public boolean onCommand( CommandSender sender, Command command,String label,String[] args) {
