@@ -11,53 +11,28 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.util.Vector;
-
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
-
 import uoc.tfm.vmejia.speedrun.cbr.Modelo;
 import uoc.tfm.vmejia.speedrun.cbr.UtilCaso;
+import uoc.tfm.vmejia.speedrun.cbr.UtilModelo;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
-import uoc.tfm.vmejia.speedrun.util.*;
-import uoc.tfm.vmejia.speedrun.var.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
-import static uoc.tfm.vmejia.speedrun.var.Agente.destinotipo;
-import static uoc.tfm.vmejia.speedrun.var.Material.tipo;
+import uoc.tfm.vmejia.speedrun.util.UtilAgente;
+import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
+import uoc.tfm.vmejia.speedrun.util.UtilBase;
+import uoc.tfm.vmejia.speedrun.util.UtilLocation;
+import uoc.tfm.vmejia.speedrun.var.Escena;
 
 public class MyTrait extends Trait {
 
-    // El mundo
+    SpeedRun plugin;
     World world = null;
+    Recomendar reco =null;
+    Escena escena = new Escena();
 
     public MyTrait() {
         super("mytraitname");
         plugin = JavaPlugin.getPlugin(SpeedRun.class);
-    }
-
-    SpeedRun plugin;
-
-    boolean SomeSetting = false;
-
-    // see the 'Persistence API' section
-    @Persist("mysettingname") boolean automaticallyPersistedSetting = false;
-
-    // Here you should load up any values you have previously saved (optional).
-    // This does NOT get called when applying the trait for the first time,
-    // only loading onto an existing npc at server start.
-    // This is called AFTER onAttach so you can load defaults in onAttach and they will be overridden here.
-    // This is called BEFORE onSpawn, npc.getEntity() will return null.
-    public void load(DataKey key) {
-        SomeSetting = key.getBoolean("SomeSetting", false);
-    }
-
-    // Save settings for this NPC (optional). These values will be persisted to the Citizens saves file
-    public void save(DataKey key) {
-        key.setBoolean("SomeSetting",SomeSetting);
     }
 
     @EventHandler
@@ -75,21 +50,9 @@ public class MyTrait extends Trait {
         System.out.print("  -- <[ Evento mov BEGIN");
     }
 
-    // Almacenes y cofres
-    Escena escena = new Escena();
-
     // Función para inicializar los cofres, los almacenes y el agente
     public void inicializarAlamcenesYCofres(){
         escena.inicializarAlamcenesYCofres();
-    }
-
-    // Inicializa el cbr para realizar las consultas
-    // TODO poner en la clase de modelo para independizarlo de aquí
-    Recomendar reco =null;
-    public  void inicializarCBR(){
-        System.out.println(" -- -- Inicializa el CBR con los casos");
-        reco = new Recomendar();
-        reco.loadengine();
     }
 
     // Consultar al cbr sobre el mejor caso
@@ -99,7 +62,7 @@ public class MyTrait extends Trait {
 
     // Elije cuál es la mejor estrategia
     public void estrategia(Escena escena){
-        Modelo.estrategia(reco, escena);
+        UtilModelo.estrategia(reco, escena);
     }
 
     // Coloca el destino al NPC que le corresponde
@@ -196,11 +159,8 @@ public class MyTrait extends Trait {
             // Inicializa el camino por defecto al almacen 1
             escena.camino = escena.caminoAlm2;
             // Iniciar el motor del cbr
-            inicializarCBR();
-            // Iniciar los almacenes y los cofres de la base
+            UtilModelo.inicializarCBR(reco);
             inicializarAlamcenesYCofres();
-            // Encuentra las posiciones de referencia
-
         }
 
         n_tick++; // El tick tack del reloj

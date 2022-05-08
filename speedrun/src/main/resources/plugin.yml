@@ -6,7 +6,3 @@ depend: [CbrPlugin]
 commands:
   arena:
     description: La arena del juego
-  crearnpc:
-    description: Comando para crear un npc de Citizen
-  movernpc:
-    description: Comando para mover un npc de Citizen
