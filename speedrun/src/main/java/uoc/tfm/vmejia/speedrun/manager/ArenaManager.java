@@ -6,10 +6,9 @@ import org.bukkit.World;
 import org.bukkit.WorldCreator;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
-import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
+import uoc.tfm.vmejia.speedrun.instance.Arena;
 
-import java.awt.geom.Area;
 import java.util.ArrayList;
 import java.util.List;
 

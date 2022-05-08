@@ -45,6 +45,7 @@ public class Arena {
     public void toggleCanJoin(){this.canJoin = !this.canJoin;}
     public boolean canJoin(){return this.canJoin;}
     public Location getSignLocation(){return sign;}
+    public SpeedRun getMinigame(){return minigame;}
     public void setState(GameState state) {
         this.state = state;
         updateSign("Arena "+id,state.name(), "",state == GameState.LIVE ? "Players: "+players.size():"");

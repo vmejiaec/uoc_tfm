@@ -15,8 +15,15 @@ import java.util.logging.Level;
 public final class SpeedRun extends JavaPlugin {
 
     private ArenaManager arenaManager;
+    private boolean JuegoEnMarcha;
+    private boolean JuegoReinicio;
 
     public ArenaManager getArenaManager(){return arenaManager;}
+
+    public boolean IsJuegoEnMarcha(){return JuegoEnMarcha;}
+    public void setJuegoEnMarcha(boolean estado){this.JuegoEnMarcha = estado;}
+    public Boolean getJuegoReinicio(){return JuegoReinicio;}
+    public void setJuegoReinicio(boolean estado){this.JuegoReinicio = estado;}
 
     @Override
     public void onEnable() {
@@ -49,6 +56,9 @@ public final class SpeedRun extends JavaPlugin {
         // Registra los comandos
         getCommand("arena").setExecutor(new ArenaCommand(this));
 
+        // Control de inicio del juego en la arena para el Agente NPC
+        JuegoEnMarcha = false;
+        JuegoReinicio = true;
     }
 
 }

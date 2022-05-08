@@ -115,8 +115,12 @@ public class MyTrait extends Trait {
     @Override
     public void run() {
         // Una sola vez al empezar
-        if (start){
+        if (plugin.getJuegoReinicio()){
             start = false;
+            plugin.setJuegoReinicio(false);
+            //
+            n_tick = 0;
+            trigerbeginmove = true;
             escena.camino = escena.caminoAlm2;
             // Iniciar el motor del cbr
             System.out.println(" -- -- Inicializa el CBR con los casos");
@@ -124,17 +128,33 @@ public class MyTrait extends Trait {
             reco.loadengine();
             //
             escena.inicializarAlamcenesYCofres();
+            // Colocar al agente en el inicio
+            world = npc.getStoredLocation().getWorld();
+            System.out.println(" -- -- Coloca al agente en la base inicial");
+            System.out.println(" -- -- World: "+world);
+            System.out.println(" -- -- Escena: "+escena);
+            Location locBaseAgente =
+                    new Location(world,escena.vecbase1.getX(), escena.vecbase1.getY(),escena.vecbase1.getZ());
+            System.out.println(" -- -- NPC: "+npc);
+            System.out.println(" -- -- Location: "+locBaseAgente);
+            System.out.println(" -- -- NPC Entity: "+npc.getEntity());
+            if(npc.getEntity() != null) {
+                npc.getEntity().teleport(locBaseAgente);
+            }
         }
 
-        n_tick++; // El tick tack del reloj
-        if (n_tick > n_tick_max){
-            //System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
-            n_tick = 0; // Reinicio del reloj
+        // Si la arena ya empezó el juego
+        if(plugin.IsJuegoEnMarcha()) {
+            n_tick++; // El tick tack del reloj
+            if (n_tick > n_tick_max) {
+                //System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );
+                n_tick = 0; // Reinicio del reloj
 
-            // Si no ha empezado el viaje, lo inicia
-            if(trigerbeginmove) {
-                trigerbeginmove = false;
-                movetonextpos();
+                // Si no ha empezado el viaje, lo inicia
+                if (trigerbeginmove) {
+                    trigerbeginmove = false;
+                    movetonextpos();
+                }
             }
         }
     }

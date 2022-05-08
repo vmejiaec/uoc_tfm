@@ -14,6 +14,13 @@ public class Game {
     public  Game(Arena arena){
         this.arena = arena;
         this.points = new HashMap<>();
+        // Baja la bandera en el minijuego SpeedRun
+        System.out.println(" -- -- arena: "+arena);
+        System.out.println(" -- -- arena.minigame: "+arena.getMinigame());
+        if(arena.getMinigame() != null){
+            arena.getMinigame().setJuegoEnMarcha(false);
+            arena.getMinigame().setJuegoReinicio(true);
+        }
     }
 
     public void start(){
@@ -24,6 +31,9 @@ public class Game {
         for(UUID uuid: arena.getPlayers()){
             points.put(uuid,0);
         }
+
+        // Levanta la bandera en el minijuego SpeedRun
+        arena.getMinigame().setJuegoEnMarcha(true);
     }
 
     // Aumenta el marcador de un jugador
