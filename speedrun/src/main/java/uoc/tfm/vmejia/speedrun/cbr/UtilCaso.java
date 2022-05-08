@@ -7,6 +7,7 @@ import uoc.tfm.vmejia.speedrun.var.Escena;
 import java.util.Locale;
 
 public class UtilCaso {
+
     public static int[] getValores(Caso caso){
         int[] valores = new int[]{
             caso.alm1.cofre.inv_cacao, caso.alm1.cofre.inv_huevo, caso.alm1.cofre.inv_leche, caso.alm1.cofre.inv_trigo,

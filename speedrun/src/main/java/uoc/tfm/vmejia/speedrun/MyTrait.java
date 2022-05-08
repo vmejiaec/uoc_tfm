@@ -5,7 +5,6 @@ import net.citizensnpcs.api.ai.event.NavigationCompleteEvent;
 import net.citizensnpcs.api.trait.Trait;
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
@@ -15,35 +14,26 @@ import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
-import uoc.tfm.vmejia.speedrun.util.UtilLocation;
 import uoc.tfm.vmejia.speedrun.var.Escena;
 
 public class MyTrait extends Trait {
 
     SpeedRun plugin;
-    World world = null;
-    Recomendar reco =null;
-    Escena escena = new Escena();
+    World world ;
+    Recomendar reco;
+    Escena escena;
 
     public MyTrait() {
         super("mytraitname");
         plugin = JavaPlugin.getPlugin(SpeedRun.class);
-    }
-
-    // Función para inicializar los cofres, los almacenes y el agente
-    public void inicializarAlamcenesYCofres(){
-        escena.inicializarAlamcenesYCofres();
-    }
-
-    // Inicializa el cbr para realizar las consultas
-    public  void inicializarCBR(){
-        System.out.println(" -- -- Inicializa el CBR con los casos");
+        escena = new Escena();
         reco = new Recomendar();
-        reco.loadengine();
     }
 
     // Coloca el destino al NPC que le corresponde
     int posactual = 0;
+    // El estado significa si se encuentra en la base
+    boolean estaenbase = true;
 
     public void movetonextpos(){
         if (posactual == 0 ) posactual = 1 ; else posactual = 0;
@@ -55,13 +45,9 @@ public class MyTrait extends Trait {
         ));
     }
 
-    // El estado significa si se encuentra en la base
-    boolean estaenbase = true;
-
     @EventHandler
     public void navigationcomplete( NavigationCompleteEvent event){
         // Confirma que ha llegado al destino
-        Location locnpc = npc.getStoredLocation();
         double distancia =  escena.camino.get(posactual).distance(npc.getStoredLocation().toVector())  ;
         //System.out.println(" -- Distancia del Npc al destino: "+distancia);
         if (distancia <= 3 ){ // llegó al destino
@@ -125,21 +111,19 @@ public class MyTrait extends Trait {
     boolean trigerbeginmove = true;
     // Bandera para la iniciar el relog
     boolean start = true;
-    // Called every tick
+
     @Override
     public void run() {
-
         // Una sola vez al empezar
         if (start){
             start = false;
-            // Inicializa el camino por defecto al almacen 1
             escena.camino = escena.caminoAlm2;
             // Iniciar el motor del cbr
-            inicializarCBR();
-            // Iniciar los almacenes y los cofres de la base
-            inicializarAlamcenesYCofres();
-            // Encuentra las posiciones de referencia
-
+            System.out.println(" -- -- Inicializa el CBR con los casos");
+            reco = new Recomendar();
+            reco.loadengine();
+            //
+            escena.inicializarAlamcenesYCofres();
         }
 
         n_tick++; // El tick tack del reloj
@@ -155,31 +139,23 @@ public class MyTrait extends Trait {
         }
     }
 
-    //Run code when your trait is attached to a NPC.
-    //This is called BEFORE onSpawn, so npc.getEntity() will return null
-    //This would be a good place to load configurable defaults for new NPCs.
     @Override
     public void onAttach() {
-        plugin.getServer().getLogger().info(npc.getName() + "has been assigned MyTrait!");
+        plugin.getServer().getLogger().info(npc.getName() + " ha sido asignado a MyTrait!");
     }
 
-    // Run code when the NPC is despawned. This is called before the entity actually despawns so npc.getEntity() is still valid.
     @Override
     public void onDespawn() {
     }
 
-    //Run code when the NPC is spawned. Note that npc.getEntity() will be null until this method is called.
-    //This is called AFTER onAttach and AFTER Load when the server is started.
     @Override
     public void onSpawn() {
-        System.out.println("Evento OnSpawn llamado --------(*)");
+        System.out.print(" El agente NPC es colocado en escena --------(*)");
         String npcname = npc.getName();
-        System.out.println();
         world = npc.getStoredLocation().getWorld();
-        System.out.println("   --- El npc se llama: " + npcname);
+        System.out.print("   --- El npc se llama: " + npcname);
     }
 
-    //run code when the NPC is removed. Use this to tear down any repeating tasks.
     @Override
     public void onRemove() {
     }

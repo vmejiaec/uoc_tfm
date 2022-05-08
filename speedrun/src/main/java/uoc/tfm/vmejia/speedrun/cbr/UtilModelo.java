@@ -10,12 +10,6 @@ import java.util.Random;
 
 public class UtilModelo {
 
-    // Inicializa el cbr para realizar las consultas
-    public static void inicializarCBR(Recomendar reco){
-        System.out.println(" -- -- Inicializa el CBR con los casos");
-        reco = new Recomendar();
-        reco.loadengine();
-    }
 
     public static void estrategia(Recomendar reco, Escena escena){
         Random r = new Random();
