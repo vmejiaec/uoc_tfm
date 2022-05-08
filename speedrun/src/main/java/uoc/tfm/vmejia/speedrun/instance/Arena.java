@@ -131,7 +131,7 @@ public class Arena {
     }
 
     public void updateSign(String line1,String line2,String line3,String line4){
-        System.out.println(" - sign: " + sign);
+        // System.out.println(" - sign: " + sign);
         Sign signBlock = (Sign) sign.getBlock().getState();
         signBlock.setLine(0,line1);
         signBlock.setLine(1,line2);

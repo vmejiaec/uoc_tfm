@@ -1,19 +1,14 @@
 package uoc.tfm.vmejia.speedrun;
 
-import net.citizensnpcs.api.ai.event.NavigationBeginEvent;
 import net.citizensnpcs.api.ai.event.NavigationCancelEvent;
 import net.citizensnpcs.api.ai.event.NavigationCompleteEvent;
-import net.citizensnpcs.api.persistence.Persist;
 import net.citizensnpcs.api.trait.Trait;
-import net.citizensnpcs.api.util.DataKey;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
-import uoc.tfm.vmejia.speedrun.cbr.Modelo;
-import uoc.tfm.vmejia.speedrun.cbr.UtilCaso;
 import uoc.tfm.vmejia.speedrun.cbr.UtilModelo;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
@@ -35,23 +30,6 @@ public class MyTrait extends Trait {
         plugin = JavaPlugin.getPlugin(SpeedRun.class);
     }
 
-    @EventHandler
-    public void click(net.citizensnpcs.api.event.NPCRightClickEvent event){
-        System.out.println("click event ------------------------------- ");
-        System.out.println( "  -- Nombre del Evento: "+ event.getEventName());
-        Block bloque = event.getClicker().getTargetBlockExact(1);
-        if (bloque == null) throw new AssertionError();
-        Location bloqueLocation = bloque.getLocation();
-        System.out.println(UtilLocation.ToString(bloqueLocation));
-    }
-
-    @EventHandler
-    public void navigationbegin( NavigationBeginEvent event){
-        System.out.print("  -- <[ Evento mov BEGIN");
-    }
-
-
-
     // Función para inicializar los cofres, los almacenes y el agente
     public void inicializarAlamcenesYCofres(){
         escena.inicializarAlamcenesYCofres();
@@ -62,16 +40,6 @@ public class MyTrait extends Trait {
         System.out.println(" -- -- Inicializa el CBR con los casos");
         reco = new Recomendar();
         reco.loadengine();
-    }
-
-    // Consultar al cbr sobre el mejor caso
-    public String ConsultaCBR(){
-        return  UtilCaso.ConsultaCBR(reco, escena);
-    }
-
-    // Elije cuál es la mejor estrategia
-    public void estrategia(Escena escena){
-        UtilModelo.estrategia(reco, escena);
     }
 
     // Coloca el destino al NPC que le corresponde
@@ -92,7 +60,6 @@ public class MyTrait extends Trait {
 
     @EventHandler
     public void navigationcomplete( NavigationCompleteEvent event){
-        System.out.print("  -- ]> Evento mov COMPLETE");
         // Confirma que ha llegado al destino
         Location locnpc = npc.getStoredLocation();
         double distancia =  escena.camino.get(posactual).distance(npc.getStoredLocation().toVector())  ;
@@ -120,7 +87,7 @@ public class MyTrait extends Trait {
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(escena.baseAgente));
                 // Elije la estrategia
-                estrategia(escena);
+                UtilModelo.estrategia(reco, escena);
             } else {  // está en el almacen
                 System.out.print("Estoy en el almacén!"+escena.agente.destino);
                 // Toma el material

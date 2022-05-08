@@ -22,15 +22,17 @@ public class ArenaManager {
     public ArenaManager(SpeedRun minigame){
         FileConfiguration config = minigame.getConfig();
         for(String str: config.getConfigurationSection("arenas.").getKeys(false)){
-            System.out.println( " - World: "+ str + " - " + config.getString("arenas."+str+".player-spawn.world"));
+            //System.out.println( " - World: "+ str + " - " + config.getString("arenas."+str+".player-spawn.world"));
             World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".player-spawn.world")));
             world.setAutoSave(false);
 
+            /*
             System.out.println( "Datos de la arena "+ str + " " +
                     config.getString("arenas."+str+".sign.world")+ " " +
                     config.getDouble("arenas."+str+".sign.x")+ " " +
                     config.getDouble("arenas."+str+".sign.y")+ " " +
                     config.getDouble("arenas."+str+".sign.z"));
+             */
 
             arenas.add(new Arena(
                     minigame,
