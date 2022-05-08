@@ -13,12 +13,12 @@ npc:
     traits:
       type: PLAYER
       location:
-        bodyYaw: 314.94614
+        bodyYaw: 90.04443
         world: world
-        x: '170.5936'
+        x: '165.6833'
         y: '4.0'
-        z: '-103.4047'
-        yaw: '-45.0539'
+        z: '-105.4991'
+        yaw: '90.0444'
         pitch: '0.0'
       skintrait:
         fetchDefaultSkin: true
@@ -31,7 +31,7 @@ npc:
         mysettingname: false
       sneak:
         sneaking: false
-    traitnames: equipment,mytraitname,inventory,scoreboardtrait,spawned,skintrait,mounttrait,location,type,sneak
+    traitnames: equipment,mounttrait,skintrait,spawned,type,scoreboardtrait,mytraitname,location,sneak,inventory
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

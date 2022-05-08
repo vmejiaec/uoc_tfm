@@ -35,6 +35,25 @@ public class MyTrait extends Trait {
         plugin = JavaPlugin.getPlugin(SpeedRun.class);
     }
 
+    boolean SomeSetting = false;
+
+    // see the 'Persistence API' section
+    @Persist("mysettingname") boolean automaticallyPersistedSetting = false;
+
+    // Here you should load up any values you have previously saved (optional).
+    // This does NOT get called when applying the trait for the first time,
+    // only loading onto an existing npc at server start.
+    // This is called AFTER onAttach so you can load defaults in onAttach and they will be overridden here.
+    // This is called BEFORE onSpawn, npc.getEntity() will return null.
+    public void load(DataKey key) {
+        SomeSetting = key.getBoolean("SomeSetting", false);
+    }
+
+    // Save settings for this NPC (optional). These values will be persisted to the Citizens saves file
+    public void save(DataKey key) {
+        key.setBoolean("SomeSetting",SomeSetting);
+    }
+
     @EventHandler
     public void click(net.citizensnpcs.api.event.NPCRightClickEvent event){
         System.out.println("click event ------------------------------- ");
@@ -50,9 +69,18 @@ public class MyTrait extends Trait {
         System.out.print("  -- <[ Evento mov BEGIN");
     }
 
+
+
     // Función para inicializar los cofres, los almacenes y el agente
     public void inicializarAlamcenesYCofres(){
         escena.inicializarAlamcenesYCofres();
+    }
+
+    // Inicializa el cbr para realizar las consultas
+    public  void inicializarCBR(){
+        System.out.println(" -- -- Inicializa el CBR con los casos");
+        reco = new Recomendar();
+        reco.loadengine();
     }
 
     // Consultar al cbr sobre el mejor caso
@@ -159,8 +187,11 @@ public class MyTrait extends Trait {
             // Inicializa el camino por defecto al almacen 1
             escena.camino = escena.caminoAlm2;
             // Iniciar el motor del cbr
-            UtilModelo.inicializarCBR(reco);
+            inicializarCBR();
+            // Iniciar los almacenes y los cofres de la base
             inicializarAlamcenesYCofres();
+            // Encuentra las posiciones de referencia
+
         }
 
         n_tick++; // El tick tack del reloj
