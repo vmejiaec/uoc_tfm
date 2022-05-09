@@ -17,7 +17,7 @@ arenas:
       z: -123
     sign-exit:
       world: 'world'
-      x: 147
+      x: 149
       y: 5
       z: -86
     player-spawn:

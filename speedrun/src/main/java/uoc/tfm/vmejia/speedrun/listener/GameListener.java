@@ -46,7 +46,16 @@ public class GameListener implements Listener {
             Arena arena = minigame.getArenaManager().getArena(e.getClickedBlock().getLocation());
             if (arena != null){
                 Bukkit.dispatchCommand(e.getPlayer(),"arena join "+arena.getId());
+            } else {
+                arena = minigame.getArenaManager().getArenaByLocSignExit(e.getClickedBlock().getLocation());
+                if (arena != null){
+                    System.out.print("Sales de la arena por el cartel");
+                    Bukkit.dispatchCommand(e.getPlayer(),"arena leave");
+                }
             }
+
         }
     }
+
+
 }

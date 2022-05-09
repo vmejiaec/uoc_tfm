@@ -49,6 +49,12 @@ public class ArenaManager {
                             config.getDouble("arenas."+str+".sign.x"),
                             config.getDouble("arenas."+str+".sign.y"),
                             config.getDouble("arenas."+str+".sign.z")
+                    ),
+                    new Location(
+                            Bukkit.getWorld(config.getString("arenas."+str+".sign-exit.world")),
+                            config.getDouble("arenas."+str+".sign-exit.x"),
+                            config.getDouble("arenas."+str+".sign-exit.y"),
+                            config.getDouble("arenas."+str+".sign-exit.z")
                     )
             ));
 
@@ -85,6 +91,15 @@ public class ArenaManager {
     public Arena getArena(Location sign){
         for(Arena arena : arenas){
             if(arena.getSignLocation().equals(sign)){
+                return arena;
+            }
+        }
+        return null;
+    }
+
+    public Arena getArenaByLocSignExit(Location signExit){
+        for(Arena arena : arenas){
+            if(arena.getSignExitLocation().equals(signExit)){
                 return arena;
             }
         }

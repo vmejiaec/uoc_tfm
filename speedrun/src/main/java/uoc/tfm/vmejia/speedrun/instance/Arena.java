@@ -20,8 +20,9 @@ public class Arena {
     private SpeedRun minigame;
     private boolean canJoin;
     private Location sign;
+    private Location signExit;
 
-    public Arena(SpeedRun minigame, int id, Location playerSpawn, Location sign){
+    public Arena(SpeedRun minigame, int id, Location playerSpawn, Location sign, Location signExit){
         this.id = id;
         this.playerSpawn = playerSpawn;
         this.players = new ArrayList<>();
@@ -30,6 +31,7 @@ public class Arena {
         this.minigame = minigame;
         this.canJoin = true;
         this.sign = sign;
+        this.signExit = signExit;
 
         setState(GameState.RECRUITING);
     }
@@ -44,6 +46,7 @@ public class Arena {
     public void toggleCanJoin(){this.canJoin = !this.canJoin;}
     public boolean canJoin(){return this.canJoin;}
     public Location getSignLocation(){return sign;}
+    public Location getSignExitLocation(){return signExit;}
     public SpeedRun getMinigame(){return minigame;}
     public void setState(GameState state) {
         this.state = state;
@@ -139,5 +142,7 @@ public class Arena {
         signBlock.setLine(3,line4);
         signBlock.update();
     }
+
+
 
 }
