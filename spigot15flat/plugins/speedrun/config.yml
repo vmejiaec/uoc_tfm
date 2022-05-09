@@ -25,7 +25,7 @@ arenas:
       x: 153
       y: 4
       z: -89
-      yaw: -90
+      yaw: 0
       pitch: 0
   1:
     sign:   
@@ -35,14 +35,14 @@ arenas:
       z: -123
     sign-exit:
       world: 'world'
-      x: 147
+      x: 140
       y: 5
       z: -86
     player-spawn:
       world: 'world'
-      x: 167
+      x: 136
       y: 4
-      z: -61
+      z: -89
       yaw: -180
       pitch: 0
   2:
