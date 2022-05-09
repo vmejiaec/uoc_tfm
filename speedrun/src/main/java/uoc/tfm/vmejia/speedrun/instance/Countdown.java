@@ -2,7 +2,6 @@ package uoc.tfm.vmejia.speedrun.instance;
 
 import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
-import uoc.tfm.vmejia.speedrun.GameState;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 

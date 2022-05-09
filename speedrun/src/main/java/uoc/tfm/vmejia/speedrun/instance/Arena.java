@@ -3,7 +3,6 @@ package uoc.tfm.vmejia.speedrun.instance;
 import org.bukkit.*;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
-import uoc.tfm.vmejia.speedrun.GameState;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 

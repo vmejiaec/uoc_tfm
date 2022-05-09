@@ -2,7 +2,6 @@ package uoc.tfm.vmejia.speedrun.instance;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import uoc.tfm.vmejia.speedrun.GameState;
 
 import java.util.HashMap;
 import java.util.UUID;

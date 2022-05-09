@@ -1,33 +1,43 @@
-required-players: 2
+required-players: 1
 countdown-seconds: 6
 cuenta-aviso: 3
 lobby-spawn:
   world: 'world'
-  x: 176
-  y: 4
-  z: -61
-  yaw: -180
+  x: 163
+  y: 9
+  z: -125
+  yaw: 90
   pitch: 0
 arenas:
   0:
     sign:
       world: 'world'
-      x: 174
+      x: 165
+      y: 9
+      z: -123
+    sign-exit:
+      world: 'world'
+      x: 147
       y: 5
-      z: -60
+      z: -86
     player-spawn:
       world: 'world'
-      x: 167
+      x: 153
       y: 4
-      z: -53
-      yaw: -180
+      z: -89
+      yaw: -90
       pitch: 0
   1:
     sign:
       world: 'world'
-      x: 174
+      x: 163
+      y: 9
+      z: -123
+    sign-exit:
+      world: 'world'
+      x: 147
       y: 5
-      z: -61
+      z: -86
     player-spawn:
       world: 'world'
       x: 167
@@ -38,9 +48,14 @@ arenas:
   2:
     sign:
       world: 'world'
-      x: 174
+      x: 161
+      y: 9
+      z: -123
+    sign-exit:
+      world: 'world'
+      x: 147
       y: 5
-      z: -62
+      z: -86
     player-spawn:
       world: 'world'
       x: 167
