@@ -1,5 +1,5 @@
 required-players: 1
-countdown-seconds: 6
+countdown-seconds: 3
 cuenta-aviso: 3
 lobby-spawn:
   world: 'world'
@@ -58,13 +58,13 @@ arenas:
       y: 4
       z: -105
     almacen1:
-      x: 116
-      y: 3
+      x: 117
+      y: 4
       z: -90
     almacen2:
-      x: 116
-      y: 3
-      z: -90
+      x: 117
+      y: 4
+      z: -103
   2:
     world: 'world'
     sign:
@@ -86,10 +86,10 @@ arenas:
       y: 4
       z: -105
     almacen1:
-      x: 188
-      y: 3
+      x: 189
+      y: 4
       z: -91
     almacen2:
-      x: 188
-      y: 3
+      x: 189
+      y: 4
       z: -103

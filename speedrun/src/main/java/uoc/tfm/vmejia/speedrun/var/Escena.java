@@ -1,6 +1,7 @@
 package uoc.tfm.vmejia.speedrun.var;
 
 import org.bukkit.util.Vector;
+import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 
 import java.util.ArrayList;
@@ -25,6 +26,15 @@ public class Escena {
     public List<Vector> caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
     public List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
     public List<Vector> camino = new ArrayList<>();
+
+    public void iniciaLocaciones(Arena arena){
+        vecbase1 = arena.getNPCSpawn().toVector();
+        vecAlmacen1 = arena.getAlmacen1().toVector();
+        vecAlmacen2 = arena.getAlmacen2().toVector();
+
+        caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
+        caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
+    }
 
     public void inicializarAlamcenesYCofres(){
         // Inicializa los almacenes

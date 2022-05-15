@@ -111,11 +111,14 @@ public class MyTrait extends Trait {
     boolean trigerbeginmove = true;
     // Bandera para la iniciar el relog
     boolean start = true;
+    // Bandera para inicializar los contenidos de los cofres
+    boolean configCofresIni = true;
 
     @Override
     public void run() {
         // Una sola vez al empezar
         if (plugin.getJuegoReinicio()){
+
             start = false;
             plugin.setJuegoReinicio(false);
             //
@@ -127,6 +130,7 @@ public class MyTrait extends Trait {
             reco = new Recomendar();
             reco.loadengine();
             //
+            configCofresIni = true;
             escena.inicializarAlamcenesYCofres();
             // Colocar al agente en el inicio
             world = npc.getStoredLocation().getWorld();
@@ -142,6 +146,14 @@ public class MyTrait extends Trait {
 
         // Si la arena ya empezó el juego
         if(plugin.IsJuegoEnMarcha()) {
+            if(configCofresIni){
+                // configura la escena con la arena del player
+                System.out.println("************* Configuración de la Escena con la arena elejida");
+                //
+                configCofresIni = false;
+                // Coloca los datos de la arena en la escena
+                escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
+            }
             n_tick++; // El tick tack del reloj
             if (n_tick > n_tick_max) {
                 //System.out.println(" -- Está navegando?: "+npc.getNavigator().isNavigating() );

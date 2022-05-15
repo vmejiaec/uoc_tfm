@@ -58,6 +58,10 @@ public class Arena {
     public Location getSignLocation(){return sign;}
     public Location getSignExitLocation(){return signExit;}
     public SpeedRun getMinigame(){return minigame;}
+    public Location getNPCSpawn(){return this.npcSpawn;}
+    public Location getAlmacen1(){return this.almacen1;}
+    public Location getAlmacen2(){return this.almacen2;}
+
     public void setState(GameState state) {
         this.state = state;
         updateSign("Arena "+id,state.name(), "",state == GameState.LIVE ? "Players: "+players.size():"");
@@ -67,11 +71,12 @@ public class Arena {
     /* GAME */
 
     public void start(){
+        System.out.println("---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------");
         game.start();
     }
 
     public void reset(){
-
+        System.out.println("---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------");
         if (state == GameState.LIVE){
             this.canJoin = false;
 
@@ -96,26 +101,31 @@ public class Arena {
     /* PLAYERS */
 
     public void addPlayer(Player player){
+        // Se coloca al player en la arena
         players.add(player.getUniqueId());
         player.teleport(playerSpawn);
 
+        // Luego de añadir al jugador, se añade al NPC
         NPC npc = minigame.getNPC();
         System.out.println("NPC desde la arena "+npc.getName());
+        players.add(npc.getUniqueId());
+        npc.teleport(npcSpawn, PlayerTeleportEvent.TeleportCause.PLUGIN);
 
+        // Da inicio al conteo para iniciar el juego
         if (state.equals(GameState.RECRUITING) && players.size() >= ConfigManager.getRequiredPlayers()){
             countdown.start();
         }
-    }
-
-    public void addNPC(NPC npc){
-        players.add(npc.getUniqueId());
-        npc.teleport(npcSpawn, PlayerTeleportEvent.TeleportCause.PLUGIN);
     }
 
     public void removePlayer(Player player){
         players.remove(player.getUniqueId());
         player.teleport(ConfigManager.getLobbySpawn());
         player.sendTitle("","");
+
+        // Se remueve al NPC
+        NPC npc = minigame.getNPC();
+        System.out.println("NPC desde la arena "+npc.getName());
+        players.remove(npc.getUniqueId());
 
         // Si estamos en espera de más jugadores, no se hecha fuera a los que ya están conectados esperando
         if(state.equals(GameState.COUNTDOWN) && players.size() < ConfigManager.getRequiredPlayers()){
@@ -140,13 +150,17 @@ public class Arena {
     /* TOOLS */
     public void sendMessage(String message){
         for(UUID uuid:players){
-            Bukkit.getPlayer(uuid).sendMessage(message);
+            if( Bukkit.getPlayer(uuid) != null) {
+                Bukkit.getPlayer(uuid).sendMessage(message);
+            }
         }
     }
 
     public void sendTitle(String title, String subtitle){
         for(UUID uuid:players){
-            Bukkit.getPlayer(uuid).sendTitle(title, subtitle);
+            if( Bukkit.getPlayer(uuid) != null) {
+                Bukkit.getPlayer(uuid).sendTitle(title, subtitle);
+            }
         }
     }
 

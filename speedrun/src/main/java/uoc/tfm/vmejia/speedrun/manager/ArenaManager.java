@@ -11,6 +11,7 @@ import uoc.tfm.vmejia.speedrun.instance.Arena;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class ArenaManager {
 
@@ -82,6 +83,15 @@ public class ArenaManager {
     public Arena getArena(Player player){
         for(Arena arena: arenas){
             if(arena.getPlayers().contains(player.getUniqueId())){
+                return arena;
+            }
+        }
+        return null;
+    }
+
+    public Arena getArena(UUID uuid){
+        for(Arena arena: arenas){
+            if(arena.getPlayers().contains(uuid)){
                 return arena;
             }
         }
