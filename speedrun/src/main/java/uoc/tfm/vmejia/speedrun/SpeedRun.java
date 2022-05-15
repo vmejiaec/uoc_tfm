@@ -11,17 +11,21 @@ import uoc.tfm.vmejia.speedrun.listener.ConnectListener;
 import uoc.tfm.vmejia.speedrun.listener.GameListener;
 import uoc.tfm.vmejia.speedrun.manager.ArenaManager;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
+import uoc.tfm.vmejia.speedrun.manager.EscenaManager;
 
 import java.util.logging.Level;
 
 public final class SpeedRun extends JavaPlugin {
 
     private ArenaManager arenaManager;
+    private EscenaManager escenaManager;
+
     private boolean JuegoEnMarcha;
     private boolean JuegoReinicio;
     private NPC npc;
 
     public ArenaManager getArenaManager(){return arenaManager;}
+    public EscenaManager getEscenaManager(){return escenaManager;}
 
     public boolean IsJuegoEnMarcha(){return JuegoEnMarcha;}
     public void setJuegoEnMarcha(boolean estado){this.JuegoEnMarcha = estado;}
@@ -56,6 +60,7 @@ public final class SpeedRun extends JavaPlugin {
         // Prepara el gestor de arenas
         System.out.println("Crear ArenaManager");
         arenaManager = new ArenaManager(this);
+        escenaManager = new EscenaManager(this);
 
         // Registra los eventos
         Bukkit.getPluginManager().registerEvents(new ConnectListener(this),this);

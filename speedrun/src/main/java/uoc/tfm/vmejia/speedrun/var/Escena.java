@@ -2,6 +2,7 @@ package uoc.tfm.vmejia.speedrun.var;
 
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.manager.EscenaManager;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 
 import java.util.ArrayList;
@@ -39,26 +40,28 @@ public class Escena {
         camino = caminoAlm2;
     }
 
-    public void inicializarAlamcenesYCofres(){
+    public void inicializarAlamcenesYCofres(Arena arena, EscenaManager escenaManager){
         // Inicializa los almacenes
-        almacenIzq = new Almacen("Almacen 1",25,25,35,30);
-        almacenDer = new Almacen("Almacen 2",15,15,20,10);
+        if (arena != null) {
+            almacenIzq = arena.getalmAlmacen1();
+            almacenDer = arena.getalmAlmacen2();
+        }
         // Inicializa la base del NPC
         baseAgente = new Base("pan");
-        baseAgente.cofrepan = new Cofre(0,0,0,0,0);
-        baseAgente.cofrepan.receta = new Receta("pan",0,1,0,3);
-        baseAgente.cofregalleta = new Cofre(0,0,0,0,0);
-        baseAgente.cofregalleta.receta = new Receta("galleta",1,1,1,2);
-        baseAgente.cofrepastel = new Cofre(0,0,0,0,0);
-        baseAgente.cofrepastel.receta = new Receta("pastel",3,2,1,0);
+        baseAgente.cofrepan = new Cofre();
+        baseAgente.cofrepan.receta = escenaManager.getRecetaPan();
+        baseAgente.cofregalleta = new Cofre();
+        baseAgente.cofregalleta.receta = escenaManager.getRecetaGalleta();
+        baseAgente.cofrepastel = new Cofre();
+        baseAgente.cofrepastel.receta = escenaManager.getRecetaPastel();
         // Inicializa la base del player
         basePlayer = new Base("pan");
-        basePlayer.cofrepan = new Cofre(0,0,0,0,0);
-        basePlayer.cofrepan.receta = new Receta("pan",0,1,0,3);
-        basePlayer.cofregalleta = new Cofre(0,0,0,0,0);
-        basePlayer.cofregalleta.receta = new Receta("galleta",1,1,1,2);
-        basePlayer.cofrepastel = new Cofre(0,0,0,0,0);
-        basePlayer.cofrepastel.receta = new Receta("pastel",3,2,1,0);
+        basePlayer.cofrepan = new Cofre();
+        basePlayer.cofrepan.receta = escenaManager.getRecetaPan();
+        basePlayer.cofregalleta = new Cofre();
+        basePlayer.cofregalleta.receta = escenaManager.getRecetaGalleta();
+        basePlayer.cofrepastel = new Cofre();
+        basePlayer.cofrepastel.receta = escenaManager.getRecetaPastel();
         // Inicializa el agente
         agente = new Agente("npc");
         agente.destino = Agente.destinotipo.ALALMACEN1;

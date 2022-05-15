@@ -131,7 +131,7 @@ public class MyTrait extends Trait {
             reco.loadengine();
             //
             configCofresIni = true;
-            escena.inicializarAlamcenesYCofres();
+
             // Colocar al agente en el inicio
             world = npc.getStoredLocation().getWorld();
             System.out.println(" -- -- Coloca al agente en la base inicial");
@@ -153,6 +153,7 @@ public class MyTrait extends Trait {
                 configCofresIni = false;
                 // Coloca los datos de la arena en la escena
                 escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
+                escena.inicializarAlamcenesYCofres(plugin.getArenaManager().getArena(npc.getUniqueId()), plugin.getEscenaManager());
                 // Borra la memoria del NPC
                 System.out.println("Se cancela la navegación del NPC");
                 npc.getNavigator().cancelNavigation();

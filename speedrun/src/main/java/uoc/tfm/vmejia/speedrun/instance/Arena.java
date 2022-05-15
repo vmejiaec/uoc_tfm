@@ -7,6 +7,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
+import uoc.tfm.vmejia.speedrun.var.Almacen;
+import uoc.tfm.vmejia.speedrun.var.Cofre;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,10 +27,12 @@ public class Arena {
     private Location signExit;
     private Location npcSpawn;
     private Location almacen1, almacen2;
+    private Almacen almAlmacen1, almAlmacen2;
 
     public Arena(SpeedRun minigame, int id,
                  Location playerSpawn, Location sign, Location signExit,
-                 Location npcSpawn, Location almacen1, Location almacen2
+                 Location npcSpawn, Location almacen1, Location almacen2,
+                 Almacen almAlmacen1, Almacen almAlmacen2
     ){
         this.id = id;
         this.playerSpawn = playerSpawn;
@@ -42,6 +46,9 @@ public class Arena {
         this.npcSpawn = npcSpawn;
         this.almacen1 = almacen1;
         this.almacen2 = almacen2;
+
+        this.almAlmacen1 = almAlmacen1;
+        this.almAlmacen2 = almAlmacen2;
 
         setState(GameState.RECRUITING);
     }
@@ -61,6 +68,9 @@ public class Arena {
     public Location getNPCSpawn(){return this.npcSpawn;}
     public Location getAlmacen1(){return this.almacen1;}
     public Location getAlmacen2(){return this.almacen2;}
+
+    public Almacen getalmAlmacen1(){return almAlmacen1;}
+    public Almacen getalmAlmacen2(){return almAlmacen2;}
 
     public void setState(GameState state) {
         this.state = state;

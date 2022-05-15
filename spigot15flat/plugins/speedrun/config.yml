@@ -1,6 +1,24 @@
 required-players: 1
 countdown-seconds: 3
 cuenta-aviso: 3
+receta-pan:
+  nombre: 'pan'
+  inv_cacao: 0
+  inv_huevo: 1
+  inv_leche: 0
+  inv_trigo: 3
+receta-galleta:
+  nombre: 'galleta'
+  inv_cacao: 1
+  inv_huevo: 1
+  inv_leche: 1
+  inv_trigo: 2
+receta-pastel:
+   nombre: 'pastel'
+   inv_cacao: 3
+   inv_huevo: 2
+   inv_leche: 1
+   inv_trigo: 0
 lobby-spawn:
   world: 'world'
   x: 163
@@ -33,10 +51,20 @@ arenas:
       x: 172
       y: 4
       z: -103
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
     almacen2:
       x: 172
       y: 4
       z: -90
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'
   1:
     world: 'world'
     sign:   
@@ -61,10 +89,20 @@ arenas:
       x: 117
       y: 4
       z: -90
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
     almacen2:
       x: 117
       y: 4
       z: -103
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'
   2:
     world: 'world'
     sign:
@@ -89,7 +127,17 @@ arenas:
       x: 189
       y: 4
       z: -91
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
     almacen2:
       x: 189
       y: 4
       z: -103
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'

@@ -8,6 +8,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.var.Almacen;
+import uoc.tfm.vmejia.speedrun.var.Cofre;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +76,20 @@ public class ArenaManager {
                             config.getDouble("arenas."+str+".almacen2.x"),
                             config.getDouble("arenas."+str+".almacen2.y"),
                             config.getDouble("arenas."+str+".almacen2.z")
+                    ),
+                    new Almacen(
+                            "Almacen1",
+                            config.getInt("arenas."+str+".almacen1.inv_cacao"),
+                            config.getInt("arenas."+str+".almacen1.inv_huevo"),
+                            config.getInt("arenas."+str+".almacen1.inv_leche"),
+                            config.getInt("arenas."+str+".almacen1.inv_trigo")
+                    ),
+                    new Almacen(
+                            "Almacen2",
+                            config.getInt("arenas."+str+".almacen2.inv_cacao"),
+                            config.getInt("arenas."+str+".almacen2.inv_huevo"),
+                            config.getInt("arenas."+str+".almacen2.inv_leche"),
+                            config.getInt("arenas."+str+".almacen2.inv_trigo")
                     )
             ));
 
