@@ -28,12 +28,15 @@ public class Escena {
     public List<Vector> camino = new ArrayList<>();
 
     public void iniciaLocaciones(Arena arena){
+        System.out.println("Inicializa las Posiciones de la arena: "+arena.getId());
         vecbase1 = arena.getNPCSpawn().toVector();
         vecAlmacen1 = arena.getAlmacen1().toVector();
         vecAlmacen2 = arena.getAlmacen2().toVector();
 
         caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
         caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
+
+        camino = caminoAlm2;
     }
 
     public void inicializarAlamcenesYCofres(){

@@ -153,6 +153,12 @@ public class MyTrait extends Trait {
                 configCofresIni = false;
                 // Coloca los datos de la arena en la escena
                 escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
+                // Borra la memoria del NPC
+                System.out.println("Se cancela la navegación del NPC");
+                npc.getNavigator().cancelNavigation();
+                System.out.println("La posición actual es: "+posactual);
+                posactual = 1;
+                movetonextpos();
             }
             n_tick++; // El tick tack del reloj
             if (n_tick > n_tick_max) {

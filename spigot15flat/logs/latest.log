@@ -1,0 +1,488 @@
+[14:41:58] [Server thread/INFO]: Starting minecraft server version 1.15.2
+[14:41:58] [Server thread/INFO]: Loading properties
+[14:41:58] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
+[14:41:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[14:41:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:41:58] [Server thread/INFO]: Debug logging is disabled
+[14:41:58] [Server thread/INFO]: Default game type: SURVIVAL
+[14:41:58] [Server thread/INFO]: Generating keypair
+[14:41:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:41:58] [Server thread/INFO]: Using default channel type
+[14:42:00] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
+[14:42:00] [Server thread/INFO]: [CbrPlugin] Loading CbrPlugin v1.0
+[14:42:00] [Server thread/INFO]: [speedrun] Loading speedrun v1.0
+[14:42:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:42:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:42:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:42:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:42:00] [Server thread/INFO]: Preparing level "world"
+[14:42:00] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[14:42:04] [Server thread/INFO]: Loaded 6 recipes
+[14:42:05] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:42:05] [Server thread/INFO]: View Distance: 10
+[14:42:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:42:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:42:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:42:05] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[14:42:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:42:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:42:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:42:05] [Server thread/INFO]: Mob Spawn Range: 6
+[14:42:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Potato Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[14:42:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:42:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:42:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[14:42:05] [Server thread/INFO]: Max TNT Explosions: 100
+[14:42:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:42:05] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[14:42:05] [Server thread/INFO]: View Distance: 10
+[14:42:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:42:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:42:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[14:42:05] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[14:42:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:42:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:42:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:42:05] [Server thread/INFO]: Mob Spawn Range: 6
+[14:42:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Potato Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[14:42:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[14:42:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:42:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:42:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[14:42:05] [Server thread/INFO]: Max TNT Explosions: 100
+[14:42:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:42:05] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[14:42:05] [Server thread/INFO]: Preparing spawn area: 0%
+[14:42:05] [Server thread/INFO]: Preparing spawn area: 0%
+[14:42:06] [Server thread/INFO]: Preparing spawn area: 46%
+[14:42:06] [Server thread/INFO]: Time elapsed: 1139 ms
+[14:42:06] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[14:42:06] [Server thread/INFO]: Preparing spawn area: 0%
+[14:42:06] [Server-Worker-5/INFO]: Preparing spawn area: 83%
+[14:42:07] [Server thread/INFO]: Time elapsed: 889 ms
+[14:42:07] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[14:42:07] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
+[14:42:07] [Server thread/INFO]: [CbrPlugin] Enabling CbrPlugin v1.0
+[14:42:07] [Server thread/INFO]: [speedrun] Enabling speedrun v1.0
+[14:42:07] [Server thread/WARN]: [speedrun] Loaded class net.citizensnpcs.api.CitizensAPI from Citizens v2.0.29-SNAPSHOT (build 2491) which is not a depend, softdepend or loadbefore of this plugin.
+[14:42:07] [Server thread/INFO]: CitizensAPI el trait es: mytraitname
+
+[14:42:07] [Server thread/INFO]: Crear ArenaManager
+
+[14:42:07] [Server thread/INFO]:  - World: 0 - world
+
+[14:42:07] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@55896140
+
+[14:42:07] [Server thread/INFO]:  -- -- arena.minigame: null
+
+[14:42:07] [Server thread/INFO]:  - World: 1 - world
+
+[14:42:07] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@5a520cdd
+
+[14:42:07] [Server thread/INFO]:  -- -- arena.minigame: null
+
+[14:42:07] [Server thread/INFO]:  - World: 2 - world
+
+[14:42:07] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@28e07f2e
+
+[14:42:07] [Server thread/INFO]:  -- -- arena.minigame: null
+
+[14:42:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:42:07] [Server thread/INFO]: Done (7.335s)! For help, type "help"
+[14:42:07] [Server thread/INFO]: npcVictor ha sido asignado a MyTrait!
+[14:42:07] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+
+[14:42:07] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:42:07] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:42:07] [Thread-8/INFO]: Imported 13 instances.
+
+[14:42:08] [Server thread/INFO]: 
+
+[14:42:08] [Server thread/INFO]: 
+Almacen 1
+Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
+
+[14:42:08] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
+
+[14:42:08] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+
+[14:42:08] [Server thread/INFO]:  El agente NPC es colocado en escena --------(*)
+[14:42:08] [Server thread/INFO]:    --- El npc se llama: npcVictor
+[14:42:08] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
+[14:42:09] [User Authenticator #1/INFO]: UUID of player vmejiaec is 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c
+[14:42:09] [Server thread/INFO]: vmejiaec[/127.0.0.1:46470] logged in with entity id 51 at ([world]163.0, 9.0, -125.0)
+[14:42:17] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:42:20] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------
+
+[14:42:20] [Server thread/INFO]: ************* Configuración de la Escena con la arena elejida
+
+[14:42:20] [Server thread/INFO]: Inicializa las Posiciones de la arena: 2
+
+[14:42:20] [Server thread/INFO]: Se cancela la navegación del NPC
+
+[14:42:20] [Server thread/INFO]: La posición actual es: 0
+
+[14:42:20] [Server thread/INFO]: Estoy en la base!
+[14:42:20] [Server thread/INFO]: Operación: DEJA
+[14:42:20] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
+[14:42:20] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:42:20] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
+
+[14:42:20] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[14:42:20] [Server thread/INFO]: Estrategia :1
+
+[14:42:29] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[14:42:29] [Server thread/INFO]: Operación: TOMA
+[14:42:29] [Server thread/INFO]: Retiro: Almacen 2 HUEVO 5
+[14:42:29] [Server thread/INFO]:  - Deposito: 
+
+[14:42:29] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 10 l: 20 t: 10 )
+
+[14:42:29] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PASTEL
+  - material: 5 - HUEVO
+  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
+
+[14:42:37] [Server thread/INFO]: Estoy en la base!
+[14:42:37] [Server thread/INFO]: Operación: DEJA
+[14:42:37] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
+[14:42:37] [Server thread/INFO]:  - Deposito: 
+[14:42:37] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
+
+
+[14:42:37] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=5}
+
+[14:42:37] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[14:42:37] [Server thread/INFO]: Estrategia :0
+
+[14:42:43] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[14:42:43] [Server thread/INFO]: Operación: TOMA
+[14:42:43] [Server thread/INFO]: Retiro: Almacen 1 LECHE 5
+[14:42:43] [Server thread/INFO]:  - Deposito: 
+
+[14:42:43] [Server thread/INFO]: 
+Almacen 1
+Inv: 0 ( c: 25 h: 25 l: 30 t: 30 )
+
+[14:42:43] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN1
+  - producto: GALLETA
+  - material: 5 - LECHE
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+[14:42:52] [Server thread/INFO]: Estoy en la base!
+[14:42:52] [Server thread/INFO]: Operación: DEJA
+[14:42:52] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[14:42:52] [Server thread/INFO]:  - Deposito: 
+[14:42:52] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
+
+
+[14:42:52] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=10}
+
+[14:42:52] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
+
+[14:42:52] [Server thread/INFO]: Estrategia :1
+
+[14:42:59] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[14:42:59] [Server thread/INFO]: Operación: TOMA
+[14:42:59] [Server thread/INFO]: Retiro: Almacen 2 TRIGO 5
+[14:42:59] [Server thread/INFO]:  - Deposito: 
+
+[14:42:59] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 10 l: 20 t: 5 )
+
+[14:42:59] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PASTEL
+  - material: 5 - TRIGO
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+
+[14:43:08] [Server thread/INFO]: Estoy en la base!
+[14:43:08] [Server thread/INFO]: Operación: DEJA
+[14:43:08] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[14:43:08] [Server thread/INFO]:  - Deposito: 
+[14:43:08] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 5 )
+
+
+[14:43:08] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=5}
+
+[14:43:08] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[14:43:08] [Server thread/INFO]: Estrategia :1
+
+[14:43:11] [Server thread/INFO]: Sales de la arena por el cartel
+[14:43:11] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:43:11] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------
+
+[14:43:11] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@28e07f2e
+
+[14:43:11] [Server thread/INFO]:  -- -- arena.minigame: speedrun v1.0
+
+[14:43:11] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+
+[14:43:11] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:43:11] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:43:11] [Thread-10/INFO]: Imported 13 instances.
+
+[14:43:12] [Server thread/INFO]: 
+
+[14:43:12] [Server thread/INFO]: 
+Almacen 1
+Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
+
+[14:43:12] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
+
+[14:43:12] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+
+[14:43:12] [Server thread/INFO]: Estoy en la base!
+[14:43:12] [Server thread/INFO]: Operación: DEJA
+[14:43:12] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
+[14:43:12] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:43:12] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-galleta-ingr-leche=0, cofre-pan-ingr-cacao=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[14:43:12] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[14:43:12] [Server thread/INFO]: Estrategia :0
+
+[14:43:20] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:43:20] [Server thread/WARN]: vmejiaec moved too quickly! -26.996122804380974,-5.0,34.97402944690343
+[14:43:23] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------
+
+[14:43:23] [Server thread/INFO]: ************* Configuración de la Escena con la arena elejida
+
+[14:43:23] [Server thread/INFO]: Inicializa las Posiciones de la arena: 1
+
+[14:43:23] [Server thread/INFO]: Se cancela la navegación del NPC
+
+[14:43:23] [Server thread/INFO]: La posición actual es: 0
+
+[14:43:23] [Server thread/INFO]: Estoy en la base!
+[14:43:23] [Server thread/INFO]: Operación: DEJA
+[14:43:23] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[14:43:23] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:43:23] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, alm1-inv-trigo=10, cofre-galleta-ingr-huevo=0, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-galleta-ingr-leche=5, cofre-pan-ingr-cacao=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
+
+[14:43:23] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[14:43:23] [Server thread/INFO]: Estrategia :0
+
+[14:43:33] [Server thread/INFO]: Sales de la arena por el cartel
+[14:43:33] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:43:33] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------
+
+[14:43:33] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@5a520cdd
+
+[14:43:33] [Server thread/INFO]:  -- -- arena.minigame: speedrun v1.0
+
+[14:43:33] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+
+[14:43:33] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:43:33] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:43:33] [Thread-11/INFO]: Imported 13 instances.
+
+[14:43:34] [Server thread/INFO]: 
+
+[14:43:34] [Server thread/INFO]: 
+Almacen 1
+Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
+
+[14:43:34] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
+
+[14:43:34] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+
+[14:43:34] [Server thread/INFO]: Estoy en la base!
+[14:43:34] [Server thread/INFO]: Operación: DEJA
+[14:43:34] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
+[14:43:34] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:43:34] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[14:43:34] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[14:43:34] [Server thread/INFO]: Estrategia :1
+
+[14:43:52] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:43:52] [Server thread/WARN]: vmejiaec moved too quickly! -12.08010355894453,-5.0,34.34650855747739
+[14:43:55] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------
+
+[14:43:55] [Server thread/INFO]: ************* Configuración de la Escena con la arena elejida
+
+[14:43:55] [Server thread/INFO]: Inicializa las Posiciones de la arena: 0
+
+[14:43:55] [Server thread/INFO]: Se cancela la navegación del NPC
+
+[14:43:55] [Server thread/INFO]: La posición actual es: 0
+
+[14:43:55] [Server thread/INFO]: Estoy en la base!
+[14:43:55] [Server thread/INFO]: Operación: DEJA
+[14:43:55] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
+[14:43:55] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:43:55] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
+
+[14:43:55] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[14:43:55] [Server thread/INFO]: Estrategia :1
+
+[14:44:06] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[14:44:06] [Server thread/INFO]: Operación: TOMA
+[14:44:06] [Server thread/INFO]: Retiro: Almacen 2 CACAO 5
+[14:44:06] [Server thread/INFO]:  - Deposito: 
+
+[14:44:06] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 10 h: 15 l: 20 t: 10 )
+
+[14:44:06] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PASTEL
+  - material: 5 - CACAO
+  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
+
+[14:44:11] [Server thread/INFO]: Sales de la arena por el cartel
+[14:44:11] [Server thread/INFO]: NPC desde la arena npcVictor
+
+[14:44:11] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------
+
+[14:44:11] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@55896140
+
+[14:44:11] [Server thread/INFO]:  -- -- arena.minigame: speedrun v1.0
+
+[14:44:11] [Server thread/WARN]: vmejiaec moved too quickly! 11.56489928834614,5.0,-39.819524834028
+[14:44:11] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+
+[14:44:11] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:44:11] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+
+[14:44:11] [Thread-12/INFO]: Imported 13 instances.
+
+[14:44:12] [Server thread/INFO]: 
+
+[14:44:12] [Server thread/INFO]: 
+Almacen 1
+Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
+
+[14:44:12] [Server thread/INFO]: 
+Almacen 2
+Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
+
+[14:44:12] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+
+[14:44:12] [Server thread/INFO]: Estoy en la base!
+[14:44:12] [Server thread/INFO]: Operación: DEJA
+[14:44:12] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
+[14:44:12] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[14:44:12] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, cofre-pan-ingr-trigo=10, alm2-inv-cacao=10, cofre-galleta=0, alm1-inv-huevo=5, alm1-inv-trigo=20, cofre-galleta-ingr-huevo=0, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[14:44:12] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[14:44:12] [Server thread/INFO]: Estrategia :0
+
+[14:44:21] [Server thread/INFO]: vmejiaec lost connection: Disconnected
+[14:44:21] [Server thread/INFO]: vmejiaec left the game
