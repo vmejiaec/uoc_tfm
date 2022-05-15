@@ -10,56 +10,86 @@ lobby-spawn:
   pitch: 0
 arenas:
   0:
+    world: 'world'
     sign:
-      world: 'world'
       x: 165
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
       x: 149
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
       x: 153
       y: 4
       z: -89
       yaw: 0
       pitch: 0
+    npc-spawn:
+      x: 152
+      y: 4
+      z: -105
+    almacen1:
+      x: 172
+      y: 4
+      z: -103
+    almacen2:
+      x: 172
+      y: 4
+      z: -90
   1:
+    world: 'world'
     sign:   
-      world: 'world'
       x: 163
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
       x: 140
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
       x: 136
       y: 4
       z: -89
       yaw: -180
       pitch: 0
+    npc-spawn:
+      x: 137
+      y: 4
+      z: -105
+    almacen1:
+      x: 116
+      y: 3
+      z: -90
+    almacen2:
+      x: 116
+      y: 3
+      z: -90
   2:
+    world: 'world'
     sign:
-      world: 'world'
       x: 161
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
-      x: 147
+      x: 212
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
-      x: 167
+      x: 209
       y: 4
-      z: -69
+      z: -89
       yaw: -180
       pitch: 0
+    npc-spawn:
+      x: 209
+      y: 4
+      z: -105
+    almacen1:
+      x: 188
+      y: 3
+      z: -91
+    almacen2:
+      x: 188
+      y: 3
+      z: -103

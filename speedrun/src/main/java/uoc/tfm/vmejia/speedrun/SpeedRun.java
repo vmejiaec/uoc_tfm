@@ -1,6 +1,8 @@
 package uoc.tfm.vmejia.speedrun;
 
 import net.citizensnpcs.api.CitizensAPI;
+import net.citizensnpcs.api.npc.NPC;
+import net.citizensnpcs.api.trait.Trait;
 import net.citizensnpcs.api.trait.TraitInfo;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,6 +19,7 @@ public final class SpeedRun extends JavaPlugin {
     private ArenaManager arenaManager;
     private boolean JuegoEnMarcha;
     private boolean JuegoReinicio;
+    private NPC npc;
 
     public ArenaManager getArenaManager(){return arenaManager;}
 
@@ -24,6 +27,9 @@ public final class SpeedRun extends JavaPlugin {
     public void setJuegoEnMarcha(boolean estado){this.JuegoEnMarcha = estado;}
     public Boolean getJuegoReinicio(){return JuegoReinicio;}
     public void setJuegoReinicio(boolean estado){this.JuegoReinicio = estado;}
+
+    public void setNPC (NPC npc){this.npc = npc;}
+    public NPC getNPC (){return this.npc;}
 
     @Override
     public void onEnable() {
@@ -42,6 +48,8 @@ public final class SpeedRun extends JavaPlugin {
         //Register your trait with Citizens.
         CitizensAPI.getTraitFactory()
                 .registerTrait(TraitInfo.create(MyTrait.class).withName("mytraitname"));
+        Trait trait = CitizensAPI.getTraitFactory().getTrait("mytraitname");
+        System.out.println("CitizensAPI el trait es: "+ trait.getName());
 
         // Prepara la configuración del juego
         ConfigManager.setupConfig(this);

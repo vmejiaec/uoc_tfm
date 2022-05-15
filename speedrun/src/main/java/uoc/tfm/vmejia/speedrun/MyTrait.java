@@ -159,6 +159,7 @@ public class MyTrait extends Trait {
     @Override
     public void onAttach() {
         plugin.getServer().getLogger().info(npc.getName() + " ha sido asignado a MyTrait!");
+        plugin.setNPC(npc);
     }
 
     @Override

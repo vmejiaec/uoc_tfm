@@ -21,8 +21,8 @@ public class ArenaManager {
     public ArenaManager(SpeedRun minigame){
         FileConfiguration config = minigame.getConfig();
         for(String str: config.getConfigurationSection("arenas.").getKeys(false)){
-            //System.out.println( " - World: "+ str + " - " + config.getString("arenas."+str+".player-spawn.world"));
-            World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".player-spawn.world")));
+            System.out.println( " - World: "+ str + " - " + config.getString("arenas."+str+".world"));
+            World world = Bukkit.createWorld(new WorldCreator(config.getString("arenas."+str+".world")));
             world.setAutoSave(false);
 
             /*
@@ -37,7 +37,7 @@ public class ArenaManager {
                     minigame,
                     Integer.parseInt(str),
                     new Location(
-                            Bukkit.getWorld(config.getString("arenas."+str+".player-spawn.world")),
+                            world,
                             config.getDouble("arenas."+str+".player-spawn.x"),
                             config.getDouble("arenas."+str+".player-spawn.y"),
                             config.getDouble("arenas."+str+".player-spawn.z"),
@@ -45,16 +45,34 @@ public class ArenaManager {
                             (float) config.getDouble("arenas."+str+".player-spawn.pitch")
                     ),
                     new Location(
-                            Bukkit.getWorld(config.getString("arenas."+str+".sign.world")),
+                            world,
                             config.getDouble("arenas."+str+".sign.x"),
                             config.getDouble("arenas."+str+".sign.y"),
                             config.getDouble("arenas."+str+".sign.z")
                     ),
                     new Location(
-                            Bukkit.getWorld(config.getString("arenas."+str+".sign-exit.world")),
+                            world,
                             config.getDouble("arenas."+str+".sign-exit.x"),
                             config.getDouble("arenas."+str+".sign-exit.y"),
                             config.getDouble("arenas."+str+".sign-exit.z")
+                    ),
+                    new Location(
+                            world,
+                            config.getDouble("arenas."+str+".npc-spawn.x"),
+                            config.getDouble("arenas."+str+".npc-spawn.y"),
+                            config.getDouble("arenas."+str+".npc-spawn.z")
+                    ),
+                    new Location(
+                            world,
+                            config.getDouble("arenas."+str+".almacen1.x"),
+                            config.getDouble("arenas."+str+".almacen1.y"),
+                            config.getDouble("arenas."+str+".almacen1.z")
+                    ),
+                    new Location(
+                            world,
+                            config.getDouble("arenas."+str+".almacen2.x"),
+                            config.getDouble("arenas."+str+".almacen2.y"),
+                            config.getDouble("arenas."+str+".almacen2.z")
                     )
             ));
 

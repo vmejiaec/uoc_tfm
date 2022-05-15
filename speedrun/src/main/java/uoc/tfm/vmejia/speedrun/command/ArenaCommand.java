@@ -60,6 +60,7 @@ public class ArenaCommand implements CommandExecutor {
 
                         //if(arena.canJoin()){
                         if(true){
+                            // asigno el jugador a la arena
                             arena.addPlayer(player);
                             player.sendMessage(ChatColor.GREEN+"Ahora está en la arena "+arena.getId());
                         } else {

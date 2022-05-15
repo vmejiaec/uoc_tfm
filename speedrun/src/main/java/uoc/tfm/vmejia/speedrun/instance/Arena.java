@@ -1,8 +1,10 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
+import net.citizensnpcs.api.npc.NPC;
 import org.bukkit.*;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerTeleportEvent;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 
@@ -21,8 +23,13 @@ public class Arena {
     private boolean canJoin;
     private Location sign;
     private Location signExit;
+    private Location npcSpawn;
+    private Location almacen1, almacen2;
 
-    public Arena(SpeedRun minigame, int id, Location playerSpawn, Location sign, Location signExit){
+    public Arena(SpeedRun minigame, int id,
+                 Location playerSpawn, Location sign, Location signExit,
+                 Location npcSpawn, Location almacen1, Location almacen2
+    ){
         this.id = id;
         this.playerSpawn = playerSpawn;
         this.players = new ArrayList<>();
@@ -32,6 +39,9 @@ public class Arena {
         this.canJoin = true;
         this.sign = sign;
         this.signExit = signExit;
+        this.npcSpawn = npcSpawn;
+        this.almacen1 = almacen1;
+        this.almacen2 = almacen2;
 
         setState(GameState.RECRUITING);
     }
@@ -89,9 +99,17 @@ public class Arena {
         players.add(player.getUniqueId());
         player.teleport(playerSpawn);
 
+        NPC npc = minigame.getNPC();
+        System.out.println("NPC desde la arena "+npc.getName());
+
         if (state.equals(GameState.RECRUITING) && players.size() >= ConfigManager.getRequiredPlayers()){
             countdown.start();
         }
+    }
+
+    public void addNPC(NPC npc){
+        players.add(npc.getUniqueId());
+        npc.teleport(npcSpawn, PlayerTeleportEvent.TeleportCause.PLUGIN);
     }
 
     public void removePlayer(Player player){
@@ -120,7 +138,6 @@ public class Arena {
     }
 
     /* TOOLS */
-
     public void sendMessage(String message){
         for(UUID uuid:players){
             Bukkit.getPlayer(uuid).sendMessage(message);
@@ -142,7 +159,5 @@ public class Arena {
         signBlock.setLine(3,line4);
         signBlock.update();
     }
-
-
 
 }
