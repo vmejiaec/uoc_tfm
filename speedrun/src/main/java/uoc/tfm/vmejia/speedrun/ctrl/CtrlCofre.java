@@ -58,29 +58,31 @@ public class CtrlCofre {
     }
 
     public static void Procesar(Cofre cofre){
-        int pan_ingr_c = cofre.receta.ingr_cacao;
-        int pan_ingr_h = cofre.receta.ingr_huevo;
-        int pan_ingr_l = cofre.receta.ingr_leche;
-        int pan_ingr_t = cofre.receta.ingr_trigo;
-        int pan_inv_c = cofre.inv_cacao;
-        int pan_inv_h = cofre.inv_huevo;
-        int pan_inv_l = cofre.inv_leche;
-        int pan_inv_t = cofre.inv_trigo;
+        int ingr_c = cofre.receta.ingr_cacao;
+        int ingr_h = cofre.receta.ingr_huevo;
+        int ingr_l = cofre.receta.ingr_leche;
+        int ingr_t = cofre.receta.ingr_trigo;
+        int inv_c = cofre.inv_cacao;
+        int inv_h = cofre.inv_huevo;
+        int inv_l = cofre.inv_leche;
+        int inv_t = cofre.inv_trigo;
         // Verifica si existen los ingredientes para fabricar el producto
         if(
-                pan_inv_c >= pan_ingr_c &&
-                pan_inv_h >= pan_ingr_h &&
-                pan_inv_l >= pan_ingr_l &&
-                pan_inv_t >= pan_ingr_t
+                inv_c >= ingr_c &&
+                inv_h >= ingr_h &&
+                inv_l >= ingr_l &&
+                inv_t >= ingr_t
         ){
             // Si hay suficientes ingredientes entonces creamos el producto
             // - Retiro los ingredientes
-            CtrlCofre.Retiro(cofre, Material.tipo.CACAO,pan_ingr_c);
-            CtrlCofre.Retiro(cofre, Material.tipo.HUEVO,pan_ingr_h);
-            CtrlCofre.Retiro(cofre, Material.tipo.LECHE,pan_ingr_l);
-            CtrlCofre.Retiro(cofre, Material.tipo.TRIGO,pan_ingr_t);
-            // - Añador los productos
+            CtrlCofre.Retiro(cofre, Material.tipo.CACAO,ingr_c);
+            CtrlCofre.Retiro(cofre, Material.tipo.HUEVO,ingr_h);
+            CtrlCofre.Retiro(cofre, Material.tipo.LECHE,ingr_l);
+            CtrlCofre.Retiro(cofre, Material.tipo.TRIGO,ingr_t);
+            // - Añadir los productos
             ++cofre.inv;
+            // Reportamos haber obtenido un producto más.
+
         }
     }
 }
