@@ -1,7 +1,10 @@
 package uoc.tfm.vmejia.speedrun.ctrl;
 
+import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
 import uoc.tfm.vmejia.speedrun.var.Material;
+
+import java.util.UUID;
 
 public class CtrlCofre {
     public static  boolean Retiro(Cofre cofre, Material.tipo material, int cantidad){
@@ -57,7 +60,7 @@ public class CtrlCofre {
         }
     }
 
-    public static void Procesar(Cofre cofre){
+    public static boolean Procesar( Cofre cofre){
         int ingr_c = cofre.receta.ingr_cacao;
         int ingr_h = cofre.receta.ingr_huevo;
         int ingr_l = cofre.receta.ingr_leche;
@@ -81,8 +84,8 @@ public class CtrlCofre {
             CtrlCofre.Retiro(cofre, Material.tipo.TRIGO,ingr_t);
             // - Añadir los productos
             ++cofre.inv;
-            // Reportamos haber obtenido un producto más.
-
+            return true;
         }
+        return  false;
     }
 }

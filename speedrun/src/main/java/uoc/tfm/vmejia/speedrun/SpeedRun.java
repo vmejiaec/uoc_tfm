@@ -72,6 +72,8 @@ public final class SpeedRun extends JavaPlugin {
         // Control de inicio del juego en la arena para el Agente NPC
         JuegoEnMarcha = false;
         JuegoReinicio = true;
+
+
     }
 
 }

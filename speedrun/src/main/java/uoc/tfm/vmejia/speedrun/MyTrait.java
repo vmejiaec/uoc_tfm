@@ -3,6 +3,7 @@ package uoc.tfm.vmejia.speedrun;
 import net.citizensnpcs.api.ai.event.NavigationCancelEvent;
 import net.citizensnpcs.api.ai.event.NavigationCompleteEvent;
 import net.citizensnpcs.api.trait.Trait;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.event.EventHandler;
@@ -11,6 +12,7 @@ import uoc.tfm.vmejia.cbrplugin.Recomendar;
 import uoc.tfm.vmejia.speedrun.cbr.UtilModelo;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
+import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
@@ -69,7 +71,15 @@ public class MyTrait extends Trait {
                 }
                 escena.baseAgente.objetivo = ""+escena.agente.producto;
                 // Procesa los productos de los cofres de la base
-                CtrlBase.procesa(escena.baseAgente);
+                System.out.println("Calcula que haya al menos un producto producido >>>>");
+                boolean resProceso = CtrlBase.procesa(escena.baseAgente);
+                // Si se puede producir un producto, se reporta al marcador
+                if (resProceso){
+                    MarcadorEvent marcadorEvent = new MarcadorEvent(npc.getUniqueId(), " Se marcó un: ");
+                    Bukkit.getPluginManager().callEvent(marcadorEvent);
+                }
+                MarcadorEvent marcadorEvent = new MarcadorEvent(npc.getUniqueId(), " Se marcó un: ");
+                Bukkit.getPluginManager().callEvent(marcadorEvent);
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(escena.baseAgente));
                 // Elije la estrategia

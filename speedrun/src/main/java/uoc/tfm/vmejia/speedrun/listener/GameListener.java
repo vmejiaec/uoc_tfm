@@ -9,6 +9,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.world.WorldLoadEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
+import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.instance.GameState;
 
@@ -26,6 +27,11 @@ public class GameListener implements Listener {
         if(arena != null && arena.getState().equals(GameState.LIVE)){
             arena.getGame().addPoint(e.getPlayer());
         }
+    }
+
+    @EventHandler
+    public void onMarca(MarcadorEvent event){
+        System.out.println("Evento Marcador para: "+event.getUuid() + " "+ event.getMessage());
     }
 
     @EventHandler
@@ -56,6 +62,4 @@ public class GameListener implements Listener {
 
         }
     }
-
-
 }
