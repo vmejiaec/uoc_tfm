@@ -2,6 +2,7 @@ package uoc.tfm.vmejia.speedrun.instance;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -51,5 +52,23 @@ public class Game {
         points.replace(player.getUniqueId(),playerPoints);
         // notifica al jugador de los puntos ganados
         player.sendMessage(ChatColor.GREEN + player.getName()+ "+1 PUNTO!!" );
+    }
+
+    // Aumenta el marcador de un jugador por su UUID
+    public void addPoint(UUID uuid){
+        int playerPoints = points.get(uuid)+1;
+
+        // Verifica que el puntaje sea el ganador
+        if(playerPoints == ConfigManager.getPointsToWin() ){
+            arena.sendMessage(ChatColor.GOLD + "EL NPC HA GANADO LA PARTIDA!!");
+            // Se resetea la arena para volver a empezar el juego
+            arena.reset();
+            return;
+        }
+
+        // Registra el nuevo marcador
+        points.replace(uuid,playerPoints);
+        // notifica al jugador de los puntos ganados
+        arena.sendMessage(ChatColor.GREEN + "NPC +1 PUNTO!!" );
     }
 }

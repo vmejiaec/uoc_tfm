@@ -1,6 +1,7 @@
 required-players: 1
 countdown-seconds: 3
 cuenta-aviso: 3
+points-to-win: 1
 receta-pan:
   nombre: 'pan'
   inv_cacao: 0

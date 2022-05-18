@@ -21,7 +21,13 @@ public class ConfigManager {
         return config.getInt("countdown-seconds");
     }
 
-    public static int getCuentaAviso(){return config.getInt("cuenta-aviso");}
+    public static int getPointsToWin(){
+        return config.getInt("points-to-win");
+    }
+
+    public static int getCuentaAviso(){
+        return config.getInt("cuenta-aviso");
+    }
 
     public static Location getLobbySpawn(){
         return  new Location(

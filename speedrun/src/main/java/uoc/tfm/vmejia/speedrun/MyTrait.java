@@ -78,8 +78,6 @@ public class MyTrait extends Trait {
                     MarcadorEvent marcadorEvent = new MarcadorEvent(npc.getUniqueId(), " Se marcó un: ");
                     Bukkit.getPluginManager().callEvent(marcadorEvent);
                 }
-                MarcadorEvent marcadorEvent = new MarcadorEvent(npc.getUniqueId(), " Se marcó un: ");
-                Bukkit.getPluginManager().callEvent(marcadorEvent);
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(escena.baseAgente));
                 // Elije la estrategia

@@ -92,7 +92,9 @@ public class Arena {
 
             Location location = ConfigManager.getLobbySpawn();
             for(UUID uuid: players){
-                Bukkit.getPlayer(uuid).teleport(location);
+                if(Bukkit.getPlayer(uuid) != null){
+                    Bukkit.getPlayer(uuid).teleport(location);
+                }
             }
             players.clear();
 

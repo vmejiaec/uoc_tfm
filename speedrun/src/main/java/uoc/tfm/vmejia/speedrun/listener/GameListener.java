@@ -32,6 +32,10 @@ public class GameListener implements Listener {
     @EventHandler
     public void onMarca(MarcadorEvent event){
         System.out.println("Evento Marcador para: "+event.getUuid() + " "+ event.getMessage());
+        Arena arena = minigame.getArenaManager().getArena(event.getUuid());
+        if(arena != null && arena.getState().equals(GameState.LIVE)){
+            arena.getGame().addPoint(event.getUuid());
+        }
     }
 
     @EventHandler
