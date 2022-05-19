@@ -20,7 +20,7 @@ public class Events implements Listener {
 
     @EventHandler
     public void PlayerRightClick(org.bukkit.event.player.PlayerInteractEvent event){
-        /*
+
         System.out.println("Evento para modificar cofres y letreros - - Antes");
         if(event.getHand().equals(EquipmentSlot.HAND) && event.hasBlock())
         {
@@ -84,6 +84,6 @@ public class Events implements Listener {
             }
         }
 
-         */
+
     }
 }

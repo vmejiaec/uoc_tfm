@@ -2,7 +2,10 @@ package uoc.tfm.vmejia.speedrun.manager;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
+import uoc.tfm.vmejia.speedrun.var.Escena;
 import uoc.tfm.vmejia.speedrun.var.Receta;
+
+import java.util.Vector;
 
 public class EscenaManager {
     private FileConfiguration config;

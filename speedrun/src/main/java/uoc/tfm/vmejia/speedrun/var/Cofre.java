@@ -1,11 +1,14 @@
 package uoc.tfm.vmejia.speedrun.var;
 
+import org.bukkit.Location;
+
 public class Cofre {
     public int inv;
     public int inv_cacao;
     public int inv_huevo;
     public int inv_leche;
     public int inv_trigo;
+    public Location pos;
 
     public Receta receta;
 

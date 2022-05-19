@@ -144,7 +144,7 @@ public class MyTrait extends Trait {
             world = npc.getStoredLocation().getWorld();
             System.out.println(" -- -- Coloca al agente en la base inicial");
             Location locBaseAgente =
-                    new Location(world,escena.vecbase1.getX(), escena.vecbase1.getY(),escena.vecbase1.getZ());
+                    new Location(world,escena.vecBaseNPC.getX(), escena.vecBaseNPC.getY(),escena.vecBaseNPC.getZ());
             if(npc.getEntity() != null) {
                 npc.getEntity().teleport(locBaseAgente);
                 posactual = 1;

@@ -1,5 +1,7 @@
 package uoc.tfm.vmejia.speedrun.var;
 
+import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.manager.EscenaManager;
@@ -18,26 +20,53 @@ public class Escena {
 
     // Posiciones y caminos de la escena
     // La position de las bases
-    public Vector vecbase1 = new Vector(152, 4, -105);
+    public Vector vecBaseNPC = new Vector();
+    public Vector vecBasePlayer = new Vector();
     // La posición de los almacenes
-    public Vector vecAlmacen1 = new Vector(172, 4, -103);
-    public Vector vecAlmacen2 = new Vector(172, 4, -90);
+    public Vector vecAlmacen1 = new Vector();
+    public Vector vecAlmacen2 = new Vector();
 
     // los caminos de la base a los almacenes
-    public List<Vector> caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
-    public List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
+    public List<Vector> caminoAlm1 = new ArrayList<Vector>(){{add(vecBaseNPC);add(vecAlmacen1);}};
+    public List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecBaseNPC);add(vecAlmacen2);}};
     public List<Vector> camino = new ArrayList<>();
 
     public void iniciaLocaciones(Arena arena){
         System.out.println("Inicializa las Posiciones de la arena: "+arena.getId());
-        vecbase1 = arena.getNPCSpawn().toVector();
+        vecBaseNPC = arena.getNPCSpawn().toVector();
+        vecBasePlayer = arena.getPlayerSpawn().toVector();
         vecAlmacen1 = arena.getAlmacen1().toVector();
         vecAlmacen2 = arena.getAlmacen2().toVector();
 
-        caminoAlm1 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen1);}};
-        caminoAlm2 = new ArrayList<Vector>(){{add(vecbase1);add(vecAlmacen2);}};
+        caminoAlm1 = new ArrayList<Vector>(){{add(vecBaseNPC);add(vecAlmacen1);}};
+        caminoAlm2 = new ArrayList<Vector>(){{add(vecBaseNPC);add(vecAlmacen2);}};
 
         camino = caminoAlm2;
+
+        // Actualiza las posiciones de los cofres
+        World world = arena.getWorld();
+        // Decide la orientación de la base respecto a los cofres
+        Vector posrelBaseCofrePan = new Vector(1,0,-2);
+        Vector posrelBaseCofreGalleta = new Vector(1,0,0);
+        Vector posrelBaseCofrePastel = new Vector(1,0,2);
+        Vector posrelAlmacen = new Vector(-1,1,0);
+        boolean signo = vecAlmacen1.getX() > vecBaseNPC.getX()  ;
+        if (signo){
+            posrelBaseCofrePan = new Vector(-1,0,2);
+            posrelBaseCofreGalleta = new Vector(-1,0,0);
+            posrelBaseCofrePastel = new Vector(-1,0,-2);
+            posrelAlmacen = new Vector(1,1,0);
+        }
+        // Calcula dónde deben estar los cofres
+        Vector v1 = new Vector(1,1,1);
+        Vector v2 = new Vector(1,-1,2);
+        Vector v3 = v1.add(v2);
+        almacenDer.cofre.pos =  new Location(
+                world,
+                1,
+                1,
+                1
+        );
     }
 
     public void inicializarAlamcenesYCofres(Arena arena, EscenaManager escenaManager){
@@ -72,4 +101,6 @@ public class Escena {
         System.out.println(UtilAlmacen.publica(almacenIzq));
         System.out.println(UtilAlmacen.publica(almacenDer));
     }
+
+
 }
