@@ -23,12 +23,12 @@ public class UtilCaso {
     }
 
     public static String ConsultaCBR(Recomendar reco, Escena escena){
-        Caso caso = new Caso( escena.baseAgente.objetivo.toLowerCase(Locale.ROOT));
+        Caso caso = new Caso( escena.baseNPC.objetivo.toLowerCase(Locale.ROOT));
         caso.alm1 = escena.almacenIzq;
         caso.alm2 = escena.almacenDer;
-        caso.cofre_pan = escena.baseAgente.cofrepan;
-        caso.cofre_galleta = escena.baseAgente.cofregalleta;
-        caso.cofre_pastel = escena.baseAgente.cofrepastel;
+        caso.cofre_pan = escena.baseNPC.cofrepan;
+        caso.cofre_galleta = escena.baseNPC.cofregalleta;
+        caso.cofre_pastel = escena.baseNPC.cofrepastel;
 
         // --------------------------------------------------------------------------------------
         String[] nombres = new String[]{

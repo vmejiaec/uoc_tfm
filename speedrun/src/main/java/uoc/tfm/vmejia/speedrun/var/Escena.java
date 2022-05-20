@@ -2,6 +2,7 @@ package uoc.tfm.vmejia.speedrun.var;
 
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.block.Chest;
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.manager.EscenaManager;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class Escena {
     // Elementos de la escena
-    public Base baseAgente; // base del NPC agente
+    public Base baseNPC; // base del NPC agente
     public Base basePlayer; // base del player
     public Almacen almacenIzq;
     public Almacen almacenDer;
@@ -57,16 +58,47 @@ public class Escena {
             posrelBaseCofrePastel = new Vector(-1,0,-2);
             posrelAlmacen = new Vector(1,1,0);
         }
-        // Calcula dónde deben estar los cofres
-        Vector v1 = new Vector(1,1,1);
-        Vector v2 = new Vector(1,-1,2);
-        Vector v3 = v1.add(v2);
-        almacenDer.cofre.pos =  new Location(
-                world,
-                1,
-                1,
-                1
-        );
+        // Calcula dónde estan los cofres de bases y almacenes
+        Vector posBaseNPCCofrePan = vecBaseNPC.clone().add(posrelBaseCofrePan) ;
+        Vector posBaseNPCCofreGalleta = vecBaseNPC.clone().add(posrelBaseCofreGalleta) ;
+        Vector posBaseNPCCofrePastel = vecBaseNPC.clone().add(posrelBaseCofrePastel) ;
+        Vector posBasePlayerCofrePan = vecBasePlayer.clone().add(posrelBaseCofrePan) ;
+        Vector posBasePlayerCofreGalleta = vecBasePlayer.clone().add(posrelBaseCofreGalleta) ;
+        Vector posBasePlayerCofrePastel = vecBasePlayer.clone().add(posrelBaseCofrePastel) ;
+        Vector posAlmacen1 = vecAlmacen1.clone().add(posrelAlmacen);
+        Vector posAlmacen2 = vecAlmacen2.clone().add(posrelAlmacen);
+
+        // Localiza los cofres
+        System.out.println("World: "+world);
+        if(world != null){
+            baseNPC.cofrepan.pos = getLoc(world,posBaseNPCCofrePan);
+            baseNPC.cofregalleta.pos = getLoc(world,posBaseNPCCofreGalleta);
+            baseNPC.cofrepastel.pos = getLoc(world,posBaseNPCCofrePastel);
+
+            basePlayer.cofrepan.pos = getLoc(world,posBasePlayerCofrePan);
+            basePlayer.cofregalleta.pos = getLoc(world,posBasePlayerCofreGalleta);
+            basePlayer.cofrepastel.pos = getLoc(world,posBasePlayerCofrePastel);
+
+            almacenIzq.cofre.pos = getLoc(world,posAlmacen1);
+            almacenDer.cofre.pos = getLoc(world,posAlmacen2);
+
+
+            // Publicamos resultados de posiciones para control
+            System.out.println("baseNPC.cofrepan.pos "+ baseNPC.cofrepan.pos);
+            System.out.println("baseNPC.cofregalleta.pos "+ baseNPC.cofregalleta.pos);
+            System.out.println("baseNPC.cofrepastel.pos "+ baseNPC.cofrepastel.pos);
+
+            System.out.println("basePlayer.cofrepan.pos "+ basePlayer.cofrepan.pos);
+            System.out.println("basePlayer.cofregalleta.pos "+ basePlayer.cofregalleta.pos);
+            System.out.println("basePlayer.cofrepastel.pos "+ basePlayer.cofrepastel.pos);
+
+            System.out.println("almacenIzq.cofre.pos "+ almacenIzq.cofre.pos);
+            System.out.println("almacenDer.cofre.pos "+ almacenDer.cofre.pos);
+        }
+    }
+
+    public Location getLoc(World world, Vector vec){
+        return new Location(world, vec.getX(), vec.getY(), vec.getZ());
     }
 
     public void inicializarAlamcenesYCofres(Arena arena, EscenaManager escenaManager){
@@ -76,13 +108,13 @@ public class Escena {
             almacenDer = arena.getalmAlmacen2();
         }
         // Inicializa la base del NPC
-        baseAgente = new Base("pan");
-        baseAgente.cofrepan = new Cofre();
-        baseAgente.cofrepan.receta = escenaManager.getRecetaPan();
-        baseAgente.cofregalleta = new Cofre();
-        baseAgente.cofregalleta.receta = escenaManager.getRecetaGalleta();
-        baseAgente.cofrepastel = new Cofre();
-        baseAgente.cofrepastel.receta = escenaManager.getRecetaPastel();
+        baseNPC = new Base("pan");
+        baseNPC.cofrepan = new Cofre();
+        baseNPC.cofrepan.receta = escenaManager.getRecetaPan();
+        baseNPC.cofregalleta = new Cofre();
+        baseNPC.cofregalleta.receta = escenaManager.getRecetaGalleta();
+        baseNPC.cofrepastel = new Cofre();
+        baseNPC.cofrepastel.receta = escenaManager.getRecetaPastel();
         // Inicializa la base del player
         basePlayer = new Base("pan");
         basePlayer.cofrepan = new Cofre();
@@ -103,4 +135,8 @@ public class Escena {
     }
 
 
+    public void iniciaContenidoCofres() {
+        Chest cofre = (Chest) baseNPC.cofrepan.pos.getBlock().getState();
+
+    }
 }

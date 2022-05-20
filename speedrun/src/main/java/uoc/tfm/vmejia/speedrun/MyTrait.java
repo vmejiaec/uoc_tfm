@@ -60,26 +60,26 @@ public class MyTrait extends Trait {
                 // Deja el material que lleva en la bolsa
                 switch (escena.agente.producto){
                     case PAN:
-                        CtrlAgente.Deja(escena.agente,escena.baseAgente.cofrepan);
+                        CtrlAgente.Deja(escena.agente,escena.baseNPC.cofrepan);
                         break;
                     case GALLETA:
-                        CtrlAgente.Deja(escena.agente,escena.baseAgente.cofregalleta);
+                        CtrlAgente.Deja(escena.agente,escena.baseNPC.cofregalleta);
                         break;
                     case PASTEL:
-                        CtrlAgente.Deja(escena.agente,escena.baseAgente.cofrepastel);
+                        CtrlAgente.Deja(escena.agente,escena.baseNPC.cofrepastel);
                         break;
                 }
-                escena.baseAgente.objetivo = ""+escena.agente.producto;
+                escena.baseNPC.objetivo = ""+escena.agente.producto;
                 // Procesa los productos de los cofres de la base
                 System.out.println("Calcula que haya al menos un producto producido >>>>");
-                boolean resProceso = CtrlBase.procesa(escena.baseAgente);
+                boolean resProceso = CtrlBase.procesa(escena.baseNPC);
                 // Si se puede producir un producto, se reporta al marcador
                 if (resProceso){
                     MarcadorEvent marcadorEvent = new MarcadorEvent(npc.getUniqueId(), " Se marcó un: ");
                     Bukkit.getPluginManager().callEvent(marcadorEvent);
                 }
                 // Publica el estado de la base
-                System.out.println(UtilBase.publicar(escena.baseAgente));
+                System.out.println(UtilBase.publicar(escena.baseNPC));
                 // Elije la estrategia
                 UtilModelo.estrategia(reco, escena);
             } else {  // está en el almacen
@@ -160,8 +160,10 @@ public class MyTrait extends Trait {
                 //
                 configCofresIni = false;
                 // Coloca los datos de la arena en la escena
-                escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
+
                 escena.inicializarAlamcenesYCofres(plugin.getArenaManager().getArena(npc.getUniqueId()), plugin.getEscenaManager());
+                escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
+                escena.iniciaContenidoCofres();
                 // Borra la memoria del NPC
                 System.out.println("Se cancela la navegación del NPC");
                 npc.getNavigator().cancelNavigation();
