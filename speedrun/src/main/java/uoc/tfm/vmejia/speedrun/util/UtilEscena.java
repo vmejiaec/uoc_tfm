@@ -2,6 +2,7 @@ package uoc.tfm.vmejia.speedrun.util;
 
 import org.bukkit.World;
 import org.bukkit.block.Chest;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
@@ -77,6 +78,28 @@ public class UtilEscena {
     }
 
     public static void inicializarAlamcenesYCofres(Escena escena, Arena arena, EscenaManager escenaManager){
+
+        FileConfiguration config = arena.getMinigame().getConfig();
+        arena.setAlmacen1(
+                new Almacen(
+                        "Almacen1",
+                        config.getInt("arenas."+arena.getId()+".almacen1.inv_cacao"),
+                        config.getInt("arenas."+arena.getId()+".almacen1.inv_huevo"),
+                        config.getInt("arenas."+arena.getId()+".almacen1.inv_leche"),
+                        config.getInt("arenas."+arena.getId()+".almacen1.inv_trigo")
+                )
+        );
+
+        arena.setAlmacen2(
+                new Almacen(
+                        "Almacen2",
+                        config.getInt("arenas."+arena.getId()+".almacen2.inv_cacao"),
+                        config.getInt("arenas."+arena.getId()+".almacen2.inv_huevo"),
+                        config.getInt("arenas."+arena.getId()+".almacen2.inv_leche"),
+                        config.getInt("arenas."+arena.getId()+".almacen2.inv_trigo")
+                )
+        );
+
         // Inicializa los almacenes
         if (arena != null) {
             escena.almacenIzq = arena.getalmAlmacen1();

@@ -68,6 +68,8 @@ public class Arena {
     public Location getNPCSpawn(){return this.npcSpawn;}
     public Location getAlmacen1(){return this.almacen1;}
     public Location getAlmacen2(){return this.almacen2;}
+    public void setAlmacen1(Almacen almacen1){this.almAlmacen1 = almacen1;}
+    public void setAlmacen2(Almacen almacen2){this.almAlmacen2 = almacen2;}
 
     public Almacen getalmAlmacen1(){return almAlmacen1;}
     public Almacen getalmAlmacen2(){return almAlmacen2;}
