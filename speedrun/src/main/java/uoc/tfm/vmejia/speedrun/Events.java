@@ -22,10 +22,10 @@ public class Events implements Listener {
     @EventHandler
     public void PlayerRightClick(org.bukkit.event.player.PlayerInteractEvent event){
 
-        System.out.println("Evento para modificar cofres y letreros - - Antes");
+       // System.out.println("Evento para modificar cofres y letreros - - Antes");
         if(event.getHand().equals(EquipmentSlot.HAND) && event.hasBlock())
         {
-            System.out.println("Evento para modificar cofres y letreros - - Después");
+            //System.out.println("Evento para modificar cofres y letreros - - Después");
             Block bloque = event.getClickedBlock();
 
 
@@ -47,6 +47,7 @@ public class Events implements Listener {
                 System.out.println("- Quito un item");
                 int cantRetiro = 4;
                 Material materialBuscado = Material.WHEAT;
+
                 int n = chest.getInventory().getContents().length;
                 for (int i=0; i < n ; i++){
                     ItemStack content = chest.getInventory().getContents()[i];
@@ -56,6 +57,9 @@ public class Events implements Listener {
                         System.out.print(": "+content.getType() + " " + content.getAmount());
                     }
                 }
+
+                ItemStack itemStack = new ItemStack(Material.CARROT,5);
+                chest.getInventory().addItem(itemStack);
 
                 System.out.println("Ejecuto retiro");
                 HashMap<Integer ,ItemStack> z =

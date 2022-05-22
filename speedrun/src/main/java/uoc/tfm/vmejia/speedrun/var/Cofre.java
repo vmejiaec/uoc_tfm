@@ -3,6 +3,7 @@ package uoc.tfm.vmejia.speedrun.var;
 import org.bukkit.Location;
 
 public class Cofre {
+    public String nombre;
     public int inv;
     public int inv_cacao;
     public int inv_huevo;
@@ -22,11 +23,13 @@ public class Cofre {
     }
 
     public Cofre(
+            String nombre,
             int inv,
             int inv_cacao,
             int inv_huevo,
             int inv_leche,
             int inv_trigo) {
+        this.nombre = nombre;
         this.inv = inv;
         this.inv_cacao = inv_cacao;
         this.inv_huevo = inv_huevo;

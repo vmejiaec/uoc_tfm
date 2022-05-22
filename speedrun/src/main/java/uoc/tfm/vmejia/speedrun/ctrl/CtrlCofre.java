@@ -1,5 +1,7 @@
 package uoc.tfm.vmejia.speedrun.ctrl;
 
+import org.bukkit.block.Chest;
+import org.bukkit.inventory.ItemStack;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
 import uoc.tfm.vmejia.speedrun.var.Material;
@@ -87,5 +89,29 @@ public class CtrlCofre {
             return true;
         }
         return  false;
+    }
+
+    public static void BorrarContenido(Chest chest){
+        int n = chest.getInventory().getContents().length;
+        for (int i=0; i < n ; i++){
+            ItemStack content = chest.getInventory().getContents()[i];
+            if (content == null) continue;
+            chest.getInventory().removeItem (content);
+        }
+    }
+
+    public static void ColocarContenido(Chest chest, Cofre cofre){
+        ItemStack itemStackCocoa = new ItemStack(org.bukkit.Material.COCOA_BEANS,cofre.inv_cacao);
+        ItemStack itemStackHuevo = new ItemStack(org.bukkit.Material.EGG,cofre.inv_huevo);
+        ItemStack itemStackLeche = new ItemStack(org.bukkit.Material.MILK_BUCKET,cofre.inv_leche);
+        ItemStack itemStackTrigo = new ItemStack(org.bukkit.Material.WHEAT,cofre.inv_trigo);
+        chest.getInventory().addItem(itemStackCocoa,itemStackHuevo,itemStackLeche,itemStackTrigo);
+    }
+
+    public static void PublicaContenido(Cofre cofre){
+        System.out.print("Publica el contenido del cofre: "+cofre.nombre);
+        Chest chest = (Chest) cofre.pos.getBlock().getState();
+        CtrlCofre.BorrarContenido(chest);
+        CtrlCofre.ColocarContenido(chest,cofre);
     }
 }

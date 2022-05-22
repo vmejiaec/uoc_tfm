@@ -39,7 +39,7 @@ arenas:
       y: 5
       z: -86
     player-spawn:
-      x: 153
+      x: 152
       y: 4
       z: -89
       yaw: 0
@@ -77,7 +77,7 @@ arenas:
       y: 5
       z: -86
     player-spawn:
-      x: 136
+      x: 137
       y: 4
       z: -89
       yaw: -180

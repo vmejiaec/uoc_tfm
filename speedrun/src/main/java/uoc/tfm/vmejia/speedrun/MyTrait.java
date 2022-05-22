@@ -12,10 +12,12 @@ import uoc.tfm.vmejia.cbrplugin.Recomendar;
 import uoc.tfm.vmejia.speedrun.cbr.UtilModelo;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
+import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
+import uoc.tfm.vmejia.speedrun.util.UtilEscena;
 import uoc.tfm.vmejia.speedrun.var.Escena;
 
 public class MyTrait extends Trait {
@@ -80,6 +82,9 @@ public class MyTrait extends Trait {
                 }
                 // Publica el estado de la base
                 System.out.println(UtilBase.publicar(escena.baseNPC));
+                CtrlCofre.PublicaContenido(escena.baseNPC.cofrepan);
+                CtrlCofre.PublicaContenido(escena.baseNPC.cofregalleta);
+                CtrlCofre.PublicaContenido(escena.baseNPC.cofrepastel);
                 // Elije la estrategia
                 UtilModelo.estrategia(reco, escena);
             } else {  // está en el almacen
@@ -89,10 +94,12 @@ public class MyTrait extends Trait {
                     case ALALMACEN1:
                         CtrlAgente.Toma(escena.agente,escena.almacenIzq);
                         System.out.println(UtilAlmacen.publica(escena.almacenIzq));
+                        CtrlCofre.PublicaContenido(escena.almacenIzq.cofre);
                         break;
                     case ALALMACEN2:
                         CtrlAgente.Toma(escena.agente,escena.almacenDer);
                         System.out.println(UtilAlmacen.publica(escena.almacenDer));
+                        CtrlCofre.PublicaContenido(escena.almacenDer.cofre);
                         break;
                 }
                 // Se publica al agente
@@ -139,7 +146,6 @@ public class MyTrait extends Trait {
             reco.loadengine();
             //
             configCofresIni = true;
-
             // Colocar al agente en el inicio
             world = npc.getStoredLocation().getWorld();
             System.out.println(" -- -- Coloca al agente en la base inicial");
@@ -160,10 +166,9 @@ public class MyTrait extends Trait {
                 //
                 configCofresIni = false;
                 // Coloca los datos de la arena en la escena
-
-                escena.inicializarAlamcenesYCofres(plugin.getArenaManager().getArena(npc.getUniqueId()), plugin.getEscenaManager());
-                escena.iniciaLocaciones( plugin.getArenaManager().getArena(npc.getUniqueId()));
-                escena.iniciaContenidoCofres();
+                UtilEscena.inicializarAlamcenesYCofres(escena, plugin.getArenaManager().getArena(npc.getUniqueId()), plugin.getEscenaManager());
+                UtilEscena.iniciaLocaciones(escena, plugin.getArenaManager().getArena(npc.getUniqueId()));
+                UtilEscena.PublicaContenidoCofres(escena);
                 // Borra la memoria del NPC
                 System.out.println("Se cancela la navegación del NPC");
                 npc.getNavigator().cancelNavigation();
