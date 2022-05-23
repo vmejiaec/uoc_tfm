@@ -18,8 +18,12 @@ import org.bukkit.inventory.CraftingInventory;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
+import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
+import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.util.UtilBase;
 import uoc.tfm.vmejia.speedrun.util.UtilChest;
 import uoc.tfm.vmejia.speedrun.util.UtilLocation;
 import uoc.tfm.vmejia.speedrun.var.Agente;
@@ -80,10 +84,9 @@ public class Events implements Listener {
             }
             // Decide qué hacer segun si es almacen o base
             if(cofre.nombre.contains("Almacen")){
-                System.out.print("Estoy en Almacen");
+                System.out.print("El jugador está en el Almacen: "+cofre.nombre);
                 if(event.getSlotType().equals(InventoryType.SlotType.CONTAINER)){
                     // Averiguo qué material dio click
-
                     switch (itemStack.getType()){
                         case EGG:
                             jugador.material = MaterialModelo.tipo.HUEVO;
@@ -99,23 +102,42 @@ public class Events implements Listener {
                             break;
                     }
                     // Quito del cofre del almacen y pongo en el jugador
-                    if (CtrlCofre.Retiro(cofre, jugador.material , jugador.cantidad)){
-                        // Pone en el cofre del agente
-                        System.out.println(" - Deposito: " );
-                        CtrlCofre.Deposito(jugador.bolsa,jugador.material,jugador.cantidad);
+                    if (cofre.nombre.contains("1")){
+                        CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
+                    } else {
+                        CtrlAgente.Toma(escena.jugador,escena.almacenDer);
                     }
+
                     // publico el cofre del almacen
                     CtrlCofre.PublicaContenido(cofre);
                     // Publica la bolsa en el jugador
                     player.getInventory().addItem(itemStack);
                 }
-            } else if(cofre.nombre.contains("base")){
-                System.out.print("Estoy en la base");
+            } else if(cofre.nombre.contains("base Player")){
+                System.out.print("El jugador está en la base");
                 if(event.getSlotType().equals(InventoryType.SlotType.QUICKBAR)){
                     // Quito del jugador y pongo en el cofre
+                    CtrlAgente.Deja(escena.jugador,cofre);
                 }
+                // publico el cofre del almacen
+                CtrlCofre.PublicaContenido(cofre);
+                // Publica la bolsa en el jugador
+                player.getInventory().removeItem(itemStack);
+                //
+                // Procesa los productos de los cofres de la base
+                System.out.println("Calcula que haya al menos un producto producido >>>>");
+                boolean resProceso = CtrlBase.procesa(escena.basePlayer);
+                // Si se puede producir un producto, se reporta al marcador
+                if (resProceso){
+                    MarcadorEvent marcadorEvent = new MarcadorEvent(player.getUniqueId(), " Se marcó un: ");
+                    Bukkit.getPluginManager().callEvent(marcadorEvent);
+                }
+                // Publica el estado de la base
+                System.out.println(UtilBase.publicar(escena.basePlayer));
+                CtrlCofre.PublicaContenido(escena.basePlayer.cofrepan);
+                CtrlCofre.PublicaContenido(escena.basePlayer.cofregalleta);
+                CtrlCofre.PublicaContenido(escena.basePlayer.cofrepastel);
             }
-
         }
 
         event.setCancelled(true);
