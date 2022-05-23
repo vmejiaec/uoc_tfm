@@ -7,8 +7,8 @@ public class Agente {
     public  enum destinotipo {ALALMACEN1, ALALMACEN2}
     public destinotipo destino;
     // misión
-    public Material.tipo producto;
-    public Material.tipo material;
+    public MaterialModelo.tipo producto;
+    public MaterialModelo.tipo material;
     public int cantidad;
 
 

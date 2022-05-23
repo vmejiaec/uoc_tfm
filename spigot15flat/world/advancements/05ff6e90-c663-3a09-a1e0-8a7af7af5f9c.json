@@ -271,7 +271,9 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "cooked_mutton": "2022-04-03 15:42:18 -0500"
+      "cooked_mutton": "2022-04-03 15:42:18 -0500",
+      "bread": "2022-05-22 17:50:02 -0500",
+      "carrot": "2022-05-22 17:50:06 -0500"
     },
     "done": false
   },
@@ -633,6 +635,12 @@
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2022-03-09 15:44:29 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2022-05-22 14:52:09 -0500"
     },
     "done": true
   },

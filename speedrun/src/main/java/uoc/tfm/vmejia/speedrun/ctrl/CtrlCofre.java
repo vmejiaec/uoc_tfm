@@ -2,14 +2,11 @@ package uoc.tfm.vmejia.speedrun.ctrl;
 
 import org.bukkit.block.Chest;
 import org.bukkit.inventory.ItemStack;
-import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
-import uoc.tfm.vmejia.speedrun.var.Material;
-
-import java.util.UUID;
+import uoc.tfm.vmejia.speedrun.var.MaterialModelo;
 
 public class CtrlCofre {
-    public static  boolean Retiro(Cofre cofre, Material.tipo material, int cantidad){
+    public static  boolean Retiro(Cofre cofre, MaterialModelo.tipo material, int cantidad){
         boolean exito = false;
         switch (material){
             case CACAO:
@@ -42,7 +39,7 @@ public class CtrlCofre {
         return exito;
     }
 
-    public static void Deposito(Cofre cofre, Material.tipo material, int cantidad){
+    public static void Deposito(Cofre cofre, MaterialModelo.tipo material, int cantidad){
         // Se deposita en el cofre seleccionado
         switch (material){
             case CACAO:
@@ -80,10 +77,10 @@ public class CtrlCofre {
         ){
             // Si hay suficientes ingredientes entonces creamos el producto
             // - Retiro los ingredientes
-            CtrlCofre.Retiro(cofre, Material.tipo.CACAO,ingr_c);
-            CtrlCofre.Retiro(cofre, Material.tipo.HUEVO,ingr_h);
-            CtrlCofre.Retiro(cofre, Material.tipo.LECHE,ingr_l);
-            CtrlCofre.Retiro(cofre, Material.tipo.TRIGO,ingr_t);
+            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.CACAO,ingr_c);
+            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.HUEVO,ingr_h);
+            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.LECHE,ingr_l);
+            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.TRIGO,ingr_t);
             // - Añadir los productos
             ++cofre.inv;
             return true;

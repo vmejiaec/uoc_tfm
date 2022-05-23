@@ -38,7 +38,7 @@ public final class SpeedRun extends JavaPlugin {
     @Override
     public void onEnable() {
         // Registra la clase con los eventos
-        getServer().getPluginManager().registerEvents(new Events(), this);
+        getServer().getPluginManager().registerEvents(new Events(this), this);
 
         // Verifica que el plugin de Citizens se encuentre activo.
         if( getServer().getPluginManager().getPlugin("Citizens") == null

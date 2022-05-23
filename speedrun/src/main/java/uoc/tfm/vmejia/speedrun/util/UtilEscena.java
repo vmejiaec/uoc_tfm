@@ -1,9 +1,7 @@
 package uoc.tfm.vmejia.speedrun.util;
 
 import org.bukkit.World;
-import org.bukkit.block.Chest;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
@@ -132,12 +130,19 @@ public class UtilEscena {
         // Inicializa el agente
         escena.agente = new Agente("npc");
         escena.agente.destino = Agente.destinotipo.ALALMACEN1;
-        escena.agente.producto = Material.tipo.PAN;
-        escena.agente.material = Material.tipo.CACAO;
+        escena.agente.producto = MaterialModelo.tipo.PAN;
+        escena.agente.material = MaterialModelo.tipo.CACAO;
         escena.agente.cantidad = 10;
+        // Inicializa el jugador
+        escena.jugador = new Agente("jugador");
+        escena.jugador.material = MaterialModelo.tipo.HUEVO;
+        escena.jugador.cantidad = 10;
         // Publica la condición inicial
         System.out.println(UtilAlmacen.publica(escena.almacenIzq));
         System.out.println(UtilAlmacen.publica(escena.almacenDer));
+
+        // Asocia la arena con la escena
+        arena.setEscena(escena);
     }
 
     public static void PublicaContenidoCofres(Escena escena) {

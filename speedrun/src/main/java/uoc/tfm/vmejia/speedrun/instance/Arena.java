@@ -9,6 +9,7 @@ import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 import uoc.tfm.vmejia.speedrun.var.Almacen;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
+import uoc.tfm.vmejia.speedrun.var.Escena;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,7 @@ public class Arena {
     private Location npcSpawn;
     private Location almacen1, almacen2;
     private Almacen almAlmacen1, almAlmacen2;
+    Escena escena;
 
     public Arena(SpeedRun minigame, int id,
                  Location playerSpawn, Location sign, Location signExit,
@@ -188,4 +190,11 @@ public class Arena {
         signBlock.update();
     }
 
+    public void setEscena(Escena escena) {
+        this.escena = escena;
+    }
+
+    public  Escena getEscena(){
+        return this.escena;
+    }
 }

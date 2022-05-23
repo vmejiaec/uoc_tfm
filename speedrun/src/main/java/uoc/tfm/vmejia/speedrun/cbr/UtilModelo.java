@@ -4,7 +4,7 @@ import uoc.tfm.vmejia.cbrplugin.Recomendar;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.var.Agente;
 import uoc.tfm.vmejia.speedrun.var.Escena;
-import uoc.tfm.vmejia.speedrun.var.Material;
+import uoc.tfm.vmejia.speedrun.var.MaterialModelo;
 
 import java.util.Random;
 
@@ -34,28 +34,28 @@ public class UtilModelo {
         sorteo = r.nextInt(4);
         switch (sorteo){
             case 0:
-                escena.agente.material = Material.tipo.CACAO;
+                escena.agente.material = MaterialModelo.tipo.CACAO;
                 break;
             case 1:
-                escena.agente.material = Material.tipo.HUEVO;
+                escena.agente.material = MaterialModelo.tipo.HUEVO;
                 break;
             case 2:
-                escena.agente.material = Material.tipo.LECHE;
+                escena.agente.material = MaterialModelo.tipo.LECHE;
                 break;
             case 3:
-                escena.agente.material = Material.tipo.TRIGO;
+                escena.agente.material = MaterialModelo.tipo.TRIGO;
                 break;
         }
         sorteo = r.nextInt(3);
         switch (sorteo){
             case 0:
-                escena.agente.producto = Material.tipo.PAN;
+                escena.agente.producto = MaterialModelo.tipo.PAN;
                 break;
             case 1:
-                escena.agente.producto = Material.tipo.GALLETA;
+                escena.agente.producto = MaterialModelo.tipo.GALLETA;
                 break;
             case 2:
-                escena.agente.producto = Material.tipo.PASTEL;
+                escena.agente.producto = MaterialModelo.tipo.PASTEL;
                 break;
         }
     }

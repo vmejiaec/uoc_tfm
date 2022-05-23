@@ -19,6 +19,7 @@ public class Escena {
     public Almacen almacenIzq;
     public Almacen almacenDer;
     public Agente agente;
+    public Agente jugador;
 
     // Posiciones y caminos de la escena
     // La position de las bases
@@ -33,4 +34,15 @@ public class Escena {
     public List<Vector> caminoAlm2 = new ArrayList<Vector>(){{add(vecBaseNPC);add(vecAlmacen2);}};
     public List<Vector> camino = new ArrayList<>();
 
+    public Cofre getCofre(Location location) {
+        if (almacenIzq.cofre.pos.equals(location)) return almacenIzq.cofre;
+        if (almacenDer.cofre.pos.equals(location)) return almacenDer.cofre;
+        if (basePlayer.cofrepan.pos.equals(location)) return basePlayer.cofrepan;
+        if (basePlayer.cofregalleta.pos.equals(location)) return basePlayer.cofregalleta;
+        if (basePlayer.cofrepastel.pos.equals(location)) return basePlayer.cofrepastel;
+        if (baseNPC.cofrepan.pos.equals(location)) return baseNPC.cofrepan;
+        if (baseNPC.cofregalleta.pos.equals(location)) return baseNPC.cofregalleta;
+        if (baseNPC.cofrepastel.pos.equals(location)) return baseNPC.cofrepastel;
+        return null;
+    }
 }
