@@ -137,11 +137,11 @@ public class UtilEscena {
         escena.agente.destino = Agente.destinotipo.ALALMACEN1;
         escena.agente.producto = MaterialModelo.tipo.PAN;
         escena.agente.material = MaterialModelo.tipo.CACAO;
-        escena.agente.cantidad = 10;
+        escena.agente.cantidad = config.getInt("npc-cant-min-toma");
         // Inicializa el jugador
         escena.jugador = new Agente("jugador");
         escena.jugador.material = MaterialModelo.tipo.HUEVO;
-        escena.jugador.cantidad = 10;
+        escena.jugador.cantidad = config.getInt("player-cant-min-toma");;
         // Publica la condición inicial
         System.out.println(UtilAlmacen.publica(escena.almacenIzq));
         System.out.println(UtilAlmacen.publica(escena.almacenDer));

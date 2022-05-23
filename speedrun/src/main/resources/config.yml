@@ -1,6 +1,27 @@
 required-players: 1
-countdown-seconds: 6
+countdown-seconds: 3
 cuenta-aviso: 3
+points-to-win: 1
+player-cant-min-toma: 3
+npc-cant-min-toma: 5
+receta-pan:
+  nombre: 'pan'
+  inv_cacao: 0
+  inv_huevo: 1
+  inv_leche: 0
+  inv_trigo: 3
+receta-galleta:
+  nombre: 'galleta'
+  inv_cacao: 1
+  inv_huevo: 1
+  inv_leche: 1
+  inv_trigo: 2
+receta-pastel:
+  nombre: 'pastel'
+  inv_cacao: 3
+  inv_huevo: 2
+  inv_leche: 1
+  inv_trigo: 0
 lobby-spawn:
   world: 'world'
   x: 163
@@ -10,56 +31,116 @@ lobby-spawn:
   pitch: 0
 arenas:
   0:
+    world: 'world'
     sign:
-      world: 'world'
       x: 165
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
-      x: 147
+      x: 149
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
-      x: 153
+      x: 152
       y: 4
       z: -89
-      yaw: -90
+      yaw: 0
       pitch: 0
+    npc-spawn:
+      x: 152
+      y: 4
+      z: -105
+    almacen1:
+      x: 172
+      y: 4
+      z: -103
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
+    almacen2:
+      x: 172
+      y: 4
+      z: -90
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'
   1:
+    world: 'world'
     sign:
-      world: 'world'
       x: 163
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
-      x: 147
+      x: 140
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
-      x: 167
+      x: 137
       y: 4
-      z: -61
+      z: -89
       yaw: -180
       pitch: 0
+    npc-spawn:
+      x: 137
+      y: 4
+      z: -105
+    almacen1:
+      x: 117
+      y: 4
+      z: -90
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
+    almacen2:
+      x: 117
+      y: 4
+      z: -103
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'
   2:
+    world: 'world'
     sign:
-      world: 'world'
       x: 161
       y: 9
       z: -123
     sign-exit:
-      world: 'world'
-      x: 147
+      x: 212
       y: 5
       z: -86
     player-spawn:
-      world: 'world'
-      x: 167
+      x: 209
       y: 4
-      z: -69
+      z: -89
       yaw: -180
       pitch: 0
+    npc-spawn:
+      x: 209
+      y: 4
+      z: -105
+    almacen1:
+      x: 189
+      y: 4
+      z: -91
+      inv_cacao: 25
+      inv_huevo: 25
+      inv_leche: 35
+      inv_trigo: 30
+    almacen2:
+      x: 189
+      y: 4
+      z: -103
+      inv_cacao: 15
+      inv_huevo: 15
+      inv_leche: 20
+      inv_trigo: 10
+    npc-base:
+      objetivo: 'pan'
