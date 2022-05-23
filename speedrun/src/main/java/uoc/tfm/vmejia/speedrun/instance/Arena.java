@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
+import uoc.tfm.vmejia.speedrun.util.UtilEscena;
 import uoc.tfm.vmejia.speedrun.var.Almacen;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
 import uoc.tfm.vmejia.speedrun.var.Escena;
@@ -29,7 +30,7 @@ public class Arena {
     private Location npcSpawn;
     private Location almacen1, almacen2;
     private Almacen almAlmacen1, almAlmacen2;
-    Escena escena;
+    private Escena escena;
 
     public Arena(SpeedRun minigame, int id,
                  Location playerSpawn, Location sign, Location signExit,
@@ -121,6 +122,9 @@ public class Arena {
         players.add(player.getUniqueId());
         player.teleport(playerSpawn);
 
+        // Inicializa al player, borra su inventario personal
+        UtilEscena.inicializarJugador(player);
+
         // Luego de añadir al jugador, se añade al NPC
         NPC npc = minigame.getNPC();
         System.out.println("NPC desde la arena "+npc.getName());
@@ -136,7 +140,10 @@ public class Arena {
     public void removePlayer(Player player){
         players.remove(player.getUniqueId());
         player.teleport(ConfigManager.getLobbySpawn());
-        player.sendTitle("","");
+        player.sendTitle("GAME OVER","Saliste de la arena");
+
+        // Inicializa al player, borra su inventario personal
+        UtilEscena.inicializarJugador(player);
 
         // Se remueve al NPC
         NPC npc = minigame.getNPC();

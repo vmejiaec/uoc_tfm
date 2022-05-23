@@ -86,31 +86,18 @@ public class Events implements Listener {
             if(cofre.nombre.contains("Almacen")){
                 System.out.print("El jugador está en el Almacen: "+cofre.nombre);
                 if(event.getSlotType().equals(InventoryType.SlotType.CONTAINER)){
-                    // Averiguo qué material dio click
-                    switch (itemStack.getType()){
-                        case EGG:
-                            jugador.material = MaterialModelo.tipo.HUEVO;
-                            break;
-                        case COCOA_BEANS:
-                            jugador.material = MaterialModelo.tipo.CACAO;
-                            break;
-                        case MILK_BUCKET:
-                            jugador.material = MaterialModelo.tipo.LECHE;
-                            break;
-                        case WHEAT:
-                            jugador.material = MaterialModelo.tipo.TRIGO;
-                            break;
-                    }
+                    // Averiguo a qué material dio click y equivale al modelo
+                    jugador.material = MaterialModelo.equivale(itemStack.getType());
                     // Quito del cofre del almacen y pongo en el jugador
                     if (cofre.nombre.contains("1")){
                         CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
                     } else {
                         CtrlAgente.Toma(escena.jugador,escena.almacenDer);
                     }
-
                     // publico el cofre del almacen
                     CtrlCofre.PublicaContenido(cofre);
                     // Publica la bolsa en el jugador
+                    itemStack.setAmount(jugador.cantidad);
                     player.getInventory().addItem(itemStack);
                 }
             } else if(cofre.nombre.contains("base Player")){

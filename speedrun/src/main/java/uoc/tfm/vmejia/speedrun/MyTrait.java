@@ -14,6 +14,7 @@ import uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
+import uoc.tfm.vmejia.speedrun.instance.Arena;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
@@ -164,11 +165,13 @@ public class MyTrait extends Trait {
                 // configura la escena con la arena del player
                 System.out.println("************* Configuración de la Escena con la arena elejida");
                 //
+                Arena arena = plugin.getArenaManager().getArena(npc.getUniqueId());
                 configCofresIni = false;
                 // Coloca los datos de la arena en la escena
-                UtilEscena.inicializarAlamcenesYCofres(escena, plugin.getArenaManager().getArena(npc.getUniqueId()), plugin.getEscenaManager());
-                UtilEscena.iniciaLocaciones(escena, plugin.getArenaManager().getArena(npc.getUniqueId()));
+                UtilEscena.inicializarAlamcenesYCofres(escena, arena, plugin.getEscenaManager());
+                UtilEscena.iniciaLocaciones(escena, arena);
                 UtilEscena.PublicaContenidoCofres(escena);
+
                 // Borra la memoria del NPC
                 System.out.println("Se cancela la navegación del NPC");
                 npc.getNavigator().cancelNavigation();

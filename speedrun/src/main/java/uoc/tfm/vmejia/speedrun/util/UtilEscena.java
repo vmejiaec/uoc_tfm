@@ -1,7 +1,11 @@
 package uoc.tfm.vmejia.speedrun.util;
 
 import org.bukkit.World;
+import org.bukkit.block.Chest;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
@@ -159,7 +163,16 @@ public class UtilEscena {
     }
 
 
-
+    public static void inicializarJugador(Player player) {
+        // borramos el inventario del player
+        Inventory inventory = player.getInventory();
+        int n = inventory.getContents().length;
+        for (int i=0; i < n ; i++){
+            ItemStack content = inventory.getContents()[i];
+            if (content == null) continue;
+            inventory.removeItem (content);
+        }
+    }
 }
 
 
