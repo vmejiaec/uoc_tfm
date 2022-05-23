@@ -12,5 +12,12 @@ public class UtilAgente {
         return res;
     }
 
+    public static boolean bolsaVacia(Agente agente){
+        return
+            agente.bolsa.inv_cacao == 0 &&
+            agente.bolsa.inv_huevo == 0 &&
+            agente.bolsa.inv_leche == 0 &&
+            agente.bolsa.inv_trigo == 0 ;
+    }
 
 }

@@ -3,15 +3,18 @@ package uoc.tfm.vmejia.speedrun.ctrl;
 import uoc.tfm.vmejia.speedrun.var.*;
 
 public class CtrlAgente {
-    public static void Toma(Agente agente, Almacen almacen){
+    public static boolean Toma(Agente agente, Almacen almacen){
+        boolean boolToma = false;
         // Quita del almacen
         System.out.print("Operación: TOMA");
         System.out.print("Retiro: " + almacen.nombre + " " + agente.material + " " + agente.cantidad);
         if (CtrlCofre.Retiro(almacen.cofre, agente.material, agente.cantidad)){
+            boolToma = true;
             // Pone en el cofre del agente
             System.out.println(" - Deposito: " );
             CtrlCofre.Deposito(agente.bolsa,agente.material,agente.cantidad);
         }
+        return boolToma;
     }
 
     public static void Deja(Agente agente, Cofre cofre){

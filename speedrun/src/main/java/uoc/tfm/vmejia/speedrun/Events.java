@@ -23,6 +23,7 @@ import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
 import uoc.tfm.vmejia.speedrun.util.UtilChest;
 import uoc.tfm.vmejia.speedrun.util.UtilLocation;
@@ -86,25 +87,23 @@ public class Events implements Listener {
             if(cofre.nombre.contains("Almacen")){
                 System.out.print("El jugador está en el Almacen: "+cofre.nombre);
                 if(event.getSlotType().equals(InventoryType.SlotType.CONTAINER)){
-                    boolean jugadorBolsaVacia =
-                            jugador.bolsa.inv_cacao == 0 &&
-                            jugador.bolsa.inv_huevo == 0 &&
-                            jugador.bolsa.inv_leche == 0 &&
-                            jugador.bolsa.inv_trigo == 0 ;
-                    if(jugadorBolsaVacia){
+                    if(UtilAgente.bolsaVacia(jugador)){
                         // Averiguo a qué material dio click y equivale al modelo
                         jugador.material = MaterialModelo.equivale(itemStack.getType());
                         // Quito del cofre del almacen y pongo en el jugador
+                        boolean boolToma = false;
                         if (cofre.nombre.contains("1")){
-                            CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
+                            boolToma = CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
                         } else {
-                            CtrlAgente.Toma(escena.jugador,escena.almacenDer);
+                            boolToma = CtrlAgente.Toma(escena.jugador,escena.almacenDer);
                         }
                         // publico el cofre del almacen
                         CtrlCofre.PublicaContenido(cofre);
-                        // Publica la bolsa en el jugador
-                        itemStack.setAmount(jugador.cantidad);
-                        player.getInventory().addItem(itemStack);
+                        if(boolToma){
+                            // Publica la bolsa en el jugador
+                            itemStack.setAmount(jugador.cantidad);
+                            player.getInventory().addItem(itemStack);
+                        }
                     }
                 }
             } else if(cofre.nombre.contains("base Player")){
