@@ -107,7 +107,7 @@ public class Events implements Listener {
                     // publico el cofre del almacen
                     CtrlCofre.PublicaContenido(cofre);
                     // Publica la bolsa en el jugador
-                    
+                    player.getInventory().addItem(itemStack);
                 }
             } else if(cofre.nombre.contains("base")){
                 System.out.print("Estoy en la base");
