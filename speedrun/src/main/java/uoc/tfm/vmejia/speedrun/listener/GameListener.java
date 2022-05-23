@@ -2,6 +2,7 @@ package uoc.tfm.vmejia.speedrun.listener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -34,7 +35,12 @@ public class GameListener implements Listener {
         System.out.println("Evento Marcador para: "+event.getUuid() + " "+ event.getMessage());
         Arena arena = minigame.getArenaManager().getArena(event.getUuid());
         if(arena != null && arena.getState().equals(GameState.LIVE)){
-            arena.getGame().addPoint(event.getUuid());
+            if(event.getMessage().equals("player")){
+                Player player = Bukkit.getPlayer(event.getUuid());
+                arena.getGame().addPoint(player);
+            } else {
+                arena.getGame().addPoint(event.getUuid());
+            }
         }
     }
 

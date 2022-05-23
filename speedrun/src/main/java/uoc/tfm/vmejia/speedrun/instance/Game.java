@@ -1,5 +1,6 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
@@ -41,7 +42,7 @@ public class Game {
         int playerPoints = points.get(player.getUniqueId())+1;
 
         // Verifica que el puntaje sea el ganador
-        if(playerPoints == 3){
+        if(playerPoints == ConfigManager.getPointsToWin()){
             arena.sendMessage(ChatColor.GOLD + player.getName()+" HA GANADO LA PARTIDA!!");
             // Se resetea la arena para volver a empezar el juego
             arena.reset();

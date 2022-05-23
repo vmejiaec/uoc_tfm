@@ -86,19 +86,26 @@ public class Events implements Listener {
             if(cofre.nombre.contains("Almacen")){
                 System.out.print("El jugador está en el Almacen: "+cofre.nombre);
                 if(event.getSlotType().equals(InventoryType.SlotType.CONTAINER)){
-                    // Averiguo a qué material dio click y equivale al modelo
-                    jugador.material = MaterialModelo.equivale(itemStack.getType());
-                    // Quito del cofre del almacen y pongo en el jugador
-                    if (cofre.nombre.contains("1")){
-                        CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
-                    } else {
-                        CtrlAgente.Toma(escena.jugador,escena.almacenDer);
+                    boolean jugadorBolsaVacia =
+                            jugador.bolsa.inv_cacao == 0 &&
+                            jugador.bolsa.inv_huevo == 0 &&
+                            jugador.bolsa.inv_leche == 0 &&
+                            jugador.bolsa.inv_trigo == 0 ;
+                    if(jugadorBolsaVacia){
+                        // Averiguo a qué material dio click y equivale al modelo
+                        jugador.material = MaterialModelo.equivale(itemStack.getType());
+                        // Quito del cofre del almacen y pongo en el jugador
+                        if (cofre.nombre.contains("1")){
+                            CtrlAgente.Toma(escena.jugador,escena.almacenIzq);
+                        } else {
+                            CtrlAgente.Toma(escena.jugador,escena.almacenDer);
+                        }
+                        // publico el cofre del almacen
+                        CtrlCofre.PublicaContenido(cofre);
+                        // Publica la bolsa en el jugador
+                        itemStack.setAmount(jugador.cantidad);
+                        player.getInventory().addItem(itemStack);
                     }
-                    // publico el cofre del almacen
-                    CtrlCofre.PublicaContenido(cofre);
-                    // Publica la bolsa en el jugador
-                    itemStack.setAmount(jugador.cantidad);
-                    player.getInventory().addItem(itemStack);
                 }
             } else if(cofre.nombre.contains("base Player")){
                 System.out.print("El jugador está en la base");
@@ -110,13 +117,12 @@ public class Events implements Listener {
                 CtrlCofre.PublicaContenido(cofre);
                 // Publica la bolsa en el jugador
                 player.getInventory().removeItem(itemStack);
-                //
                 // Procesa los productos de los cofres de la base
                 System.out.println("Calcula que haya al menos un producto producido >>>>");
                 boolean resProceso = CtrlBase.procesa(escena.basePlayer);
                 // Si se puede producir un producto, se reporta al marcador
                 if (resProceso){
-                    MarcadorEvent marcadorEvent = new MarcadorEvent(player.getUniqueId(), " Se marcó un: ");
+                    MarcadorEvent marcadorEvent = new MarcadorEvent(player.getUniqueId(), "player");
                     Bukkit.getPluginManager().callEvent(marcadorEvent);
                 }
                 // Publica el estado de la base

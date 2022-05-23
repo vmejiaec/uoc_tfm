@@ -4,6 +4,7 @@ import org.bukkit.World;
 import org.bukkit.block.Chest;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.PufferFish;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
@@ -172,6 +173,12 @@ public class UtilEscena {
             if (content == null) continue;
             inventory.removeItem (content);
         }
+    }
+
+    public static boolean JugadorInventarioVacio(Player player){
+        // confirmo si el jugador está vacío
+        Inventory inventory = player.getInventory();
+        return true;
     }
 }
 
