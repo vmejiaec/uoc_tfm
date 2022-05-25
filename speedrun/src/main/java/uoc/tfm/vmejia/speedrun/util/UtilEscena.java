@@ -163,7 +163,6 @@ public class UtilEscena {
         CtrlCofre.PublicaContenido(escena.almacenDer.cofre);
     }
 
-
     public static void inicializarJugador(Player player) {
         // borramos el inventario del player
         Inventory inventory = player.getInventory();
@@ -173,12 +172,6 @@ public class UtilEscena {
             if (content == null) continue;
             inventory.removeItem (content);
         }
-    }
-
-    public static boolean JugadorInventarioVacio(Player player){
-        // confirmo si el jugador está vacío
-        Inventory inventory = player.getInventory();
-        return true;
     }
 }
 
