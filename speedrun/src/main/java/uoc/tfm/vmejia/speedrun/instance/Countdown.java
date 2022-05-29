@@ -25,9 +25,20 @@ public class Countdown extends BukkitRunnable {
     @Override
     public void run() {
         if(countdownSeconds == 0){
-            arena.sendTitle(ChatColor.RED+"INICIO", ChatColor.GRAY+"Que gane el mejor");
+            arena.sendTitle(
+                    ChatColor.RED+"INICIO",
+                    ChatColor.GRAY+"Pulsa TAB por ayuda");
+
+            //
             cancel();
             arena.start();
+
+            // Coloca la ayuda en el tab
+            if(arena.getState().equals(GameState.RECRUITING)){
+
+            } else {
+                GUI.PublicarLugar(arena.getPlayer(), "Arena "+arena.getId());
+            }
             return;
         }
 

@@ -7,7 +7,7 @@ npc-cant-min-toma: 5
 receta-pan:
   nombre: 'pan'
   inv_cacao: 0
-  inv_huevo: 1
+  inv_huevo: 2
   inv_leche: 0
   inv_trigo: 3
 receta-galleta:
@@ -27,7 +27,7 @@ lobby-spawn:
   x: 163
   y: 9
   z: -125
-  yaw: 90
+  yaw: 0
   pitch: 0
 arenas:
   0:
@@ -44,7 +44,7 @@ arenas:
       x: 152
       y: 4
       z: -89
-      yaw: 0
+      yaw: -90
       pitch: 0
     npc-spawn:
       x: 152
@@ -82,7 +82,7 @@ arenas:
       x: 137
       y: 4
       z: -89
-      yaw: -180
+      yaw: 90
       pitch: 0
     npc-spawn:
       x: 137
@@ -120,7 +120,7 @@ arenas:
       x: 209
       y: 4
       z: -89
-      yaw: -180
+      yaw: 90
       pitch: 0
     npc-spawn:
       x: 209

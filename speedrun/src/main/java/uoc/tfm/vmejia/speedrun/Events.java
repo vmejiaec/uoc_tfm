@@ -1,6 +1,9 @@
 package uoc.tfm.vmejia.speedrun;
 
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -162,10 +165,15 @@ public class Events implements Listener {
 
     @EventHandler
     public void onJoin (PlayerJoinEvent e){
-        System.out.println("Evento onJoin empieza hhhhhhhhhhhhhhhhhhhhhh");
+        System.out.println("Evento onJoin publica GUI");
         Player player = e.getPlayer();
         GUI.publicarMarcadorInicial(player);
-
-        System.out.println("Evento onJoin termina hhhhhhhhhhhhhhhhhhhhhh");
+        GUI.PublicarLugar(player,"LOBBY");
+        player.sendTitle(
+                ChatColor.RED+"SPEED-RUN",
+                ChatColor.GREEN+"Presiona TAB para ayuda",
+                20,
+                200,
+                20);
     }
 }

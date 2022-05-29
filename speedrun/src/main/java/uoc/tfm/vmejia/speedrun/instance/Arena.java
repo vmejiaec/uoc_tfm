@@ -30,6 +30,7 @@ public class Arena {
     private Location almacen1, almacen2;
     private Almacen almAlmacen1, almAlmacen2;
     private Escena escena;
+    private Player player;
 
     public Arena(SpeedRun minigame, int id,
                  Location playerSpawn, Location sign, Location signExit,
@@ -72,7 +73,7 @@ public class Arena {
     public Location getAlmacen2(){return this.almacen2;}
     public void setAlmacen1(Almacen almacen1){this.almAlmacen1 = almacen1;}
     public void setAlmacen2(Almacen almacen2){this.almAlmacen2 = almacen2;}
-
+    public Player getPlayer(){return this.player;};
     public Almacen getalmAlmacen1(){return almAlmacen1;}
     public Almacen getalmAlmacen2(){return almAlmacen2;}
 
@@ -120,6 +121,7 @@ public class Arena {
     public void addPlayer(Player player){
         // Se coloca al player en la arena
         players.add(player.getUniqueId());
+        this.player = player;
         player.teleport(playerSpawn);
 
         // Inicializa al player, borra su inventario personal
@@ -141,6 +143,8 @@ public class Arena {
         players.remove(player.getUniqueId());
         player.teleport(ConfigManager.getLobbySpawn());
         player.sendTitle("GAME OVER","Saliste de la arena");
+        // Publica el lugar
+        GUI.PublicarLugar(player, "LOBBY");
 
         // Inicializa al player, borra su inventario personal
         UtilEscena.inicializarJugador(player);
@@ -167,7 +171,6 @@ public class Arena {
         if(state == GameState.LIVE){
             updateSign("Arena "+id,state.name(), "","Players: "+players.size());
         }
-
     }
 
     /* TOOLS */

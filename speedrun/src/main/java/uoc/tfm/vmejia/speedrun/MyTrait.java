@@ -92,16 +92,18 @@ public class MyTrait extends Trait {
                 CtrlCofre.PublicaContenido(escena.baseNPC.cofrepastel);
                 // Publica el marcador
                 Arena arena = plugin.getArenaManager().getArena(npc.getUniqueId());
-                UUID playerUUID = null;
-                for (UUID uuid : arena.getPlayers()) {
-                    if(uuid.equals(npc.getUniqueId())){
+                if(arena != null){
+                    UUID playerUUID = null;
+                    for (UUID uuid : arena.getPlayers()) {
+                        if(uuid.equals(npc.getUniqueId())){
 
-                    } else {
-                        playerUUID = uuid;
+                        } else {
+                            playerUUID = uuid;
+                        }
                     }
+                    Player player = Bukkit.getPlayer(playerUUID);
+                    GUI.PublicarMarcador(player,escena);
                 }
-                Player player = Bukkit.getPlayer(playerUUID);
-                GUI.PublicarMarcador(player,escena);
                 // Elije la estrategia
                 UtilModelo.estrategia(reco, escena);
             } else {  // está en el almacen

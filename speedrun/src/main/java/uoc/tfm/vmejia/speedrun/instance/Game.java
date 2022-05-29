@@ -43,16 +43,20 @@ public class Game {
 
         // Verifica que el puntaje sea el ganador
         if(playerPoints == ConfigManager.getPointsToWin()){
-            arena.sendMessage(ChatColor.GOLD + player.getName()+" HA GANADO LA PARTIDA!!");
+            arena.sendMessage(ChatColor.GOLD + player.getName()+" HAS GANADO LA PARTIDA!!");
+            // Publicar Titulo de ganancia
+            GUI.PublicarGanador(player);
             // Se resetea la arena para volver a empezar el juego
             arena.reset();
+            // Publica el lugar
+            GUI.PublicarLugar(player,"LOBBY");
             return;
         }
 
         // Registra el nuevo marcador
         points.replace(player.getUniqueId(),playerPoints);
         // notifica al jugador de los puntos ganados
-        player.sendMessage(ChatColor.GREEN + player.getName()+ "+1 PUNTO!!" );
+        player.sendMessage(ChatColor.GREEN + player.getName()+ " + 1 PRODUCTO!!" );
     }
 
     // Aumenta el marcador de un jugador por su UUID
@@ -70,6 +74,6 @@ public class Game {
         // Registra el nuevo marcador
         points.replace(uuid,playerPoints);
         // notifica al jugador de los puntos ganados
-        arena.sendMessage(ChatColor.GREEN + "NPC +1 PUNTO!!" );
+        arena.sendMessage(ChatColor.GREEN + "NPC + 1 PRODUCTO!!" );
     }
 }

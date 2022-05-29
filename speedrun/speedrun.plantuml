@@ -1,0 +1,351 @@
+@startuml
+
+title __SPEEDRUN's Class Diagram__\n
+
+  namespace uoc.tfm.vmejia.speedrun {
+    class uoc.tfm.vmejia.speedrun.Events {
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    class uoc.tfm.vmejia.speedrun.MyTrait {
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    class uoc.tfm.vmejia.speedrun.SpeedRun {
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace cbr {
+      class uoc.tfm.vmejia.speedrun.cbr.Caso {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace cbr {
+      class uoc.tfm.vmejia.speedrun.cbr.Modelo {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace cbr {
+      class uoc.tfm.vmejia.speedrun.cbr.UtilCaso {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace cbr {
+      class uoc.tfm.vmejia.speedrun.cbr.UtilModelo {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace command {
+      class uoc.tfm.vmejia.speedrun.command.ArenaCommand {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace ctrl {
+      class uoc.tfm.vmejia.speedrun.ctrl.CtrlAgente {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace ctrl {
+      class uoc.tfm.vmejia.speedrun.ctrl.CtrlAlmacen {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace ctrl {
+      class uoc.tfm.vmejia.speedrun.ctrl.CtrlBase {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace ctrl {
+      class uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace event {
+      class uoc.tfm.vmejia.speedrun.event.MarcadorEvent {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace instance {
+      class uoc.tfm.vmejia.speedrun.instance.Arena {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace instance {
+      class uoc.tfm.vmejia.speedrun.instance.Countdown {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace instance {
+      class uoc.tfm.vmejia.speedrun.instance.GUI {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace instance {
+      class uoc.tfm.vmejia.speedrun.instance.Game {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace instance {
+      enum GameState {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace listener {
+      class uoc.tfm.vmejia.speedrun.listener.ConnectListener {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace listener {
+      class uoc.tfm.vmejia.speedrun.listener.GameListener {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace manager {
+      class uoc.tfm.vmejia.speedrun.manager.ArenaManager {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace manager {
+      class uoc.tfm.vmejia.speedrun.manager.ConfigManager {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace manager {
+      class uoc.tfm.vmejia.speedrun.manager.EscenaManager {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilAgente {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilAlmacen {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilBase {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilChest {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilCofre {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilEscena {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace util {
+      class uoc.tfm.vmejia.speedrun.util.UtilLocation {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Agente {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Almacen {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Base {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Cofre {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Escena {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.MaterialModelo {
+      }
+    }
+  }
+  
+
+  namespace uoc.tfm.vmejia.speedrun {
+    namespace var {
+      class uoc.tfm.vmejia.speedrun.var.Receta {
+      }
+    }
+  }
+  
+
+  uoc.tfm.vmejia.speedrun.Events .up.|> org.bukkit.event.Listener
+  uoc.tfm.vmejia.speedrun.Events o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.MyTrait -up-|> net.citizensnpcs.api.trait.Trait
+  uoc.tfm.vmejia.speedrun.MyTrait o-- uoc.tfm.vmejia.speedrun.var.Escena : escena
+  uoc.tfm.vmejia.speedrun.MyTrait o-- uoc.tfm.vmejia.speedrun.SpeedRun : plugin
+  uoc.tfm.vmejia.speedrun.SpeedRun -up-|> org.bukkit.plugin.java.JavaPlugin
+  uoc.tfm.vmejia.speedrun.SpeedRun o-- uoc.tfm.vmejia.speedrun.manager.ArenaManager : arenaManager
+  uoc.tfm.vmejia.speedrun.SpeedRun o-- uoc.tfm.vmejia.speedrun.manager.EscenaManager : escenaManager
+  uoc.tfm.vmejia.speedrun.cbr.Caso o-- uoc.tfm.vmejia.speedrun.var.Almacen : alm1
+  uoc.tfm.vmejia.speedrun.cbr.Caso o-- uoc.tfm.vmejia.speedrun.var.Almacen : alm2
+  uoc.tfm.vmejia.speedrun.cbr.Caso o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofre_galleta
+  uoc.tfm.vmejia.speedrun.cbr.Caso o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofre_pan
+  uoc.tfm.vmejia.speedrun.cbr.Caso o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofre_pastel
+  uoc.tfm.vmejia.speedrun.command.ArenaCommand .up.|> org.bukkit.command.CommandExecutor
+  uoc.tfm.vmejia.speedrun.command.ArenaCommand o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.event.MarcadorEvent .up.|> org.bukkit.event.Cancellable
+  uoc.tfm.vmejia.speedrun.event.MarcadorEvent -up-|> org.bukkit.event.Event
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.var.Almacen : almAlmacen1
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.var.Almacen : almAlmacen2
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.instance.Countdown : countdown
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.var.Escena : escena
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.instance.Game : game
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.instance.Arena o-- uoc.tfm.vmejia.speedrun.instance.GameState : state
+  uoc.tfm.vmejia.speedrun.instance.Countdown -up-|> org.bukkit.scheduler.BukkitRunnable
+  uoc.tfm.vmejia.speedrun.instance.Countdown o-- uoc.tfm.vmejia.speedrun.instance.Arena : arena
+  uoc.tfm.vmejia.speedrun.instance.Countdown o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.instance.Game o-- uoc.tfm.vmejia.speedrun.instance.Arena : arena
+  uoc.tfm.vmejia.speedrun.listener.ConnectListener .up.|> org.bukkit.event.Listener
+  uoc.tfm.vmejia.speedrun.listener.ConnectListener o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.listener.GameListener .up.|> org.bukkit.event.Listener
+  uoc.tfm.vmejia.speedrun.listener.GameListener o-- uoc.tfm.vmejia.speedrun.SpeedRun : minigame
+  uoc.tfm.vmejia.speedrun.var.Agente o-- uoc.tfm.vmejia.speedrun.var.Cofre : bolsa
+  uoc.tfm.vmejia.speedrun.var.Agente o-- uoc.tfm.vmejia.speedrun.var.Agente.destinotipo : destino
+  uoc.tfm.vmejia.speedrun.var.Agente o-- uoc.tfm.vmejia.speedrun.var.MaterialModelo.tipo : material
+  uoc.tfm.vmejia.speedrun.var.Agente o-- uoc.tfm.vmejia.speedrun.var.MaterialModelo.tipo : producto
+  uoc.tfm.vmejia.speedrun.var.Almacen o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofre
+  uoc.tfm.vmejia.speedrun.var.Base o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofregalleta
+  uoc.tfm.vmejia.speedrun.var.Base o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofrepan
+  uoc.tfm.vmejia.speedrun.var.Base o-- uoc.tfm.vmejia.speedrun.var.Cofre : cofrepastel
+  uoc.tfm.vmejia.speedrun.var.Cofre o-- uoc.tfm.vmejia.speedrun.var.Receta : receta
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Agente : agente
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Almacen : almacenDer
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Almacen : almacenIzq
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Base : baseNPC
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Base : basePlayer
+  uoc.tfm.vmejia.speedrun.var.Escena o-- uoc.tfm.vmejia.speedrun.var.Agente : jugador
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -136,4 +136,28 @@ public class GUI {
         player.getScoreboard().getTeam(team).setSuffix(color+valor);
     }
 
+    public static void PublicarLugar(Player player, String lugar){
+        if (lugar.equals("LOBBY")){
+            System.out.println("Ayuda para el LOBBY");
+            player.setPlayerListHeaderFooter(
+                    ChatColor.GREEN+ "Te encuentras en "+lugar,
+                    "Para empezar a jugar, elije una area \n Da click derecho en uno de los letreros");
+        } else {
+            System.out.println("Ayuda para la ARENA");
+            player.setPlayerListHeaderFooter(
+                    ChatColor.GREEN+ "Te encuentras en la "+ lugar,
+                    "Toma los ingredientes de los almacenes \n Llévalos hasta los cofres de tu base \n No pierdas de vista el marcador");
+        }
+
+    }
+
+    public static void PublicarGanador(Player player){
+        player.sendTitle(
+                ChatColor.RED+"HAS GANADO!",
+                ChatColor.GREEN+"Felicitaciones "+player.getName(),
+                20,
+                100,
+                20);
+    }
+
 }
