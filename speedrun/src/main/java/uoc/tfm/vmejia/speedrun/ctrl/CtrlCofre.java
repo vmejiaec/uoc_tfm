@@ -60,32 +60,42 @@ public class CtrlCofre {
     }
 
     public static boolean Procesar( Cofre cofre){
-        int ingr_c = cofre.receta.ingr_cacao;
-        int ingr_h = cofre.receta.ingr_huevo;
-        int ingr_l = cofre.receta.ingr_leche;
-        int ingr_t = cofre.receta.ingr_trigo;
-        int inv_c = cofre.inv_cacao;
-        int inv_h = cofre.inv_huevo;
-        int inv_l = cofre.inv_leche;
-        int inv_t = cofre.inv_trigo;
-        // Verifica si existen los ingredientes para fabricar el producto
-        if(
-                inv_c >= ingr_c &&
-                inv_h >= ingr_h &&
-                inv_l >= ingr_l &&
-                inv_t >= ingr_t
-        ){
-            // Si hay suficientes ingredientes entonces creamos el producto
-            // - Retiro los ingredientes
-            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.CACAO,ingr_c);
-            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.HUEVO,ingr_h);
-            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.LECHE,ingr_l);
-            CtrlCofre.Retiro(cofre, MaterialModelo.tipo.TRIGO,ingr_t);
-            // - Añadir los productos
-            ++cofre.inv;
-            return true;
+        boolean algunProducto = false;
+        boolean repite = true;
+        while (repite){
+            int ingr_c = cofre.receta.ingr_cacao;
+            int ingr_h = cofre.receta.ingr_huevo;
+            int ingr_l = cofre.receta.ingr_leche;
+            int ingr_t = cofre.receta.ingr_trigo;
+            int inv_c = cofre.inv_cacao;
+            int inv_h = cofre.inv_huevo;
+            int inv_l = cofre.inv_leche;
+            int inv_t = cofre.inv_trigo;
+            System.out.print("Calc. Productos. Verificación");
+            // Verifica si existen los ingredientes para fabricar el producto
+            if(
+                    inv_c >= ingr_c &&
+                    inv_h >= ingr_h &&
+                    inv_l >= ingr_l &&
+                    inv_t >= ingr_t
+            ){
+                System.out.print("     Si se puede producir un producto");
+                // Si hay suficientes ingredientes entonces creamos el producto
+                // - Retiro los ingredientes
+                CtrlCofre.Retiro(cofre, MaterialModelo.tipo.CACAO,ingr_c);
+                CtrlCofre.Retiro(cofre, MaterialModelo.tipo.HUEVO,ingr_h);
+                CtrlCofre.Retiro(cofre, MaterialModelo.tipo.LECHE,ingr_l);
+                CtrlCofre.Retiro(cofre, MaterialModelo.tipo.TRIGO,ingr_t);
+                // - Añadir los productos
+                ++cofre.inv;
+                algunProducto = true;
+            } else {
+                System.out.print("     No se puede producir un producto");
+                repite = false;
+            }
         }
-        return  false;
+
+        return  algunProducto;
     }
 
     public static void BorrarContenido(Chest chest){

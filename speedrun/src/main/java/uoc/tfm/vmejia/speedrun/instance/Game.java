@@ -76,6 +76,9 @@ public class Game {
         // Verifica que el puntaje sea el ganador
         if(playerPoints == ConfigManager.getPointsToWin() ){
             arena.sendMessage(ChatColor.GOLD + "EL NPC HA GANADO LA PARTIDA!!");
+            // Se publica a todos que el npc ganó y el resto perdió
+            arena.sendTitle(ChatColor.RED+"GAME OVER", ChatColor.GOLD+"Has perdido!");
+            arena.getPlayer().playSound(arena.getPlayer().getLocation(),Sound.ENTITY_GHAST_SCREAM,2.0f,1.0f);
             // Se resetea la arena para volver a empezar el juego
             arena.reset();
             return;
