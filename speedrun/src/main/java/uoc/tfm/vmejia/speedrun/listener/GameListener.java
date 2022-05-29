@@ -38,8 +38,10 @@ public class GameListener implements Listener {
             if(event.getMessage().equals("player")){
                 Player player = Bukkit.getPlayer(event.getUuid());
                 arena.getGame().addPoint(player);
-            } else {
+                // Publica en el GUI el marcador
+            } else { // el npc
                 arena.getGame().addPoint(event.getUuid());
+                // Publica en el GUI el marcador
             }
         }
     }

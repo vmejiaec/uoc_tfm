@@ -49,9 +49,8 @@ public final class SpeedRun extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
-        //Register your trait with Citizens.
-        CitizensAPI.getTraitFactory()
-                .registerTrait(TraitInfo.create(MyTrait.class).withName("mytraitname"));
+        //Citizens registro del trait
+        CitizensAPI.getTraitFactory().registerTrait(TraitInfo.create(MyTrait.class).withName("mytraitname"));
         Trait trait = CitizensAPI.getTraitFactory().getTrait("mytraitname");
         System.out.println("CitizensAPI el trait es: "+ trait.getName());
 
@@ -62,7 +61,7 @@ public final class SpeedRun extends JavaPlugin {
         arenaManager = new ArenaManager(this);
         escenaManager = new EscenaManager(this);
 
-        // Registra los eventos
+        // Registra las escuchas de los eventos
         Bukkit.getPluginManager().registerEvents(new ConnectListener(this),this);
         Bukkit.getPluginManager().registerEvents(new GameListener(this), this);
 

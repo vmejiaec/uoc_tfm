@@ -6,6 +6,7 @@ import net.citizensnpcs.api.trait.Trait;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 import uoc.tfm.vmejia.cbrplugin.Recomendar;
@@ -15,11 +16,14 @@ import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.instance.GUI;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
 import uoc.tfm.vmejia.speedrun.util.UtilEscena;
 import uoc.tfm.vmejia.speedrun.var.Escena;
+
+import java.util.UUID;
 
 public class MyTrait extends Trait {
 
@@ -86,6 +90,18 @@ public class MyTrait extends Trait {
                 CtrlCofre.PublicaContenido(escena.baseNPC.cofrepan);
                 CtrlCofre.PublicaContenido(escena.baseNPC.cofregalleta);
                 CtrlCofre.PublicaContenido(escena.baseNPC.cofrepastel);
+                // Publica el marcador
+                Arena arena = plugin.getArenaManager().getArena(npc.getUniqueId());
+                UUID playerUUID = null;
+                for (UUID uuid : arena.getPlayers()) {
+                    if(uuid.equals(npc.getUniqueId())){
+
+                    } else {
+                        playerUUID = uuid;
+                    }
+                }
+                Player player = Bukkit.getPlayer(playerUUID);
+                GUI.PublicarMarcador(player,escena);
                 // Elije la estrategia
                 UtilModelo.estrategia(reco, escena);
             } else {  // está en el almacen

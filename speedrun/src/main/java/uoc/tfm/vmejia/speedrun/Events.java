@@ -4,9 +4,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.Chest;
-import org.bukkit.block.Sign;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -14,7 +11,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.CraftingInventory;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -23,9 +20,9 @@ import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlCofre;
 import uoc.tfm.vmejia.speedrun.event.MarcadorEvent;
 import uoc.tfm.vmejia.speedrun.instance.Arena;
+import uoc.tfm.vmejia.speedrun.instance.GUI;
 import uoc.tfm.vmejia.speedrun.util.UtilAgente;
 import uoc.tfm.vmejia.speedrun.util.UtilBase;
-import uoc.tfm.vmejia.speedrun.util.UtilChest;
 import uoc.tfm.vmejia.speedrun.util.UtilLocation;
 import uoc.tfm.vmejia.speedrun.var.Agente;
 import uoc.tfm.vmejia.speedrun.var.Cofre;
@@ -33,7 +30,6 @@ import uoc.tfm.vmejia.speedrun.var.Escena;
 import uoc.tfm.vmejia.speedrun.var.MaterialModelo;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class Events implements Listener {
 
@@ -129,6 +125,8 @@ public class Events implements Listener {
                 CtrlCofre.PublicaContenido(escena.basePlayer.cofrepan);
                 CtrlCofre.PublicaContenido(escena.basePlayer.cofregalleta);
                 CtrlCofre.PublicaContenido(escena.basePlayer.cofrepastel);
+                // Publica el marcador
+                GUI.PublicarMarcador(player,escena);
             }
         }
 
@@ -162,4 +160,12 @@ public class Events implements Listener {
         System.out.print("Evento click - - Fin");
     }
 
+    @EventHandler
+    public void onJoin (PlayerJoinEvent e){
+        System.out.println("Evento onJoin empieza hhhhhhhhhhhhhhhhhhhhhh");
+        Player player = e.getPlayer();
+        GUI.publicarMarcadorInicial(player);
+
+        System.out.println("Evento onJoin termina hhhhhhhhhhhhhhhhhhhhhh");
+    }
 }

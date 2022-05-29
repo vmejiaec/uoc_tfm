@@ -9,7 +9,6 @@ import uoc.tfm.vmejia.speedrun.SpeedRun;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 import uoc.tfm.vmejia.speedrun.util.UtilEscena;
 import uoc.tfm.vmejia.speedrun.var.Almacen;
-import uoc.tfm.vmejia.speedrun.var.Cofre;
 import uoc.tfm.vmejia.speedrun.var.Escena;
 
 import java.util.ArrayList;
@@ -95,21 +94,22 @@ public class Arena {
         if (state == GameState.LIVE){
             this.canJoin = false;
 
+            // Coloca al jugador en el lobby
             Location location = ConfigManager.getLobbySpawn();
             for(UUID uuid: players){
                 if(Bukkit.getPlayer(uuid) != null){
                     Bukkit.getPlayer(uuid).teleport(location);
                 }
             }
+            // Borra la lista de jugadores
             players.clear();
-
+            // Evita que cualquier cambio en la arena sea guardado
             String worldName = playerSpawn.getWorld().getName();
-            //Bukkit.unloadWorld(spawn.getWorld(),false);
             World world = Bukkit.createWorld(new WorldCreator(worldName) );
             world.setAutoSave(false);
         }
         setState(GameState.RECRUITING);
-        sendTitle("","");
+        sendTitle("Reinicio","Reinicio");
         countdown.cancel();
         countdown = new Countdown(minigame, this);
         game = new Game(this);

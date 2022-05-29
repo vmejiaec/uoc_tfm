@@ -1,854 +1,1142 @@
-[13:35:14] [Server thread/INFO]: Starting minecraft server version 1.15.2
-[13:35:14] [Server thread/INFO]: Loading properties
-[13:35:14] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
-[13:35:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:18:08] [Server thread/INFO]: Starting minecraft server version 1.15.2
+[23:18:08] [Server thread/INFO]: Loading properties
+[23:18:09] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-a99063f-8731c97 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)
+[23:18:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
 
-[13:35:14] [Server thread/INFO]: Using 4 threads for Netty based IO
-[13:35:14] [Server thread/INFO]: Debug logging is disabled
-[13:35:14] [Server thread/INFO]: Default game type: SURVIVAL
-[13:35:15] [Server thread/INFO]: Generating keypair
-[13:35:15] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:35:15] [Server thread/INFO]: Using default channel type
-[13:35:16] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
-[13:35:16] [Server thread/INFO]: [CbrPlugin] Loading CbrPlugin v1.0
-[13:35:16] [Server thread/INFO]: [speedrun] Loading speedrun v1.0
-[13:35:16] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[13:35:16] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[13:35:16] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[13:35:16] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[13:35:16] [Server thread/INFO]: Preparing level "world"
-[13:35:17] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[13:35:21] [Server thread/INFO]: Loaded 6 recipes
-[13:35:22] [Server thread/INFO]: -------- World Settings For [world] --------
-[13:35:22] [Server thread/INFO]: View Distance: 10
-[13:35:22] [Server thread/INFO]: Item Despawn Rate: 6000
-[13:35:22] [Server thread/INFO]: Item Merge Radius: 2.5
-[13:35:22] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[13:35:22] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[13:35:22] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[13:35:22] [Server thread/INFO]: Experience Merge Radius: 3.0
-[13:35:22] [Server thread/INFO]: Mob Spawn Range: 6
-[13:35:22] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Cane Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Melon Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Potato Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Vine Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[13:35:22] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[13:35:22] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[13:35:22] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
-[13:35:22] [Server thread/INFO]: Max TNT Explosions: 100
-[13:35:22] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[13:35:22] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[13:35:22] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[13:35:22] [Server thread/INFO]: View Distance: 10
-[13:35:22] [Server thread/INFO]: Item Despawn Rate: 6000
-[13:35:22] [Server thread/INFO]: Item Merge Radius: 2.5
-[13:35:22] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[13:35:22] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[13:35:22] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[13:35:22] [Server thread/INFO]: Experience Merge Radius: 3.0
-[13:35:22] [Server thread/INFO]: Mob Spawn Range: 6
-[13:35:22] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Cane Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Melon Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Beetroot Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Carrot Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Potato Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Vine Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Bamboo Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Kelp Growth Modifier: 100%
-[13:35:22] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
-[13:35:22] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[13:35:22] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[13:35:22] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
-[13:35:22] [Server thread/INFO]: Max TNT Explosions: 100
-[13:35:22] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[13:35:22] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[13:35:22] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
-[13:35:22] [Server thread/INFO]: Preparing spawn area: 0%
-[13:35:22] [Server thread/INFO]: Preparing spawn area: 0%
-[13:35:23] [Server thread/INFO]: Time elapsed: 1037 ms
-[13:35:23] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
-[13:35:23] [Server thread/INFO]: Preparing spawn area: 0%
-[13:35:23] [Server-Worker-1/INFO]: Preparing spawn area: 83%
-[13:35:24] [Server-Worker-1/INFO]: Preparing spawn area: 83%
-[13:35:24] [Server thread/INFO]: Time elapsed: 1275 ms
-[13:35:24] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
-[13:35:24] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
-[13:35:24] [Server thread/INFO]: [CbrPlugin] Enabling CbrPlugin v1.0
-[13:35:24] [Server thread/INFO]: [speedrun] Enabling speedrun v1.0
-[13:35:24] [Server thread/WARN]: [speedrun] Loaded class net.citizensnpcs.api.CitizensAPI from Citizens v2.0.29-SNAPSHOT (build 2491) which is not a depend, softdepend or loadbefore of this plugin.
-[13:35:24] [Server thread/INFO]: CitizensAPI el trait es: mytraitname
+[23:18:09] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:18:09] [Server thread/INFO]: Debug logging is disabled
+[23:18:09] [Server thread/INFO]: Default game type: SURVIVAL
+[23:18:09] [Server thread/INFO]: Generating keypair
+[23:18:09] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:18:09] [Server thread/INFO]: Using default channel type
+[23:18:10] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2491)
+[23:18:10] [Server thread/INFO]: [CbrPlugin] Loading CbrPlugin v1.0
+[23:18:10] [Server thread/INFO]: [speedrun] Loading speedrun v1.0
+[23:18:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:18:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:18:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[23:18:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:18:10] [Server thread/INFO]: Preparing level "world"
+[23:18:10] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[23:18:15] [Server thread/INFO]: Loaded 6 recipes
+[23:18:16] [Server thread/INFO]: -------- World Settings For [world] --------
+[23:18:16] [Server thread/INFO]: View Distance: 10
+[23:18:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:18:16] [Server thread/INFO]: Mob Spawn Range: 6
+[23:18:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Potato Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[23:18:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:18:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:18:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[23:18:16] [Server thread/INFO]: Max TNT Explosions: 100
+[23:18:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:18:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:18:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:18:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:18:16] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[23:18:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:18:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:18:16] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[23:18:16] [Server thread/INFO]: View Distance: 10
+[23:18:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:18:16] [Server thread/INFO]: Mob Spawn Range: 6
+[23:18:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Potato Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[23:18:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[23:18:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:18:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[23:18:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911
+[23:18:16] [Server thread/INFO]: Max TNT Explosions: 100
+[23:18:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:18:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:18:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:18:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:18:16] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[23:18:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:18:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:18:16] [Server thread/INFO]: Preparing start region for dimension 'world'/minecraft:overworld
+[23:18:16] [Server thread/INFO]: Preparing spawn area: 0%
+[23:18:16] [Server thread/INFO]: Preparing spawn area: 0%
+[23:18:17] [Server thread/INFO]: Time elapsed: 1074 ms
+[23:18:17] [Server thread/INFO]: Preparing start region for dimension 'world_the_end'/minecraft:the_end
+[23:18:17] [Server thread/INFO]: Preparing spawn area: 0%
+[23:18:17] [Server-Worker-6/INFO]: Preparing spawn area: 83%
+[23:18:18] [Server-Worker-7/INFO]: Preparing spawn area: 90%
+[23:18:18] [Server thread/INFO]: Time elapsed: 1128 ms
+[23:18:18] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2491)
+[23:18:18] [Server thread/INFO]: [Citizens] No se puede manipular el uso de la economia. Has Vault esta activado?
+[23:18:18] [Server thread/INFO]: [CbrPlugin] Enabling CbrPlugin v1.0
+[23:18:18] [Server thread/INFO]: [speedrun] Enabling speedrun v1.0
+[23:18:18] [Server thread/WARN]: [speedrun] Loaded class net.citizensnpcs.api.CitizensAPI from Citizens v2.0.29-SNAPSHOT (build 2491) which is not a depend, softdepend or loadbefore of this plugin.
+[23:18:18] [Server thread/INFO]: CitizensAPI el trait es: mytraitname
 
-[13:35:24] [Server thread/INFO]: Crear ArenaManager
+[23:18:18] [Server thread/INFO]: Crear ArenaManager
 
-[13:35:24] [Server thread/INFO]:  - World: 0 - world
+[23:18:18] [Server thread/INFO]:  - World: 0 - world
 
-[13:35:24] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@1fa76f5
+[23:18:18] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@741f7d99
 
-[13:35:24] [Server thread/INFO]:  -- -- arena.minigame: null
+[23:18:18] [Server thread/INFO]:  -- -- arena.minigame: null
 
-[13:35:24] [Server thread/INFO]:  - World: 1 - world
+[23:18:18] [Server thread/INFO]:  - World: 1 - world
 
-[13:35:24] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@6605664a
+[23:18:18] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@6ec05697
 
-[13:35:24] [Server thread/INFO]:  -- -- arena.minigame: null
+[23:18:18] [Server thread/INFO]:  -- -- arena.minigame: null
 
-[13:35:24] [Server thread/INFO]:  - World: 2 - world
+[23:18:18] [Server thread/INFO]:  - World: 2 - world
 
-[13:35:24] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@9292a7a
+[23:18:18] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@4e066fd0
 
-[13:35:24] [Server thread/INFO]:  -- -- arena.minigame: null
+[23:18:18] [Server thread/INFO]:  -- -- arena.minigame: null
 
-[13:35:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[13:35:24] [Server thread/INFO]: Done (8.143s)! For help, type "help"
-[13:35:24] [Server thread/INFO]: npcVictor ha sido asignado a MyTrait!
-[13:35:24] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+[23:18:18] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:18:18] [Server thread/INFO]: Done (8.237s)! For help, type "help"
+[23:18:18] [Server thread/INFO]: npcVictor ha sido asignado a MyTrait!
+[23:18:18] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
 
-[13:35:24] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:18:18] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[13:35:24] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:18:18] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[13:35:25] [Thread-8/INFO]: Imported 13 instances.
+[23:18:18] [Thread-8/INFO]: Imported 13 instances.
 
-[13:35:26] [Server thread/INFO]: 
+[23:18:19] [User Authenticator #1/INFO]: UUID of player vmejiaec is 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c
+[23:18:19] [Server thread/INFO]: 
 
-[13:35:26] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+[23:18:19] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
 
-[13:35:26] [Server thread/INFO]:  El agente NPC es colocado en escena --------(*)
-[13:35:26] [Server thread/INFO]:    --- El npc se llama: npcVictor
-[13:35:26] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
-[13:35:27] [User Authenticator #1/INFO]: UUID of player vmejiaec is 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c
-[13:35:27] [Server thread/INFO]: vmejiaec[/127.0.0.1:59381] logged in with entity id 51 at ([world]163.0, 9.0, -125.0)
-[13:35:30] [Server thread/INFO]: Evento click - - Inicia
-[13:35:30] [Server thread/INFO]:    Bloque tipo: BIRCH_WALL_SIGN
+[23:18:19] [Server thread/INFO]:  El agente NPC es colocado en escena --------(*)
+[23:18:19] [Server thread/INFO]:    --- El npc se llama: npcVictor
+[23:18:20] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
+[23:18:20] [Server thread/INFO]: Evento onJoin empieza hhhhhhhhhhhhhhhhhhhhhh
 
-[13:35:30] [Server thread/INFO]: Evento click - - Fin
-[13:35:30] [Server thread/INFO]: NPC desde la arena npcVictor
+[23:18:20] [Server thread/INFO]: Evento onJoin termina hhhhhhhhhhhhhhhhhhhhhh
 
-[13:35:30] [Server thread/WARN]: vmejiaec moved too quickly! -11.0,-5.0,36.0
-[13:35:30] [Server thread/INFO]: Evento click - - Fin
-[13:35:33] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------
+[23:18:20] [Server thread/INFO]: vmejiaec[/127.0.0.1:39760] logged in with entity id 51 at ([world]163.0, 9.0, -125.0)
+[23:18:24] [Server thread/INFO]: Evento click - - Inicia
+[23:18:24] [Server thread/INFO]:    Bloque tipo: BIRCH_WALL_SIGN
 
-[13:35:33] [Server thread/INFO]: ************* Configuración de la Escena con la arena elejida
+[23:18:24] [Server thread/INFO]: Evento click - - Fin
+[23:18:24] [Server thread/INFO]: NPC desde la arena npcVictor
 
-[13:35:33] [Server thread/INFO]: 
+[23:18:24] [Server thread/INFO]: Evento click - - Fin
+[23:18:27] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA INICIO --------------------------
+
+[23:18:27] [Server thread/INFO]: ************* Configuración de la Escena con la arena elejida
+
+[23:18:27] [Server thread/INFO]: 
 Almacen1
 Inv: 0 ( c: 25 h: 25 l: 35 t: 30 )
 
-[13:35:33] [Server thread/INFO]: 
+[23:18:27] [Server thread/INFO]: 
 Almacen2
 Inv: 0 ( c: 15 h: 15 l: 20 t: 10 )
 
-[13:35:33] [Server thread/INFO]: Inicializa las Posiciones de la arena: 0
+[23:18:27] [Server thread/INFO]: Inicializa las Posiciones de la arena: 0
 
-[13:35:33] [Server thread/INFO]: World: CraftWorld{name=world}
+[23:18:27] [Server thread/INFO]: World: CraftWorld{name=world}
 
-[13:35:33] [Server thread/INFO]: baseNPC.cofrepan.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-103.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: baseNPC.cofrepan.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-103.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: baseNPC.cofregalleta.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-105.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: baseNPC.cofregalleta.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-105.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: baseNPC.cofrepastel.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-107.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: baseNPC.cofrepastel.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-107.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: basePlayer.cofrepan.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-87.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: basePlayer.cofrepan.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-87.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: basePlayer.cofregalleta.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-89.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: basePlayer.cofregalleta.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-89.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: basePlayer.cofrepastel.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-91.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: basePlayer.cofrepastel.pos Location{world=CraftWorld{name=world},x=151.0,y=4.0,z=-91.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: almacenIzq.cofre.pos Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-103.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: almacenIzq.cofre.pos Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-103.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: almacenDer.cofre.pos Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+[23:18:27] [Server thread/INFO]: almacenDer.cofre.pos Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
 
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:35:33] [Server thread/INFO]: Se cancela la navegación del NPC
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:18:27] [Server thread/INFO]: Se cancela la navegación del NPC
 
-[13:35:33] [Server thread/INFO]: La posición actual es: 0
+[23:18:27] [Server thread/INFO]: La posición actual es: 0
 
-[13:35:33] [Server thread/INFO]: Estoy en la base!
-[13:35:33] [Server thread/INFO]: Operación: DEJA
-[13:35:33] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
-[13:35:33] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:18:27] [Server thread/INFO]: Estoy en la base!
+[23:18:27] [Server thread/INFO]: Operación: DEJA
+[23:18:27] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
+[23:18:27] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:35:33] [Server thread/INFO]: 
+[23:18:27] [Server thread/INFO]: 
 Base   -- Objetivo: PAN-- 
     Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
     Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
     Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
 
 
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:35:33] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:35:33] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:18:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:18:27] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
 
-[13:35:33] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+[23:18:27] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
 
-[13:35:33] [Server thread/INFO]: Estrategia :1
+[23:18:27] [Server thread/INFO]: Estrategia :0
 
-[13:35:38] [Server thread/INFO]: Evento click - - Inicia
-[13:35:38] [Server thread/INFO]:    Bloque tipo: CHEST
+[23:18:32] [Server thread/INFO]: Evento click - - Inicia
+[23:18:32] [Server thread/INFO]:    Bloque tipo: CHEST
 
-[13:35:38] [Server thread/INFO]: Si es un cofre!!
-[13:35:38] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
-[13:35:38] [Server thread/INFO]: Evento click - - Fin
-[13:35:40] [Server thread/INFO]: Evento de click en cofre --- ---
+[23:18:32] [Server thread/INFO]: Si es un cofre!!
+[23:18:32] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:18:32] [Server thread/INFO]: Evento click - - Fin
+[23:18:33] [Server thread/INFO]: Evento de click en cofre --- ---
 
-[13:35:40] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 15}, ItemStack{EGG x 15}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+[23:18:33] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 15}, ItemStack{EGG x 15}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 
-[13:35:40] [Server thread/INFO]: getSlot: 1
+[23:18:33] [Server thread/INFO]: getSlot: 0
 
-[13:35:40] [Server thread/INFO]: getAction: PICKUP_ALL
+[23:18:33] [Server thread/INFO]: getAction: PICKUP_ALL
 
-[13:35:40] [Server thread/INFO]: itemStack: ItemStack{EGG x 15}
+[23:18:33] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 15}
 
-[13:35:40] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+[23:18:33] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
 
-[13:35:40] [Server thread/INFO]: Cofre encontrado: Almacen 2
+[23:18:33] [Server thread/INFO]: Cofre encontrado: Almacen 2
 
-[13:35:40] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:35:40] [Server thread/INFO]: Operación: TOMA
-[13:35:40] [Server thread/INFO]: Retiro: Almacen2 HUEVO 10
-[13:35:40] [Server thread/INFO]:  - Deposito: 
+[23:18:33] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
+[23:18:33] [Server thread/INFO]: Operación: TOMA
+[23:18:33] [Server thread/INFO]: Retiro: Almacen2 CACAO 3
+[23:18:33] [Server thread/INFO]:  - Deposito: 
 
-[13:35:40] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:35:40] [Server thread/INFO]: Fin del evento click -- --
+[23:18:33] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:18:33] [Server thread/INFO]: Fin del evento click -- --
 
-[13:35:43] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[13:35:43] [Server thread/INFO]: Operación: TOMA
-[13:35:43] [Server thread/INFO]: Retiro: Almacen2 HUEVO 5
-[13:35:43] [Server thread/INFO]:  - Deposito: 
+[23:18:35] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:18:35] [Server thread/INFO]: Operación: TOMA
+[23:18:35] [Server thread/INFO]: Retiro: Almacen1 TRIGO 5
+[23:18:35] [Server thread/INFO]:  - Deposito: 
 
-[13:35:43] [Server thread/INFO]: 
-Almacen2
-Inv: 0 ( c: 15 h: 0 l: 20 t: 10 )
-
-[13:35:43] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:35:43] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN2
-  - producto: PASTEL
-  - material: 5 - HUEVO
-  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-[13:35:43] [Server thread/INFO]: Evento click - - Inicia
-[13:35:43] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:35:43] [Server thread/INFO]: Si es un cofre!!
-[13:35:43] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
-[13:35:43] [Server thread/INFO]: Evento click - - Fin
-[13:35:46] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:35:46] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 15}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:35:46] [Server thread/INFO]: getSlot: 0
-
-[13:35:46] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:35:46] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 15}
-
-[13:35:46] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:35:46] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:35:46] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:35:46] [Server thread/INFO]: Fin del evento click -- --
-
-[13:35:50] [Server thread/INFO]: Estoy en la base!
-[13:35:50] [Server thread/INFO]: Operación: DEJA
-[13:35:50] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
-[13:35:50] [Server thread/INFO]:  - Deposito: 
-[13:35:50] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:35:50] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-
-[13:35:50] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:35:50] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:35:50] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:35:50] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=5}
-
-[13:35:50] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[13:35:50] [Server thread/INFO]: Estrategia :0
-
-[13:35:53] [Server thread/INFO]: Evento click - - Inicia
-[13:35:53] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:35:53] [Server thread/INFO]: Si es un cofre!!
-[13:35:53] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
-[13:35:53] [Server thread/INFO]: Evento click - - Fin
-[13:35:54] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:35:54] [Server thread/INFO]: [ItemStack{EGG x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:35:54] [Server thread/INFO]: getSlot: 0
-
-[13:35:54] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:35:54] [Server thread/INFO]: itemStack: ItemStack{EGG x 10}
-
-[13:35:54] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=154.39982006892433,y=4.0,z=-86.72600677562032,pitch=17.849987,yaw=-274.0496}
-
-[13:35:54] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
-
-[13:35:54] [Server thread/INFO]: El jugador está en la base
-[13:35:54] [Server thread/INFO]: Operación: DEJA
-[13:35:54] [Server thread/INFO]: Retiro de la bolsa: HUEVO 10
-[13:35:54] [Server thread/INFO]:  - Deposito: 
-[13:35:54] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:35:54] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:35:54] [Server thread/INFO]: 
-Base   -- Objetivo: pan-- 
-    Cofre Pan: Inv: 0 ( c: 0 h: 10 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[13:35:54] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:35:54] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
-[13:35:54] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
-[13:35:54] [Server thread/INFO]: Fin del evento click -- --
-
-[13:35:59] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[13:35:59] [Server thread/INFO]: Operación: TOMA
-[13:35:59] [Server thread/INFO]: Retiro: Almacen1 CACAO 5
-[13:35:59] [Server thread/INFO]:  - Deposito: 
-
-[13:35:59] [Server thread/INFO]: 
+[23:18:35] [Server thread/INFO]: 
 Almacen1
-Inv: 0 ( c: 20 h: 25 l: 35 t: 30 )
+Inv: 0 ( c: 25 h: 25 l: 35 t: 25 )
 
-[13:35:59] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:35:59] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PAN
-  - material: 5 - CACAO
-  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
-
-[13:36:02] [Server thread/INFO]: Evento click - - Inicia
-[13:36:02] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:36:02] [Server thread/INFO]: Si es un cofre!!
-[13:36:02] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
-[13:36:02] [Server thread/INFO]: Evento click - - Fin
-[13:36:03] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:03] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 15}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:03] [Server thread/INFO]: getSlot: 0
-
-[13:36:03] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:03] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 15}
-
-[13:36:03] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:36:03] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:36:03] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:03] [Server thread/INFO]: Operación: TOMA
-[13:36:03] [Server thread/INFO]: Retiro: Almacen2 CACAO 10
-[13:36:03] [Server thread/INFO]:  - Deposito: 
-
-[13:36:03] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:36:03] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:04] [Server thread/INFO]: Estoy en la base!
-[13:36:04] [Server thread/INFO]: Operación: DEJA
-[13:36:04] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
-[13:36:04] [Server thread/INFO]:  - Deposito: 
-[13:36:04] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:36:04] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-
-[13:36:04] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:04] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:04] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:04] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
-
-[13:36:04] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[13:36:04] [Server thread/INFO]: Estrategia :0
-
-[13:36:09] [Server thread/INFO]: Evento click - - Inicia
-[13:36:09] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:36:09] [Server thread/INFO]: Si es un cofre!!
-[13:36:09] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
-[13:36:09] [Server thread/INFO]: Evento click - - Fin
-[13:36:10] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:10] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:10] [Server thread/INFO]: getSlot: 0
-
-[13:36:10] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:10] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 10}
-
-[13:36:10] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=154.82613428355896,y=4.0,z=-86.78051016984244,pitch=14.849991,yaw=-274.79944}
-
-[13:36:10] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
-
-[13:36:10] [Server thread/INFO]: El jugador está en la base
-[13:36:10] [Server thread/INFO]: Operación: DEJA
-[13:36:10] [Server thread/INFO]: Retiro de la bolsa: CACAO 10
-[13:36:10] [Server thread/INFO]:  - Deposito: 
-[13:36:10] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:10] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:36:10] [Server thread/INFO]: 
-Base   -- Objetivo: pan-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 10 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-
-
-[13:36:10] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:10] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
-[13:36:10] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
-[13:36:10] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:11] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[13:36:11] [Server thread/INFO]: Operación: TOMA
-[13:36:11] [Server thread/INFO]: Retiro: Almacen1 CACAO 5
-[13:36:11] [Server thread/INFO]:  - Deposito: 
-
-[13:36:11] [Server thread/INFO]: 
-Almacen1
-Inv: 0 ( c: 15 h: 25 l: 35 t: 30 )
-
-[13:36:11] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:36:11] [Server thread/INFO]: 
-Agente 
-  - destino: ALALMACEN1
-  - producto: PAN
-  - material: 5 - CACAO
-  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
-
-[13:36:16] [Server thread/INFO]: Estoy en la base!
-[13:36:16] [Server thread/INFO]: Operación: DEJA
-[13:36:16] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
-[13:36:16] [Server thread/INFO]:  - Deposito: 
-[13:36:16] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:36:16] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 0 t: 0 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-
-[13:36:16] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:16] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:16] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:16] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
-
-[13:36:16] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[13:36:16] [Server thread/INFO]: Estrategia :0
-
-[13:36:17] [Server thread/INFO]: Evento click - - Inicia
-[13:36:17] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:36:17] [Server thread/INFO]: Si es un cofre!!
-[13:36:17] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
-[13:36:17] [Server thread/INFO]: Evento click - - Fin
-[13:36:18] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:18] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 5}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:18] [Server thread/INFO]: getSlot: 0
-
-[13:36:18] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:18] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 5}
-
-[13:36:18] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:36:18] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:36:18] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:18] [Server thread/INFO]: Operación: TOMA
-[13:36:18] [Server thread/INFO]: Retiro: Almacen2 CACAO 10
-[13:36:18] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:36:18] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:20] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:20] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 5}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:20] [Server thread/INFO]: getSlot: 1
-
-[13:36:20] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:20] [Server thread/INFO]: itemStack: ItemStack{MILK_BUCKET x 20}
-
-[13:36:20] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:36:20] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:36:20] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:20] [Server thread/INFO]: Operación: TOMA
-[13:36:20] [Server thread/INFO]: Retiro: Almacen2 LECHE 10
-[13:36:20] [Server thread/INFO]:  - Deposito: 
-
-[13:36:20] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:36:20] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:20] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:20] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 5}, ItemStack{MILK_BUCKET x 10}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:20] [Server thread/INFO]: getSlot: 2
-
-[13:36:20] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:20] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 10}
-
-[13:36:20] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:36:20] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:36:20] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:20] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:21] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:21] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 5}, ItemStack{MILK_BUCKET x 10}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:21] [Server thread/INFO]: getSlot: 1
-
-[13:36:21] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:21] [Server thread/INFO]: itemStack: ItemStack{MILK_BUCKET x 10}
-
-[13:36:21] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
-
-[13:36:21] [Server thread/INFO]: Cofre encontrado: Almacen 2
-
-[13:36:21] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:21] [Server thread/INFO]: Fin del evento click -- --
-
-[13:36:21] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[13:36:21] [Server thread/INFO]: Operación: TOMA
-[13:36:21] [Server thread/INFO]: Retiro: Almacen1 TRIGO 5
-[13:36:21] [Server thread/INFO]:  - Deposito: 
-
-[13:36:21] [Server thread/INFO]: 
-Almacen1
-Inv: 0 ( c: 15 h: 25 l: 35 t: 25 )
-
-[13:36:21] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:36:21] [Server thread/INFO]: 
+[23:18:35] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:18:35] [Server thread/INFO]: 
 Agente 
   - destino: ALALMACEN1
   - producto: PAN
   - material: 5 - TRIGO
   - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
 
-[13:36:23] [Server thread/INFO]: Evento de click en cofre --- ---
+[23:18:41] [Server thread/INFO]: Evento click - - Inicia
+[23:18:41] [Server thread/INFO]:    Bloque tipo: CHEST
 
-[13:36:23] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 5}, ItemStack{MILK_BUCKET x 10}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+[23:18:41] [Server thread/INFO]: Si es un cofre!!
+[23:18:41] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:18:41] [Server thread/INFO]: Evento click - - Fin
+[23:18:42] [Server thread/INFO]: Evento de click en cofre --- ---
 
-[13:36:23] [Server thread/INFO]: getSlot: 2
+[23:18:42] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 3}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 
-[13:36:23] [Server thread/INFO]: getAction: PICKUP_ALL
+[23:18:42] [Server thread/INFO]: getSlot: 0
 
-[13:36:23] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 10}
+[23:18:42] [Server thread/INFO]: getAction: PICKUP_ALL
 
-[13:36:23] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+[23:18:42] [Server thread/INFO]: itemStack: ItemStack{COCOA_BEANS x 3}
 
-[13:36:23] [Server thread/INFO]: Cofre encontrado: Almacen 2
+[23:18:42] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=154.58212352370526,y=4.0,z=-86.46046923200264,pitch=17.100023,yaw=86.549866}
 
-[13:36:23] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
-[13:36:23] [Server thread/INFO]: Fin del evento click -- --
+[23:18:42] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
 
-[13:36:27] [Server thread/INFO]: Estoy en la base!
-[13:36:27] [Server thread/INFO]: Operación: DEJA
-[13:36:27] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
-[13:36:27] [Server thread/INFO]:  - Deposito: 
-[13:36:27] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:18:42] [Server thread/INFO]: El jugador está en la base
+[23:18:42] [Server thread/INFO]: Operación: DEJA
+[23:18:42] [Server thread/INFO]: Retiro de la bolsa: CACAO 3
+[23:18:42] [Server thread/INFO]:  - Deposito: 
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:18:42] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:36:27] [Server thread/INFO]: 
-Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 0 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
-
-
-[13:36:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:27] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
-
-[13:36:27] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
-
-[13:36:27] [Server thread/INFO]: Estrategia :0
-
-[13:36:30] [Server thread/INFO]: Evento click - - Inicia
-[13:36:30] [Server thread/INFO]:    Bloque tipo: CHEST
-
-[13:36:30] [Server thread/INFO]: Si es un cofre!!
-[13:36:30] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
-[13:36:30] [Server thread/INFO]: Evento click - - Fin
-[13:36:31] [Server thread/INFO]: Evento de click en cofre --- ---
-
-[13:36:31] [Server thread/INFO]: [ItemStack{MILK_BUCKET x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-
-[13:36:31] [Server thread/INFO]: getSlot: 0
-
-[13:36:31] [Server thread/INFO]: getAction: PICKUP_ALL
-
-[13:36:31] [Server thread/INFO]: itemStack: ItemStack{MILK_BUCKET x 10}
-
-[13:36:31] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=155.3254260344258,y=4.0,z=-86.66246266874242,pitch=14.700021,yaw=-272.09967}
-
-[13:36:31] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
-
-[13:36:31] [Server thread/INFO]: El jugador está en la base
-[13:36:31] [Server thread/INFO]: Operación: DEJA
-[13:36:31] [Server thread/INFO]: Retiro de la bolsa: LECHE 10
-[13:36:31] [Server thread/INFO]:  - Deposito: 
-[13:36:31] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:31] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
-
-[13:36:31] [Server thread/INFO]: 
+[23:18:42] [Server thread/INFO]: 
 Base   -- Objetivo: pan-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 10 l: 10 t: 0 )
+    Cofre Pan: Inv: 0 ( c: 3 h: 0 l: 0 t: 0 )
     Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
     Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
 
 
-[13:36:31] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:31] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
-[13:36:31] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
-[13:36:31] [Server thread/INFO]: Fin del evento click -- --
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:18:42] [Server thread/INFO]: Fin del evento click -- --
 
-[13:36:34] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
-[13:36:34] [Server thread/INFO]: Operación: TOMA
-[13:36:34] [Server thread/INFO]: Retiro: Almacen1 LECHE 5
-[13:36:34] [Server thread/INFO]:  - Deposito: 
+[23:18:42] [Server thread/INFO]: Estoy en la base!
+[23:18:42] [Server thread/INFO]: Operación: DEJA
+[23:18:42] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[23:18:42] [Server thread/INFO]:  - Deposito: 
+[23:18:42] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:36:34] [Server thread/INFO]: 
+[23:18:42] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:18:42] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:18:42] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[23:18:42] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[23:18:42] [Server thread/INFO]: Estrategia :0
+
+[23:18:50] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:18:50] [Server thread/INFO]: Operación: TOMA
+[23:18:50] [Server thread/INFO]: Retiro: Almacen1 TRIGO 5
+[23:18:50] [Server thread/INFO]:  - Deposito: 
+
+[23:18:50] [Server thread/INFO]: 
 Almacen1
-Inv: 0 ( c: 15 h: 25 l: 30 t: 25 )
+Inv: 0 ( c: 25 h: 25 l: 35 t: 20 )
 
-[13:36:34] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:36:34] [Server thread/INFO]: 
+[23:18:50] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:18:50] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN1
+  - producto: GALLETA
+  - material: 5 - TRIGO
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+
+[23:18:52] [Server thread/INFO]: Evento click - - Inicia
+[23:18:52] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:18:52] [Server thread/INFO]: Si es un cofre!!
+[23:18:52] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:18:52] [Server thread/INFO]: Evento click - - Fin
+[23:18:53] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:18:53] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 12}, ItemStack{EGG x 15}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:18:53] [Server thread/INFO]: getSlot: 1
+
+[23:18:53] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:18:53] [Server thread/INFO]: itemStack: ItemStack{EGG x 15}
+
+[23:18:53] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+
+[23:18:53] [Server thread/INFO]: Cofre encontrado: Almacen 2
+
+[23:18:53] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
+[23:18:53] [Server thread/INFO]: Operación: TOMA
+[23:18:53] [Server thread/INFO]: Retiro: Almacen2 HUEVO 3
+[23:18:53] [Server thread/INFO]:  - Deposito: 
+
+[23:18:53] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:18:53] [Server thread/INFO]: Fin del evento click -- --
+
+[23:18:55] [Server thread/INFO]: Estoy en la base!
+[23:18:55] [Server thread/INFO]: Operación: DEJA
+[23:18:55] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[23:18:55] [Server thread/INFO]:  - Deposito: 
+[23:18:55] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:18:55] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:18:55] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:18:55] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:18:55] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:18:55] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=0, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
+
+[23:18:55] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
+
+[23:18:55] [Server thread/INFO]: Estrategia :1
+
+[23:19:01] [Server thread/INFO]: Evento click - - Inicia
+[23:19:01] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:19:01] [Server thread/INFO]: Si es un cofre!!
+[23:19:01] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:19:01] [Server thread/INFO]: Evento click - - Fin
+[23:19:02] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:02] [Server thread/INFO]: [ItemStack{EGG x 3}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:02] [Server thread/INFO]: getSlot: 0
+
+[23:19:02] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:02] [Server thread/INFO]: itemStack: ItemStack{EGG x 3}
+
+[23:19:02] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=155.06074943073475,y=4.0,z=-86.33392830213464,pitch=18.000034,yaw=92.54886}
+
+[23:19:02] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
+
+[23:19:02] [Server thread/INFO]: El jugador está en la base
+[23:19:02] [Server thread/INFO]: Operación: DEJA
+[23:19:02] [Server thread/INFO]: Retiro de la bolsa: HUEVO 3
+[23:19:02] [Server thread/INFO]:  - Deposito: 
+[23:19:02] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:19:02] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:02] [Server thread/INFO]: 
+Base   -- Objetivo: pan-- 
+    Cofre Pan: Inv: 0 ( c: 3 h: 3 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:19:02] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:19:02] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:19:02] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:19:02] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:03] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:19:03] [Server thread/INFO]: Operación: TOMA
+[23:19:03] [Server thread/INFO]: Retiro: Almacen2 TRIGO 5
+[23:19:03] [Server thread/INFO]:  - Deposito: 
+
+[23:19:03] [Server thread/INFO]: 
+Almacen2
+Inv: 0 ( c: 12 h: 12 l: 20 t: 5 )
+
+[23:19:03] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:03] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: GALLETA
+  - material: 5 - TRIGO
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+
+[23:19:09] [Server thread/INFO]: Evento click - - Inicia
+[23:19:09] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:19:09] [Server thread/INFO]: Si es un cofre!!
+[23:19:09] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:19:09] [Server thread/INFO]: Evento click - - Fin
+[23:19:09] [Server thread/INFO]: Estoy en la base!
+[23:19:09] [Server thread/INFO]: Operación: DEJA
+[23:19:09] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[23:19:09] [Server thread/INFO]:  - Deposito: 
+[23:19:09] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:09] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:19:09] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:19:09] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:19:09] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:19:09] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=0, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
+
+[23:19:09] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
+
+[23:19:09] [Server thread/INFO]: Estrategia :1
+
+[23:19:10] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:10] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 12}, ItemStack{EGG x 12}, ItemStack{MILK_BUCKET x 20}, ItemStack{WHEAT x 5}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:10] [Server thread/INFO]: getSlot: 3
+
+[23:19:10] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:10] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 5}
+
+[23:19:10] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+
+[23:19:10] [Server thread/INFO]: Cofre encontrado: Almacen 2
+
+[23:19:10] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
+[23:19:10] [Server thread/INFO]: Operación: TOMA
+[23:19:10] [Server thread/INFO]: Retiro: Almacen2 TRIGO 3
+[23:19:10] [Server thread/INFO]:  - Deposito: 
+
+[23:19:10] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:10] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:20] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:19:20] [Server thread/INFO]: Operación: TOMA
+[23:19:20] [Server thread/INFO]: Retiro: Almacen2 LECHE 5
+[23:19:20] [Server thread/INFO]:  - Deposito: 
+
+[23:19:20] [Server thread/INFO]: 
+Almacen2
+Inv: 0 ( c: 12 h: 12 l: 15 t: 2 )
+
+[23:19:20] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:20] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PASTEL
+  - material: 5 - LECHE
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+[23:19:20] [Server thread/INFO]: Evento click - - Inicia
+[23:19:20] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:19:20] [Server thread/INFO]: Si es un cofre!!
+[23:19:20] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:19:20] [Server thread/INFO]: Evento click - - Fin
+[23:19:21] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:21] [Server thread/INFO]: [ItemStack{WHEAT x 3}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:21] [Server thread/INFO]: getSlot: 0
+
+[23:19:21] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:21] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 3}
+
+[23:19:21] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=155.19822390302576,y=4.0,z=-86.91246582803193,pitch=15.300047,yaw=81.89914}
+
+[23:19:21] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
+
+[23:19:21] [Server thread/INFO]: El jugador está en la base
+[23:19:21] [Server thread/INFO]: Operación: DEJA
+[23:19:21] [Server thread/INFO]: Retiro de la bolsa: TRIGO 3
+[23:19:21] [Server thread/INFO]:  - Deposito: 
+[23:19:21] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:19:21] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:21] [Server thread/INFO]: Evento Marcador para: 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c player
+
+[23:19:21] [Server thread/INFO]: 
+Base   -- Objetivo: pan-- 
+    Cofre Pan: Inv: 1 ( c: 3 h: 2 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:19:21] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:19:21] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:19:21] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:19:21] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:27] [Server thread/INFO]: Estoy en la base!
+[23:19:27] [Server thread/INFO]: Operación: DEJA
+[23:19:27] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[23:19:27] [Server thread/INFO]:  - Deposito: 
+[23:19:27] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:27] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+
+[23:19:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:19:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:19:27] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:19:27] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
+
+[23:19:27] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[23:19:27] [Server thread/INFO]: Estrategia :1
+
+[23:19:32] [Server thread/INFO]: Evento click - - Inicia
+[23:19:32] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:19:32] [Server thread/INFO]: Si es un cofre!!
+[23:19:32] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:19:32] [Server thread/INFO]: Evento click - - Fin
+[23:19:33] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:33] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 12}, ItemStack{EGG x 12}, ItemStack{MILK_BUCKET x 15}, ItemStack{WHEAT x 2}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:33] [Server thread/INFO]: getSlot: 3
+
+[23:19:33] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:33] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 2}
+
+[23:19:33] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+
+[23:19:33] [Server thread/INFO]: Cofre encontrado: Almacen 2
+
+[23:19:33] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
+[23:19:33] [Server thread/INFO]: Operación: TOMA
+[23:19:33] [Server thread/INFO]: Retiro: Almacen2 TRIGO 3
+[23:19:33] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:33] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:35] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:35] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 12}, ItemStack{EGG x 12}, ItemStack{MILK_BUCKET x 15}, ItemStack{WHEAT x 2}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:35] [Server thread/INFO]: getSlot: 3
+
+[23:19:35] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:35] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 2}
+
+[23:19:35] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-90.0,pitch=0.0,yaw=0.0}
+
+[23:19:35] [Server thread/INFO]: Cofre encontrado: Almacen 2
+
+[23:19:35] [Server thread/INFO]: El jugador está en el Almacen: Almacen 2
+[23:19:35] [Server thread/INFO]: Operación: TOMA
+[23:19:35] [Server thread/INFO]: Retiro: Almacen2 TRIGO 3
+[23:19:35] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:35] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:37] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:19:37] [Server thread/INFO]: Operación: TOMA
+[23:19:37] [Server thread/INFO]: Retiro: Almacen2 TRIGO 5
+[23:19:37] [Server thread/INFO]: 
+Almacen2
+Inv: 0 ( c: 12 h: 12 l: 15 t: 2 )
+
+[23:19:37] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:19:37] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PAN
+  - material: 5 - TRIGO
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+[23:19:45] [Server thread/INFO]: Estoy en la base!
+[23:19:45] [Server thread/INFO]: Operación: DEJA
+[23:19:45] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[23:19:45] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:45] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+
+[23:19:45] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:19:45] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:19:45] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:19:45] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[23:19:45] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[23:19:45] [Server thread/INFO]: Estrategia :0
+
+[23:19:46] [Server thread/INFO]: Evento click - - Inicia
+[23:19:46] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:19:46] [Server thread/INFO]: Si es un cofre!!
+[23:19:46] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -103.0
+[23:19:46] [Server thread/INFO]: Evento click - - Fin
+[23:19:47] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:19:47] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 25}, ItemStack{EGG x 25}, ItemStack{MILK_BUCKET x 35}, ItemStack{WHEAT x 20}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:19:47] [Server thread/INFO]: getSlot: 3
+
+[23:19:47] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:19:47] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 20}
+
+[23:19:47] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-103.0,pitch=0.0,yaw=0.0}
+
+[23:19:47] [Server thread/INFO]: Cofre encontrado: Almacen 1
+
+[23:19:47] [Server thread/INFO]: El jugador está en el Almacen: Almacen 1
+[23:19:47] [Server thread/INFO]: Operación: TOMA
+[23:19:47] [Server thread/INFO]: Retiro: Almacen1 TRIGO 3
+[23:19:47] [Server thread/INFO]:  - Deposito: 
+
+[23:19:47] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:19:47] [Server thread/INFO]: Fin del evento click -- --
+
+[23:19:54] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:19:54] [Server thread/INFO]: Operación: TOMA
+[23:19:54] [Server thread/INFO]: Retiro: Almacen1 HUEVO 5
+[23:19:54] [Server thread/INFO]:  - Deposito: 
+
+[23:19:54] [Server thread/INFO]: 
+Almacen1
+Inv: 0 ( c: 25 h: 20 l: 35 t: 17 )
+
+[23:19:54] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:19:54] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN1
+  - producto: PASTEL
+  - material: 5 - HUEVO
+  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
+
+[23:19:59] [Server thread/INFO]: Estoy en la base!
+[23:19:59] [Server thread/INFO]: Operación: DEJA
+[23:19:59] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
+[23:19:59] [Server thread/INFO]:  - Deposito: 
+[23:19:59] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:19:59] [Server thread/INFO]: 
+Base   -- Objetivo: PASTEL-- 
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 5 t: 0 )
+
+
+[23:19:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:19:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:19:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:19:59] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
+
+[23:19:59] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+
+[23:19:59] [Server thread/INFO]: Estrategia :0
+
+[23:20:06] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:20:06] [Server thread/INFO]: Operación: TOMA
+[23:20:06] [Server thread/INFO]: Retiro: Almacen1 LECHE 5
+[23:20:06] [Server thread/INFO]:  - Deposito: 
+
+[23:20:06] [Server thread/INFO]: 
+Almacen1
+Inv: 0 ( c: 25 h: 20 l: 30 t: 17 )
+
+[23:20:06] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:20:06] [Server thread/INFO]: 
 Agente 
   - destino: ALALMACEN1
   - producto: PASTEL
   - material: 5 - LECHE
   - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
 
-[13:36:39] [Server thread/INFO]: Estoy en la base!
-[13:36:39] [Server thread/INFO]: Operación: DEJA
-[13:36:39] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[13:36:39] [Server thread/INFO]:  - Deposito: 
-[13:36:39] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:20:12] [Server thread/INFO]: Estoy en la base!
+[23:20:12] [Server thread/INFO]: Operación: DEJA
+[23:20:12] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[23:20:12] [Server thread/INFO]:  - Deposito: 
+[23:20:12] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:36:39] [Server thread/INFO]: 
+[23:20:12] [Server thread/INFO]: 
 Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 0 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 5 t: 0 )
+    Cofre Pan: Inv: 0 ( c: 0 h: 0 l: 0 t: 5 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
 
 
-[13:36:39] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:39] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:39] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:39] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=5}
+[23:20:12] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:20:12] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:20:12] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:20:12] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=5, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=5}
 
-[13:36:39] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
+[23:20:12] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
 
-[13:36:39] [Server thread/INFO]: Estrategia :1
+[23:20:12] [Server thread/INFO]: Estrategia :1
 
-[13:36:40] [Server thread/INFO]: Evento click - - Inicia
-[13:36:40] [Server thread/INFO]:    Bloque tipo: CHEST
+[23:20:20] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:20:20] [Server thread/INFO]: Operación: TOMA
+[23:20:20] [Server thread/INFO]: Retiro: Almacen2 HUEVO 5
+[23:20:20] [Server thread/INFO]:  - Deposito: 
 
-[13:36:40] [Server thread/INFO]: Si es un cofre!!
-[13:36:40] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -103.0
-[13:36:40] [Server thread/INFO]: Evento click - - Fin
-[13:36:47] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
-[13:36:47] [Server thread/INFO]: Operación: TOMA
-[13:36:47] [Server thread/INFO]: Retiro: Almacen2 LECHE 5
-[13:36:47] [Server thread/INFO]:  - Deposito: 
-
-[13:36:47] [Server thread/INFO]: 
+[23:20:20] [Server thread/INFO]: 
 Almacen2
-Inv: 0 ( c: 5 h: 0 l: 5 t: 10 )
+Inv: 0 ( c: 12 h: 7 l: 15 t: 2 )
 
-[13:36:47] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
-[13:36:47] [Server thread/INFO]: 
+[23:20:20] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:20:20] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: PAN
+  - material: 5 - HUEVO
+  - BOLSA: Inv: 0 ( c: 0 h: 5 l: 0 t: 0 )
+
+[23:20:28] [Server thread/INFO]: Estoy en la base!
+[23:20:28] [Server thread/INFO]: Operación: DEJA
+[23:20:28] [Server thread/INFO]: Retiro de la bolsa: HUEVO 5
+[23:20:28] [Server thread/INFO]:  - Deposito: 
+[23:20:28] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:20:28] [Server thread/INFO]: Evento Marcador para: e68095fe-340d-4b14-ab0a-42e5ee7e061e  Se marcó un: 
+
+[23:20:28] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 1 ( c: 0 h: 4 l: 0 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
+
+
+[23:20:28] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:20:28] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:20:28] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:20:28] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[23:20:28] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[23:20:28] [Server thread/INFO]: Estrategia :1
+
+[23:20:35] [Server thread/INFO]: Evento click - - Inicia
+[23:20:35] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:20:35] [Server thread/INFO]: Si es un cofre!!
+[23:20:35] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:20:35] [Server thread/INFO]: Evento click - - Fin
+[23:20:37] [Server thread/INFO]: Evento de click en cofre --- ---
+
+[23:20:37] [Server thread/INFO]: [ItemStack{WHEAT x 3}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+
+[23:20:37] [Server thread/INFO]: getSlot: 0
+
+[23:20:37] [Server thread/INFO]: getAction: PICKUP_ALL
+
+[23:20:37] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 3}
+
+[23:20:37] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=154.49615311827102,y=4.0,z=-88.00455969708865,pitch=19.050045,yaw=61.648865}
+
+[23:20:37] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
+
+[23:20:37] [Server thread/INFO]: El jugador está en la base
+[23:20:37] [Server thread/INFO]: Operación: DEJA
+[23:20:37] [Server thread/INFO]: Retiro de la bolsa: TRIGO 3
+[23:20:37] [Server thread/INFO]:  - Deposito: 
+[23:20:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:20:37] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:20:37] [Server thread/INFO]: Evento Marcador para: 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c player
+
+[23:20:37] [Server thread/INFO]: 
+Base   -- Objetivo: pan-- 
+    Cofre Pan: Inv: 2 ( c: 3 h: 1 l: 0 t: 0 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
+
+
+[23:20:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:20:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:20:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:20:37] [Server thread/INFO]: Fin del evento click -- --
+
+[23:20:39] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:20:39] [Server thread/INFO]: Operación: TOMA
+[23:20:39] [Server thread/INFO]: Retiro: Almacen2 LECHE 5
+[23:20:39] [Server thread/INFO]:  - Deposito: 
+
+[23:20:39] [Server thread/INFO]: 
+Almacen2
+Inv: 0 ( c: 12 h: 7 l: 10 t: 2 )
+
+[23:20:39] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:20:39] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN2
+  - producto: GALLETA
+  - material: 5 - LECHE
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+[23:20:46] [Server thread/INFO]: Estoy en la base!
+[23:20:46] [Server thread/INFO]: Operación: DEJA
+[23:20:46] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[23:20:46] [Server thread/INFO]:  - Deposito: 
+[23:20:46] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:20:46] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 1 ( c: 0 h: 4 l: 0 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 5 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
+
+
+[23:20:46] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:20:46] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:20:46] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:20:46] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=0, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
+
+[23:20:46] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
+
+[23:20:46] [Server thread/INFO]: Estrategia :0
+
+[23:20:55] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:20:55] [Server thread/INFO]: Operación: TOMA
+[23:20:55] [Server thread/INFO]: Retiro: Almacen1 LECHE 5
+[23:20:55] [Server thread/INFO]:  - Deposito: 
+
+[23:20:55] [Server thread/INFO]: 
+Almacen1
+Inv: 0 ( c: 25 h: 20 l: 25 t: 17 )
+
+[23:20:55] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:20:55] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN1
+  - producto: GALLETA
+  - material: 5 - LECHE
+  - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
+
+[23:21:00] [Server thread/INFO]: Estoy en la base!
+[23:21:00] [Server thread/INFO]: Operación: DEJA
+[23:21:00] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[23:21:00] [Server thread/INFO]:  - Deposito: 
+[23:21:00] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:21:00] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 1 ( c: 0 h: 4 l: 0 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 10 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
+
+
+[23:21:00] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:21:00] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:21:00] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:21:00] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, alm2-inv-cacao=10, cofre-pan-ingr-trigo=0, cofre-galleta=0, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=10, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=galleta, alm1-inv-cacao=15, cofre-pastel=0, cofre-galleta-ingr-cacao=10}
+
+[23:21:00] [Server thread/INFO]: Mejor caso: sc_caso6 1.0
+
+[23:21:00] [Server thread/INFO]: Estrategia :0
+
+[23:21:08] [Server thread/INFO]: Estoy en el almacén!ALALMACEN1
+[23:21:08] [Server thread/INFO]: Operación: TOMA
+[23:21:08] [Server thread/INFO]: Retiro: Almacen1 CACAO 5
+[23:21:08] [Server thread/INFO]:  - Deposito: 
+
+[23:21:08] [Server thread/INFO]: 
+Almacen1
+Inv: 0 ( c: 20 h: 20 l: 25 t: 17 )
+
+[23:21:08] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:21:08] [Server thread/INFO]: 
+Agente 
+  - destino: ALALMACEN1
+  - producto: PAN
+  - material: 5 - CACAO
+  - BOLSA: Inv: 0 ( c: 5 h: 0 l: 0 t: 0 )
+
+[23:21:09] [Server thread/INFO]: Evento click - - Inicia
+[23:21:09] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:21:09] [Server thread/INFO]: Si es un cofre!!
+[23:21:09] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:21:09] [Server thread/INFO]: Evento click - - Fin
+[23:21:13] [Server thread/INFO]: Estoy en la base!
+[23:21:13] [Server thread/INFO]: Operación: DEJA
+[23:21:13] [Server thread/INFO]: Retiro de la bolsa: CACAO 5
+[23:21:13] [Server thread/INFO]:  - Deposito: 
+[23:21:13] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:21:13] [Server thread/INFO]: 
+Base   -- Objetivo: PAN-- 
+    Cofre Pan: Inv: 1 ( c: 5 h: 4 l: 0 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 10 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
+
+
+[23:21:13] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:21:13] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:21:13] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:21:13] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
+
+[23:21:13] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+
+[23:21:13] [Server thread/INFO]: Estrategia :1
+
+[23:21:17] [Server thread/INFO]: Evento click - - Inicia
+[23:21:17] [Server thread/INFO]:    Bloque tipo: CHEST
+
+[23:21:17] [Server thread/INFO]: Si es un cofre!!
+[23:21:17] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -90.0
+[23:21:17] [Server thread/INFO]: Evento click - - Fin
+[23:21:22] [Server thread/INFO]: Estoy en el almacén!ALALMACEN2
+[23:21:22] [Server thread/INFO]: Operación: TOMA
+[23:21:22] [Server thread/INFO]: Retiro: Almacen2 LECHE 5
+[23:21:22] [Server thread/INFO]:  - Deposito: 
+
+[23:21:22] [Server thread/INFO]: 
+Almacen2
+Inv: 0 ( c: 12 h: 7 l: 5 t: 2 )
+
+[23:21:22] [Server thread/INFO]: Publica el contenido del cofre: Almacen 2
+[23:21:22] [Server thread/INFO]: 
 Agente 
   - destino: ALALMACEN2
   - producto: PAN
   - material: 5 - LECHE
   - BOLSA: Inv: 0 ( c: 0 h: 0 l: 5 t: 0 )
 
-[13:36:48] [Server thread/INFO]: Evento de click en cofre --- ---
+[23:21:26] [Server thread/INFO]: Evento click - - Inicia
+[23:21:26] [Server thread/INFO]:    Bloque tipo: CHEST
 
-[13:36:48] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 15}, ItemStack{EGG x 25}, ItemStack{MILK_BUCKET x 30}, ItemStack{WHEAT x 25}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+[23:21:26] [Server thread/INFO]: Si es un cofre!!
+[23:21:26] [Server thread/INFO]:  x: 173.0 y: 5.0 z: -103.0
+[23:21:26] [Server thread/INFO]: Evento click - - Fin
+[23:21:27] [Server thread/INFO]: Evento de click en cofre --- ---
 
-[13:36:48] [Server thread/INFO]: getSlot: 3
+[23:21:27] [Server thread/INFO]: [ItemStack{COCOA_BEANS x 20}, ItemStack{EGG x 20}, ItemStack{MILK_BUCKET x 25}, ItemStack{WHEAT x 17}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 
-[13:36:48] [Server thread/INFO]: getAction: PICKUP_ALL
+[23:21:27] [Server thread/INFO]: getSlot: 3
 
-[13:36:48] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 25}
+[23:21:27] [Server thread/INFO]: getAction: PICKUP_ALL
 
-[13:36:48] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-103.0,pitch=0.0,yaw=0.0}
+[23:21:27] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 17}
 
-[13:36:48] [Server thread/INFO]: Cofre encontrado: Almacen 1
+[23:21:27] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=173.0,y=5.0,z=-103.0,pitch=0.0,yaw=0.0}
 
-[13:36:48] [Server thread/INFO]: El jugador está en el Almacen: Almacen 1
-[13:36:48] [Server thread/INFO]: Operación: TOMA
-[13:36:48] [Server thread/INFO]: Retiro: Almacen1 TRIGO 10
-[13:36:48] [Server thread/INFO]:  - Deposito: 
+[23:21:27] [Server thread/INFO]: Cofre encontrado: Almacen 1
 
-[13:36:48] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
-[13:36:48] [Server thread/INFO]: Fin del evento click -- --
+[23:21:27] [Server thread/INFO]: El jugador está en el Almacen: Almacen 1
+[23:21:27] [Server thread/INFO]: Operación: TOMA
+[23:21:27] [Server thread/INFO]: Retiro: Almacen1 TRIGO 3
+[23:21:27] [Server thread/INFO]:  - Deposito: 
 
-[13:36:56] [Server thread/INFO]: Estoy en la base!
-[13:36:56] [Server thread/INFO]: Operación: DEJA
-[13:36:56] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
-[13:36:56] [Server thread/INFO]:  - Deposito: 
-[13:36:56] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:21:27] [Server thread/INFO]: Publica el contenido del cofre: Almacen 1
+[23:21:27] [Server thread/INFO]: Fin del evento click -- --
 
-[13:36:56] [Server thread/INFO]: 
+[23:21:30] [Server thread/INFO]: Estoy en la base!
+[23:21:30] [Server thread/INFO]: Operación: DEJA
+[23:21:30] [Server thread/INFO]: Retiro de la bolsa: LECHE 5
+[23:21:30] [Server thread/INFO]:  - Deposito: 
+[23:21:30] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+
+[23:21:30] [Server thread/INFO]: 
 Base   -- Objetivo: PAN-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 5 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 5 t: 0 )
+    Cofre Pan: Inv: 1 ( c: 5 h: 4 l: 5 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 10 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
 
 
-[13:36:56] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:56] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:56] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:56] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, cofre-pastel-ingr-huevo=0, Sim=1.0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, cofre-pastel=0, alm1-inv-cacao=25, cofre-galleta-ingr-cacao=0}
+[23:21:30] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:21:30] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:21:30] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:21:30] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=0, alm2-inv-cacao=10, cofre-pan-ingr-trigo=10, cofre-galleta=0, alm1-inv-huevo=5, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=20, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=17, cofre-pan-ingr-leche=0, alm2-inv-trigo=10, cofre-pan=0, alm1-inv-leche=3, cofre-pan-ingr-cacao=0, cofre-galleta-ingr-leche=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=16, a-objetivo=pan, alm1-inv-cacao=25, cofre-pastel=0, cofre-galleta-ingr-cacao=0}
 
-[13:36:56] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
+[23:21:30] [Server thread/INFO]: Mejor caso: sc_caso2 1.0
 
-[13:36:56] [Server thread/INFO]: Estrategia :0
+[23:21:30] [Server thread/INFO]: Estrategia :0
 
-[13:36:57] [Server thread/INFO]: Evento click - - Inicia
-[13:36:57] [Server thread/INFO]:    Bloque tipo: CHEST
+[23:21:36] [Server thread/INFO]: Evento click - - Inicia
+[23:21:36] [Server thread/INFO]:    Bloque tipo: CHEST
 
-[13:36:57] [Server thread/INFO]: Si es un cofre!!
-[13:36:57] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
-[13:36:57] [Server thread/INFO]: Evento click - - Fin
-[13:36:58] [Server thread/INFO]: Evento de click en cofre --- ---
+[23:21:36] [Server thread/INFO]: Si es un cofre!!
+[23:21:36] [Server thread/INFO]:  x: 151.0 y: 4.0 z: -87.0
+[23:21:36] [Server thread/INFO]: Evento click - - Fin
+[23:21:37] [Server thread/INFO]: Evento de click en cofre --- ---
 
-[13:36:58] [Server thread/INFO]: [ItemStack{WHEAT x 10}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+[23:21:37] [Server thread/INFO]: [ItemStack{WHEAT x 3}, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 
-[13:36:58] [Server thread/INFO]: getSlot: 0
+[23:21:37] [Server thread/INFO]: getSlot: 0
 
-[13:36:58] [Server thread/INFO]: getAction: PICKUP_ALL
+[23:21:37] [Server thread/INFO]: getAction: PICKUP_ALL
 
-[13:36:58] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 10}
+[23:21:37] [Server thread/INFO]: itemStack: ItemStack{WHEAT x 3}
 
-[13:36:58] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=153.98676081807764,y=4.0,z=-89.12668914344623,pitch=16.050007,yaw=40.950333}
+[23:21:37] [Server thread/INFO]: Loc: Location{world=CraftWorld{name=world},x=154.74913983208847,y=4.0,z=-87.70768054650716,pitch=19.500069,yaw=76.496826}
 
-[13:36:58] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
+[23:21:37] [Server thread/INFO]: Cofre encontrado: base Player cofre pan
 
-[13:36:58] [Server thread/INFO]: El jugador está en la base
-[13:36:58] [Server thread/INFO]: Operación: DEJA
-[13:36:58] [Server thread/INFO]: Retiro de la bolsa: TRIGO 10
-[13:36:58] [Server thread/INFO]:  - Deposito: 
-[13:36:58] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:58] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:21:37] [Server thread/INFO]: El jugador está en la base
+[23:21:37] [Server thread/INFO]: Operación: DEJA
+[23:21:37] [Server thread/INFO]: Retiro de la bolsa: TRIGO 3
+[23:21:37] [Server thread/INFO]:  - Deposito: 
+[23:21:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:21:37] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:36:58] [Server thread/INFO]: Evento Marcador para: 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c player
+[23:21:37] [Server thread/INFO]: Evento Marcador para: 05ff6e90-c663-3a09-a1e0-8a7af7af5f9c player
 
-[13:36:58] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------
+[23:21:37] [Server thread/INFO]: ---------------------- EL JUEGO EN LA ARENA DA RE-INICIO --------------------------
 
-[13:36:58] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@1fa76f5
+[23:21:37] [Server thread/INFO]:  -- -- arena: uoc.tfm.vmejia.speedrun.instance.Arena@741f7d99
 
-[13:36:58] [Server thread/INFO]:  -- -- arena.minigame: speedrun v1.0
+[23:21:37] [Server thread/INFO]:  -- -- arena.minigame: speedrun v1.0
 
-[13:36:58] [Server thread/INFO]: 
+[23:21:37] [Server thread/INFO]: 
 Base   -- Objetivo: pan-- 
-    Cofre Pan: Inv: 1 ( c: 10 h: 9 l: 10 t: 7 )
+    Cofre Pan: Inv: 3 ( c: 3 h: 0 l: 0 t: 0 )
     Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
     Cofre Pastel: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
 
 
-[13:36:58] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
-[13:36:58] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
-[13:36:58] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
-[13:36:58] [Server thread/INFO]: Fin del evento click -- --
+[23:21:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pan
+[23:21:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre galleta
+[23:21:37] [Server thread/INFO]: Publica el contenido del cofre: base Player cofre pastel
+[23:21:37] [Server thread/INFO]: Fin del evento click -- --
 
-[13:36:58] [Server thread/WARN]: vmejiaec moved too quickly! 9.013239181922359,5.0,-35.87331085655377
-[13:36:58] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
+[23:21:37] [Server thread/INFO]:  -- -- Inicializa el CBR con los casos
 
-[13:36:58] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:21:37] [Server thread/INFO]: C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[13:36:58] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
+[23:21:37] [Server thread/INFO]: Loading file C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\speedcraft.prj
 
-[13:36:58] [Thread-10/INFO]: Imported 13 instances.
+[23:21:37] [Thread-10/INFO]: Imported 13 instances.
 
-[13:36:59] [Server thread/INFO]: 
+[23:21:38] [Server thread/INFO]: 
 
-[13:36:59] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
+[23:21:38] [Server thread/INFO]:  -- -- Coloca al agente en la base inicial
 
-[13:36:59] [Server thread/INFO]: Estoy en la base!
-[13:36:59] [Server thread/INFO]: Operación: DEJA
-[13:36:59] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
-[13:36:59] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
+[23:21:38] [Server thread/INFO]: Estoy en la base!
+[23:21:38] [Server thread/INFO]: Operación: DEJA
+[23:21:38] [Server thread/INFO]: Retiro de la bolsa: TRIGO 5
+[23:21:38] [Server thread/INFO]: Calcula que haya al menos un producto producido >>>>
 
-[13:36:59] [Server thread/INFO]: 
-Base   -- Objetivo: PASTEL-- 
-    Cofre Pan: Inv: 0 ( c: 10 h: 0 l: 5 t: 5 )
-    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 0 t: 0 )
-    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 5 t: 0 )
+[23:21:38] [Server thread/INFO]: 
+Base   -- Objetivo: GALLETA-- 
+    Cofre Pan: Inv: 1 ( c: 5 h: 4 l: 5 t: 2 )
+    Cofre Galleta: Inv: 0 ( c: 0 h: 0 l: 10 t: 10 )
+    Cofre Pastel: Inv: 0 ( c: 0 h: 5 l: 10 t: 0 )
 
 
-[13:36:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
-[13:36:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
-[13:36:59] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
-[13:36:59] [Server thread/INFO]: liste {cofre-pastel-ingr-cacao=0, cofre-pan-ingr-huevo=5, cofre-pan-ingr-trigo=0, alm2-inv-cacao=10, cofre-galleta=5, alm1-inv-huevo=0, cofre-galleta-ingr-huevo=0, alm1-inv-trigo=10, Sim=1.0, cofre-pastel-ingr-huevo=0, cofre-galleta-ingr-trigo=0, cofre-pastel-ingr-trigo=0, alm2-inv-huevo=7, cofre-pan-ingr-leche=0, alm2-inv-trigo=0, cofre-pan=10, alm1-inv-leche=3, cofre-galleta-ingr-leche=5, cofre-pan-ingr-cacao=0, cofre-pastel-ingr-leche=0, alm2-inv-leche=6, a-objetivo=pastel, cofre-pastel=0, alm1-inv-cacao=15, cofre-galleta-ingr-cacao=5}
-
-[13:36:59] [Server thread/INFO]: Mejor caso: sc_caso8 1.0
-
-[13:36:59] [Server thread/INFO]: Estrategia :1
-
-[13:37:04] [Server thread/INFO]: vmejiaec lost connection: Disconnected
-[13:37:04] [Server thread/INFO]: vmejiaec left the game
+[23:21:38] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pan
+[23:21:38] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre galleta
+[23:21:38] [Server thread/INFO]: Publica el contenido del cofre: base NPC cofre pastel
+[23:21:38] [Server thread/ERROR]: Could not pass event NavigationCompleteEvent to Citizens v2.0.29-SNAPSHOT (build 2491)
+org.bukkit.event.EventException: null
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:319) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:589) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:576) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.citizensnpcs.npc.ai.CitizensNavigator.run(CitizensNavigator.java:201) ~[?:?]
+	at net.citizensnpcs.npc.CitizensNPC.update(CitizensNPC.java:376) ~[?:?]
+	at net.citizensnpcs.nms.v1_15_R1.entity.EntityHumanNPC.tick(EntityHumanNPC.java:442) ~[?:?]
+	at net.minecraft.server.v1_15_R1.WorldServer.entityJoinedWorld(WorldServer.java:626) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.World.a(World.java:694) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.WorldServer.doTick(WorldServer.java:395) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.b(MinecraftServer.java:1082) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:406) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:984) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:824) [spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: java.lang.NullPointerException
+	at uoc.tfm.vmejia.speedrun.MyTrait.navigationcomplete(MyTrait.java:96) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.java:315) ~[spigot-1.15.2.jar:git-Spigot-a99063f-8731c97]
+	... 14 more
+[23:21:52] [Server thread/INFO]: vmejiaec lost connection: Disconnected
+[23:21:52] [Server thread/INFO]: vmejiaec left the game

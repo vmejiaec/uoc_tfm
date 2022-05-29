@@ -51,18 +51,13 @@ public class CBREngine {
         CBREngine.csv = csv;
     }
 
-    /**
-     * This methods creates a myCBR project and loads the project from a .prj file
-     */
+
+    // Crear proyecto MyCBR y leer el modelo del archivo .prj
     public Project createProjectFromPRJ(){
-
-        //System.out.println("Trying to load prj file with : "+data_path+ " "+projectName+" "+conceptName+" ");
-
+        //System.out.println("Cargando el proyecto : "+data_path+ " "+projectName+" "+conceptName+" ");
         Project project = null;
-
         try{
             project = new Project(data_path + projectName);
-
             while (project.isImporting()){
                 Thread.sleep(1000);
                 //System.out.print(".");
@@ -70,8 +65,7 @@ public class CBREngine {
             System.out.print("\n");
         }
         catch(Exception ex){
-
-            System.out.println("Fehler beim Laden des Projektes");
+            System.out.println("Error al cargar el proyecto");
         }
         return project;
     }

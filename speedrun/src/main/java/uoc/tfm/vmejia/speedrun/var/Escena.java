@@ -1,13 +1,7 @@
 package uoc.tfm.vmejia.speedrun.var;
 
 import org.bukkit.Location;
-import org.bukkit.World;
-import org.bukkit.block.Chest;
 import org.bukkit.util.Vector;
-import uoc.tfm.vmejia.speedrun.instance.Arena;
-import uoc.tfm.vmejia.speedrun.manager.EscenaManager;
-import uoc.tfm.vmejia.speedrun.util.UtilAlmacen;
-import uoc.tfm.vmejia.speedrun.util.UtilLocation;
 
 import java.util.ArrayList;
 import java.util.List;
