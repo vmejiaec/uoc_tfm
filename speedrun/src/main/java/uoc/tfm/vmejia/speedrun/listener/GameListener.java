@@ -24,10 +24,7 @@ public class GameListener implements Listener {
 
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e){
-        Arena arena = minigame.getArenaManager().getArena(e.getPlayer());
-        if(arena != null && arena.getState().equals(GameState.LIVE)){
-            arena.getGame().addPoint(e.getPlayer());
-        }
+        e.setCancelled(true);
     }
 
     @EventHandler

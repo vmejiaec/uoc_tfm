@@ -1,8 +1,9 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import org.bukkit.*;
+import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.meta.FireworkMeta;
 import org.bukkit.scoreboard.*;
 import uoc.tfm.vmejia.speedrun.ctrl.CtrlBase;
 import uoc.tfm.vmejia.speedrun.var.Escena;
@@ -134,6 +135,8 @@ public class GUI {
     public static void PonerMarcador(Player player, String team, int valor){
         String color = ChatColor.YELLOW.toString();
         player.getScoreboard().getTeam(team).setSuffix(color+valor);
+        // Sonido al cambio de marcador
+        player.playSound(player.getLocation(), Sound.BLOCK_BELL_RESONATE, 1.0f, 1.0f);
     }
 
     public static void PublicarLugar(Player player, String lugar){
@@ -158,6 +161,22 @@ public class GUI {
                 20,
                 100,
                 20);
+    }
+
+    public static void LanzarFuegosArtificiales(Player player, FireworkEffect.Type tipo, Location location){
+        Firework firework = player.getWorld().spawn(location,Firework.class);
+        FireworkMeta meta = (FireworkMeta) firework.getFireworkMeta();
+        meta.addEffect(
+                FireworkEffect.
+                        builder().
+                        withColor(Color.RED).
+                        withColor(Color.LIME).
+                        with(tipo).
+                        withFlicker().
+                        build()
+        );
+        meta.setPower(1);
+        firework.setFireworkMeta(meta);
     }
 
 }

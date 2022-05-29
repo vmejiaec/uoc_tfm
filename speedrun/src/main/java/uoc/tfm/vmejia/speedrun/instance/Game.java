@@ -1,7 +1,7 @@
 package uoc.tfm.vmejia.speedrun.instance;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import org.bukkit.*;
+import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import uoc.tfm.vmejia.speedrun.manager.ConfigManager;
 
@@ -50,6 +50,14 @@ public class Game {
             arena.reset();
             // Publica el lugar
             GUI.PublicarLugar(player,"LOBBY");
+            // Lanza fuegos artificiales
+            Location location = new Location(player.getWorld(), 163,4,-121);
+            GUI.LanzarFuegosArtificiales(player, FireworkEffect.Type.BALL_LARGE, location);
+            System.out.println("Lanza Fuegos Artificiales");
+            location = new Location(player.getWorld(), 165,4,-121);
+            GUI.LanzarFuegosArtificiales(player, FireworkEffect.Type.STAR, location);
+            location = new Location(player.getWorld(), 161,4,-121);
+            GUI.LanzarFuegosArtificiales(player, FireworkEffect.Type.BURST, location);
             return;
         }
 
@@ -57,6 +65,8 @@ public class Game {
         points.replace(player.getUniqueId(),playerPoints);
         // notifica al jugador de los puntos ganados
         player.sendMessage(ChatColor.GREEN + player.getName()+ " + 1 PRODUCTO!!" );
+        // Sonido al cambio de marcador
+        player.playSound(player.getLocation(), Sound.ENTITY_IRON_GOLEM_REPAIR, 1.0f, 1.0f);
     }
 
     // Aumenta el marcador de un jugador por su UUID
@@ -75,5 +85,7 @@ public class Game {
         points.replace(uuid,playerPoints);
         // notifica al jugador de los puntos ganados
         arena.sendMessage(ChatColor.GREEN + "NPC + 1 PRODUCTO!!" );
+        // Sonido al cambio de marcador
+        arena.getPlayer().playSound(arena.getNPCSpawn(), Sound.ENTITY_IRON_GOLEM_REPAIR, 1.0f, 1.0f);
     }
 }

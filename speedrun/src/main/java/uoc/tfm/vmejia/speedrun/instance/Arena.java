@@ -124,6 +124,9 @@ public class Arena {
         this.player = player;
         player.teleport(playerSpawn);
 
+        // Lanza sonido de entrada a la arena
+        player.playSound(player.getLocation(), Sound.ENTITY_ENDERMAN_SCREAM, 2.0f, 1.0f);
+
         // Inicializa al player, borra su inventario personal
         UtilEscena.inicializarJugador(player);
 
