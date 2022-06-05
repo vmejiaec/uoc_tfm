@@ -6,18 +6,18 @@ import de.dfki.mycbr.io.CSVImporter;
 
 public class CBREngine {
 
-    private static String data_path = "C:\\UOC\\S4\\TFM\\uoc_tfm\\cbr\\modelo\\";
-
-    private static String projectName = "speedcraft.prj";
-    // name of the central concept
-    private static String conceptName = "speedcraft_caso";
-    // name of the csv containing the instances
-    private static String csv = "speedcraft-casos.csv";
-
-    private static String columnseparator = ";";
-    private static String multiplevalueseparator = ",";
-    // name of the case base that should be used; the default name in myCBR is CB_csvImport
-    private static String casebase = "CB_csvImport";
+    //private static String data_path = "C:\\UOC\\S4\\TFM\\uoc_tfm\\cbr\\modelo\\";
+    private static String data_path = ConfigManager.getData_Path();
+    //private static String projectName = "speedcraft.prj";
+    private static String projectName = ConfigManager.getProjectName();
+    //private static String conceptName = "speedcraft_caso";
+    private static String conceptName = ConfigManager.getConceptName();
+    //private static String csv = "speedcraft-casos.csv";
+    private static String csv = ConfigManager.getCSV();
+    // Nombre del caso base, por defecto es CB_csvImport
+    private static String casebase = ConfigManager.getCaseBase();
+    private static String columnseparator = ConfigManager.getColumnSeparator();
+    private static String multiplevalueseparator = ConfigManager.getMultipleValueSeparator();
 
     public static String getCaseBase() {
         return casebase;

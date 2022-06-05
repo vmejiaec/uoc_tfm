@@ -1,0 +1,7 @@
+data_path: 'C:\UOC\S4\TFM\uoc_tfm\cbr\modelo\'
+projectName: 'speedcraft.prj'
+conceptName: 'speedcraft_caso'
+csv: 'speedcraft-casos.csv'
+casebase: 'CB_csvImport'
+columnseparator: ';'
+multiplevalueseparator: ','
